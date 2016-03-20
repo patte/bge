@@ -4,7 +4,7 @@ Router.plugin 'seo',
     suffix: ''
     separator: ''
 
-    description: 'Infos und Smartervote'
+    description: 'Infos und Hintergründe'
     #image: 'http://bge.patpat.org' #TODO
 
     meta:

@@ -6,14 +6,6 @@ sitemaps.add '/sitemap.xml', ->
     changefreq: 'weekly'
   LANGUAGES.forEach (lang) ->
     pages.push
-      page: "/#{lang}/smartervote"
-      #lastmod: new Date()
-      changefreq: 'monthly'
-    pages.push
-      page: "/#{lang}/smartervote-content"
-      #lastmod: new Date()
-      changefreq: 'monthly'
-    pages.push
       page: "/#{lang}/blog"
       #lastmod: new Date()
       changefreq: 'weekly'
