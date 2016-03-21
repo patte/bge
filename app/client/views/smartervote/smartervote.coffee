@@ -589,7 +589,7 @@ Template.question.events
 
     Meteor.setTimeout ->
       _tutorialEmitter.emit 'sliderMoved'
-    , 3000
+    , 1500
 
     Meteor.clearTimeout(piwikSlideTimeout) if piwikSlideTimeout?
     piwikSlideTimeout = Meteor.setTimeout ->
