@@ -1395,7 +1395,7 @@ Template.evaluation.helpers
     Visits.findOne _visitId
 
   shareData: ->
-    title: 'smartervote - bedingungslos.ch'
+    title: TAPi18n.__('myResult', _proPercent.get())
     url: 'https://bedingungslos.ch/myBubbles/'+_visitId
     thumbnail: "https://bedingungslos.ch#{@visit.myBubblesUrl}" if @visit? and @visit.myBubblesUrl?
 
