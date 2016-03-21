@@ -155,6 +155,7 @@ observe-sequence@1.0.7
 ongoworks:spiderable@1.0.7
 ordered-dict@1.0.4
 patte:ghostdown@0.5.2
+patte:meteor-files@0.0.1
 patte:meteor-news@0.0.1
 patte:meteor-page-crumbs@0.0.1
 practicalmeteor:underscore.string@2.3.3_3
