@@ -3,7 +3,7 @@ Router.route '/admin/files',
   waitOn: ->
     [
       Meteor.subscribe('files')
-      Meteor.subscribe('users')
+      Meteor.subscribe('adminUsers')
     ]
   action: ->
     @render 'files'

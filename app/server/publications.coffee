@@ -14,12 +14,26 @@ onlyIfUser = ->
 
 ######################################
 
-Meteor.publish "users", ->
+Meteor.publish "registeredUsers", ->
   return unless onlyIfAdmin.call(@)
-  Meteor.users.find({},
+  Meteor.users.find(
+    emails: $exists: 1
+  ,
     fields:
       _id: 1
-      username: 1
+      emails: 1
+      profile: 1
+      roles: 1
+      status: 1
+      createdAt: 1
+  )
+Meteor.publish "adminUsers", ->
+  return unless onlyIfAdmin.call(@)
+  Meteor.users.find(
+    roles: 'admin'
+  ,
+    fields:
+      _id: 1
       emails: 1
       profile: 1
       roles: 1

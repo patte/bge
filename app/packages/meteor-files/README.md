@@ -6,14 +6,15 @@ simple file upload and sharing
 Usage
 -----
 - uploading and viewing is only allowed for user in role admin
-- publish users
+- publish adminUsers
 ```
-Meteor.publish "users", ->
+Meteor.publish "adminUsers", ->
   return unless onlyIfAdmin.call(@)
-  Meteor.users.find({},
+  Meteor.users.find(
+    roles: 'admin'
+  ,
     fields:
       _id: 1
-      username: 1
       emails: 1
       profile: 1
       roles: 1
