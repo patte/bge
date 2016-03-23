@@ -5,5 +5,27 @@
   {{> errors}}
   {{> jumbotron}}
   {{> yield}}
+
+
+    <footer>
+      <nav class="footer-nav">
+          <ul>
+              <li><a href="/pages/kontakt">{{_ 'kontakt'}}</a></li>
+              <li><a href="/pages/spenden">{{_ 'spenden'}}</a></li>
+              <li><a href="/pages/medien">{{_ 'medien'}}</a></li>
+          </ul>
+      </nav>
+
+      <div class="newsletter-call-to-action">
+          <label>Newsletter</label>
+          {{> newsletterForm}}
+      </div>
+
+      <nav class="footer-social-links">
+          <ul>
+              <li><a href="https://www.facebook.com/Volksinitiative-bedingungsloses-Grundeinkommen-176302792472898/" target="_blank">Facebook</a></li>
+          </ul>
+      </nav>
+    </footer>
 </div>
 </template>
