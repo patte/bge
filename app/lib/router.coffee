@@ -19,7 +19,9 @@ Router.configure
 
 if Meteor.isClient
   Router.onAfterAction ->
-    Meteor.Piwik.trackPage(Router.current().route.path(this))
+    console.log "track page"
+    console.log window.location.pathname
+    Meteor.Piwik.trackPage(window.location.pathname)
 
 
 Router.route '/',
