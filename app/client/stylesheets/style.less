@@ -32,32 +32,32 @@ body {
 }
 
 /*
- * Common or front page styles
- */
+* Common or front page styles
+*/
 body {
-	margin: 0;
-	//padding: @viewport-border-width;
-	overflow-x: hidden;
-	//overflow-y: scroll;
+  margin: 0;
+  //padding: @viewport-border-width;
+  overflow-x: hidden;
+  //overflow-y: scroll;
 
-	background: white;
-	color: black;
+  background: white;
+  color: black;
 
-	font-family: 'SabonLTStd-Roman', serif;
-	line-height: @line-height-default;
+  font-family: 'SabonLTStd-Roman', serif;
+  line-height: @line-height-default;
 
-	@media only screen and (min-width: @screen-sm-min) {
-  	padding: @viewport-border-width;
-	}
+  @media only screen and (min-width: @screen-sm-min) {
+    padding: @viewport-border-width;
+  }
 }
 
 h1, h2, h3, h4 {
   border: none;
   color: black;
-	font-family: 'BuenosAires', sans-serif;
-	font-weight: bold;
+  font-family: 'BuenosAires', sans-serif;
+  font-weight: bold;
 
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -79,8 +79,8 @@ a {
 }
 
 /*
- * Site header, logo, menu toggler
- */
+* Site header, logo, menu toggler
+*/
 #site-header {
   position: relative;
   z-index: 2100;
@@ -90,7 +90,7 @@ a {
   border-bottom: @border-default;
 
   font-family: 'BuenosAires', sans-serif;
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #site-brand {
@@ -132,7 +132,7 @@ a {
   font-size: @font-size-logo-min;
   line-height: @line-height-logo;
 
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   @media only screen and (min-width: @screen-sm-min) {
@@ -187,8 +187,8 @@ a {
 
 
 /*
- * Main content
- */
+* Main content
+*/
 .container {
   max-width: 42em; // make it readable
   padding: 0 @padding-body-horizontal;
@@ -210,8 +210,8 @@ a {
 }
 
 /*
- * Logos on homepage
- */
+* Logos on homepage
+*/
 .jumbotron {
   margin: 0 @padding-body-horizontal @padding-body-vertical;
   padding: 0;
@@ -228,7 +228,7 @@ a {
     height: 0;
     padding-bottom: 100%;
   }
-  
+
   svg,
   object {
     position: absolute;
@@ -346,6 +346,155 @@ a {
   }
 }
 
+
+body {
+  padding-bottom: 13em;
+}
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  padding: 0 1em 0.1em;
+
+  background: linear-gradient(90deg, #ffed00 0%, #ffcc00 100%);
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a,
+  label {
+    display: inline-block;
+    margin: 0 0.5em;
+    line-height: 3em;
+    color: black;
+
+    font-family: 'BuenosAires', sans-serif;
+    font-weight: bold;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.footer-nav {
   text-align: center;
+}
+
+.newsletter-call-to-action {
+  text-align: center;
+
+  input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0.5em;
+    line-height: 1.9em;
+
+    vertical-align: middle;
+
+    background: transparent;
+    border: 1px solid black;
+    box-shadow: none;
+
+    &::-webkit-input-placeholder {color: black}
+    &::-moz-placeholder {color: black}
+    &:-ms-input-placeholder {color: black}
+
+    &:focus {
+      background: white;
+
+      &::-webkit-input-placeholder {color: gray}
+      &::-moz-placeholder {color: gray}
+      &:-ms-input-placeholder {color: gray}
+    }
+  }
+
+  button {
+    display: inline-block;
+    padding: 0 0.5em;
+    vertical-align: middle;
+    line-height: 1.9em;
+    background: black;
+    color: #ffed00;
+    border: 1px solid black;
+    border-radius: 0;
+    box-shadow: none;
+
+    font-family: 'BuenosAires', sans-serif;
+    font-weight: bold;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:hover {
+      color: white;
+    }
+
+    i {
+      //display: none;
+    }
+  }
+}
+
+.footer-social-links {
+  text-align: center;
+
+  a {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding-bottom: 3em;
+  }
+  footer {
+    padding: 0 30px 0.1em;
+
+    a,
+    label {
+      margin: 0 1em 0 0;
+    }
+  }
+
+  .footer-nav {
+    float: left;
+    width: 25%;
+    text-align: left;
+  }
+
+  .newsletter-call-to-action {
+    float: left;
+    width: 50%;
+    height: 3em;
+    text-align: center;
+
+    form {
+      display: inline-block;
+    }
+    input[type="email"] {
+      width: 8em;
+    }
+  }
+
+  .footer-social-links {
+    float: left;
+    width: 25%;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .newsletter-call-to-action {
+    input[type="email"] {
+      width: 10em;
+    }
+  }
 }
