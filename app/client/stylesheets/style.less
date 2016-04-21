@@ -175,13 +175,27 @@ a {
   background: transparent url(/img/icon-menu.svg) 50% 50% no-repeat;
   background-size: contain;
   border: 0;
-
+  text-transform: uppercase;
   text-indent: -9999em;
+}
 
-  @media only screen and (min-width: @screen-sm-min) {
-    width: 44px;
-    height: 24px;
+@media only screen and (min-width: @screen-sm-min) {
+  #site-menu .site-menu-toggle {
+    width: auto;
+    height: 44px;
     margin: 0 @padding-body-horizontal;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 60px;
+
+    background: @color-brand;
+    background-image: url(/img/icon-menu.svg), linear-gradient(141deg, #ffed00 0%, #ffcc00 100%);
+    background-size: 44px 24px, auto;
+    background-position: right 10px top 10px, 0 0;
+    background-repeat: no-repeat;
+    //box-shadow: 0 0 0 10px @color-brand;
+    text-align: right;
+    text-indent: 0;
   }
 }
 

@@ -8,35 +8,35 @@
   left: 0;
   right: 0;
   z-index: 4000;
-  
+
   box-sizing: border-box;
   min-height: 100%;
   padding-bottom: (2 * @padding-body-vertical + 2 * @line-height-logo * @font-size-logo-medium + 3rem);
-  
+
   background: @color-menu-bg;
-  
+
   font-family: 'BuenosAires', sans-serif;
 	font-weight: bold;
-  
+
   ul {
     padding: 0;
     margin: 1em 0;
     list-style: none;
     text-align: center;
   }
-  
+
   li a {
     display: inline-block;
     padding: 1rem 0;
 
     color: black;
-    
+
     font-weight: bold;
     font-size: 5vm; // IE
     font-size: 5vmin;
     text-transform: uppercase;
     text-decoration: none;
-    
+
     &:hover {
       color: #ffed00;
 /*
@@ -46,11 +46,11 @@
 */
     }
   }
-  
+
   @media only screen and (min-width: @screen-sm-min) {
   	padding: @viewport-border-width @viewport-border-width (2 * @padding-body-vertical + 2 * @line-height-logo * @font-size-logo-medium + 3rem);
 	}
-  
+
 /*
   .close-menu {
     position: absolute;
@@ -58,18 +58,18 @@
     right: 2em;
     width: 44px;
     height: 44px;
-    
+
     background: transparent url(/img/icon-close.svg) 50% 50% no-repeat;
     background-size: contain;
     border: 0;
     border-radius: 0;
-    
+
     text-indent: -9999em;
   }
 */
 }
 
 .menu-close {
-  background: transparent url(/img/icon-close.svg) 50% 50% no-repeat !important;
+  background: transparent url(/img/icon-close.svg) 100% 50% no-repeat !important;
   background-size: contain !important;
 }
