@@ -240,7 +240,8 @@ a {
   .svg-container {
     position: relative;
     height: 0;
-    padding-bottom: 100%;
+    padding-bottom: 60%;
+    overflow: hidden;
   }
 
   svg,
@@ -254,6 +255,8 @@ a {
   }
 
   p {
+    margin-top: 10px;
+    padding: 0 10px;
     font-size: 1em;
   }
 
@@ -261,11 +264,15 @@ a {
     display: inline-block;
     max-width: 200px;
     margin: 0 auto;
+    color: black;
 
     &:hover {
       .black {
         fill: white;
       }
+
+      color: shade(@color-brand, 20%);
+      text-decoration: none;
     }
   }
 
@@ -295,6 +302,10 @@ a {
         padding-bottom: 40%;
       }
 
+      p {
+        display: none;
+      }
+
       .col-sm-4 {
         padding-bottom: 0;
       }
@@ -306,14 +317,19 @@ a {
 #link-debattenblog,
 #link-expo16 {
   display: block;
+}
+
+#link-smartervote .svg-container,
+#link-debattenblog .svg-container,
+#link-expo16 .svg-container {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#link-smartervote:hover { background-image: url(/img/logobg-smartervote@2x.jpg); }
-#link-debattenblog:hover { background-image: url(/img/logobg-debattenblog@2x.jpg); }
-#link-expo16:hover { background-image: url(/img/logobg-expo16@2x.jpg); }
+#link-smartervote:hover .svg-container { background-image: url(/img/logobg-smartervote@2x.jpg); }
+#link-debattenblog:hover .svg-container { background-image: url(/img/logobg-debattenblog@2x.jpg); }
+#link-expo16:hover .svg-container { background-image: url(/img/logobg-expo16@2x.jpg); }
 
 .meteor-blog-index {
   &:extend(.container);
@@ -365,10 +381,6 @@ body {
   padding-bottom: 13em;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   overflow: auto;
   padding: 0 1em 0.1em;
 
@@ -395,6 +407,13 @@ footer {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media only screen and (min-width: 960px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 
