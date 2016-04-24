@@ -233,6 +233,13 @@ a {
   background: transparent;
   border-radius: 0 !important;
 
+  font-family: 'BuenosAires', sans-serif;
+  font-weight: bold;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+
   &.shrink {
     display: none;
   }
@@ -240,7 +247,7 @@ a {
   .svg-container {
     position: relative;
     height: 0;
-    padding-bottom: 60%;
+    padding-bottom: 120%;
     overflow: hidden;
   }
 
@@ -255,9 +262,14 @@ a {
   }
 
   p {
-    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
     padding: 0 10px;
     font-size: 1em;
+    line-height: 1;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   a {
@@ -271,7 +283,7 @@ a {
         fill: white;
       }
 
-      color: shade(@color-brand, 20%);
+      color: white;
       text-decoration: none;
     }
   }
@@ -285,9 +297,18 @@ a {
   @media only screen and (min-width: @screen-sm-min) {
     border-bottom: @border-default;
 
+    .svg-container {
+      padding-bottom: 110%;
+    }
+
     a {
       width: 100%;
       max-width: 300px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.1;
     }
 
     .col-sm-4 {
@@ -309,6 +330,17 @@ a {
       .col-sm-4 {
         padding-bottom: 0;
       }
+    }
+  }
+
+  @media only screen and (min-width: @screen-md-min) {
+    .svg-container {
+      padding-bottom: 100%;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.2;
     }
   }
 }
