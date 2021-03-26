@@ -1,0 +1,32 @@
+version: '3'
+services:
+  meteor:
+    image: bge:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URL: mongodb://mongo:27017/bge
+      PORT: 3000
+      ROOT_URL: http://localhost:3000
+      DISABLE_WEBSOCKETS: 1
+
+
+  mongo:
+    image: mongo:latest
+    restart: always
+    ports:
+      - "27017:27017"
+    expose:
+      - "27017"
+    volumes:
+      - ./docker-data/mongo:/data/db

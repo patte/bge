@@ -1,0 +1,12 @@
+app = "bge-mongo"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[[mounts]]
+  source = "bge_mongo"
+  destination = "/data/db"
+
+[experimental]
+  private_network = true
+
