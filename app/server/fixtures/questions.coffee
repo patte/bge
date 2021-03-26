@@ -9,11 +9,12 @@ deleteAndImportQuestions = ->
   i=0
   #fs.createReadStream(process.env.PWD+"/private/questions.csv").pipe( csv(
   #request.get(Meteor.absoluteUrl()+'/questions.csv').pipe( csv(
-  url = 'http://ling.s.patpat.org:8000/questions.csv'
+  url = Meteor.absoluteUrl()+'questions.csv'
+  console.log('Downloading '+url)
   HTTP.get url, (error, result) ->
     if error?
       console.log error
-      throw new Meteor.Error(error.response.statusCode, "failed to load questions.csv")
+      throw new Meteor.Error("failed to load questions.csv", error, url)
     s = new Stream.Readable()
     s._read = -> {}
     s.push(result.content)
