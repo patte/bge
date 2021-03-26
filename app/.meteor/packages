@@ -40,17 +40,13 @@ mrt:jquery-ui-sortable
 chriswessels:hammer
 jrudio:bluebird
 reywood:publish-composite
-accounts-facebook
 d3js:d3
 chhib:fast-csv
 froatsnook:request
 http
-liberation:shareit
 aslagle:reactive-table
 brettle:accounts-deluxe
 brettle:accounts-anonymous
-accounts-google
-accounts-twitter
 martino:iron-router-i18n
 tap:i18n
 tap:i18n-ui
