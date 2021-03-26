@@ -13,10 +13,10 @@ sitemaps.add '/sitemap.xml', ->
       page: "/#{lang}/smartervote-content"
       #lastmod: new Date()
       changefreq: 'monthly'
-    pages.push
-      page: "/#{lang}/blog"
-      #lastmod: new Date()
-      changefreq: 'weekly'
+    #pages.push
+    #  page: "/#{lang}/blog"
+    #  #lastmod: new Date()
+    #  changefreq: 'weekly'
     Posts.find({published: true}).forEach (page) ->
       pages.push
         page: "/#{lang}/pages/#{page.slug}"
