@@ -24,15 +24,28 @@ if Meteor.isClient
     Meteor.Piwik.trackPage(window.location.pathname)
 
 
+#Router.route '/',
+#  name: 'home'
+#  waitOn: ->
+#    [
+#      Meteor.subscribe('news')
+#      Meteor.subscribe('newsImages')
+#    ]
+#  action: ->
+#    @render 'home'
+
 Router.route '/',
   name: 'home'
+  layoutTemplate: 'layoutSmartervote'
   waitOn: ->
     [
-      Meteor.subscribe('news')
-      Meteor.subscribe('newsImages')
+      Meteor.subscribe('questions', TAPi18n.getLanguage())
+      Meteor.subscribe('visits')
+      Meteor.subscribe('answers')
+      Meteor.subscribe('publishedVisits')
     ]
   action: ->
-    @render 'home'
+    @render 'smartervote'
 
 Router.route 'smartervote',
   layoutTemplate: 'layoutSmartervote'
@@ -47,13 +60,14 @@ Router.route 'smartervote',
     @render 'smartervote'
 
 Router.route 'myBubbles/:id',
+  layoutTemplate: 'layoutSmartervote'
   waitOn: ->
     #TODO denormalise proPercent into visit
     Meteor.subscribe('visitAndAnswers', @params.id)
   data: ->
     Visits.findOne(@params.id)
   seo:
-    image: -> 
+    image: ->
       Meteor.absoluteUrl().slice(0, -1)+@data().myBubblesUrl
   action: ->
     @render 'myBubbles'
