@@ -17,11 +17,11 @@ Router.configure
 #    dashboardRoute: '/home'  #redirect to this path after sign-in
 #    passwordSignupFields: 'EMAIL_ONLY'
 
-if Meteor.isClient
-  Router.onAfterAction ->
-    console.log "track page"
-    console.log window.location.pathname
-    Meteor.Piwik.trackPage(window.location.pathname)
+#if Meteor.isClient
+#  Router.onAfterAction ->
+#    console.log "track page"
+#    console.log window.location.pathname
+#    Meteor.Piwik.trackPage(window.location.pathname)
 
 
 #Router.route '/',
