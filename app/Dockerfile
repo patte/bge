@@ -7,7 +7,8 @@ LABEL software.description="answer questions, get bubbles"
 RUN apt-get update && \
   apt-get install --yes \
     git curl && \
-  rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/* && \
+  apt-get clean
 
 RUN useradd meteor -G staff -m -s /bin/bash
 USER meteor
@@ -27,6 +28,7 @@ RUN cd /home/meteor/src && \
 
 # cleanup
 RUN rm -rf /home/meteor/.meteor
+RUN rm -rf /home/meteor/src
 
 WORKDIR /home/meteor/build/bundle
 
