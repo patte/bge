@@ -57,7 +57,7 @@ _questionLabelLengthMax = 5
 
 _breakpointX = 768
 
-_startTutorial = true
+_startTutorial = false
 _showTutorial = new ReactiveVar(false)
 
 _tutorialEmitter = new EventEmitter
