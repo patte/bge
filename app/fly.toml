@@ -3,35 +3,42 @@ app = "bge"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
+[[vm]]
+size = "shared-cpu-1x"
+memory = "768m"
+
 [[services]]
-  internal_port = 3000
-  protocol = "tcp"
+internal_port = 3000
+protocol = "tcp"
+auto_stop_machines = "stop"
+auto_start_machines = true
+min_machines_running = 0
 
-  [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
+[services.concurrency]
+hard_limit = 25
+soft_limit = 20
 
-  [[services.ports]]
-    handlers = ["http"]
-    port = "80"
+[[services.ports]]
+handlers = ["http"]
+port = "80"
 
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = "443"
+[[services.ports]]
+handlers = ["tls", "http"]
+port = "443"
 
-  [[services.http_checks]]
-    grace_period = "5s"
-    interval = "15s"
-    timeout = "2s"
-    method = "get"
-    path = "/"
-    protocol = "http"
+[[services.http_checks]]
+grace_period = "5s"
+interval = "15s"
+timeout = "2s"
+method = "get"
+path = "/"
+protocol = "http"
 
 [env]
-  MONGO_URL = "mongodb://global.bge-mongo.internal:10000"
-  PORT = "3000"
-  DISABLE_WEBSOCKETS = "1"
-  ROOT_URL = "https://bge.fly.dev"
+MONGO_URL = "mongodb://global.bge-mongo.internal:10000"
+PORT = "3000"
+DISABLE_WEBSOCKETS = "1"
+ROOT_URL = "https://bge.fly.dev"
 
 [experimental]
-  private_network = true
+private_network = true
