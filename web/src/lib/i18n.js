@@ -45,6 +45,15 @@ export function __(key, ...args) {
   return str.replace(/%%/g, '%')
 }
 
+// The static build is published per language at /, /fr/ and /it/ (see
+// vite.config.js). When we're on one of those paths the URL is authoritative —
+// it's what crawlers and shared links resolve to — so it wins over the saved /
+// browser preference. At the root we keep the saved/browser preference.
+function languageFromPath() {
+  const m = (window.location.pathname || '').match(/^\/(fr|it)(?:\/|$)/)
+  return m && LANGUAGES.includes(m[1]) ? m[1] : null
+}
+
 export function initLanguage() {
   let saved = null
   try {
@@ -53,7 +62,10 @@ export function initLanguage() {
     /* ignore */
   }
   const nav = (navigator.language || DEFAULT_LANGUAGE).slice(0, 2)
-  current = (saved && LANGUAGES.includes(saved) && saved) || (LANGUAGES.includes(nav) ? nav : DEFAULT_LANGUAGE)
+  current =
+    languageFromPath() ||
+    (saved && LANGUAGES.includes(saved) && saved) ||
+    (LANGUAGES.includes(nav) ? nav : DEFAULT_LANGUAGE)
   document.documentElement.setAttribute('lang', current)
   return current
 }
