@@ -29,8 +29,20 @@ async function freshContextPage(browser, viewport) {
   page.on('pageerror', (e) => console.log(`  [pageerror:${name}] ${e.message}`))
   // Meteor keeps a DDP long-poll open, so 'load' can be slow; domcontentloaded
   // + waitReady (which waits for the actual app selectors) is more reliable.
-  await page.goto(baseUrl, { waitUntil: 'domcontentloaded', timeout: 90000 })
-  await waitReady(page)
+  // The baseline is a scale-to-zero fly VM that can 503 / be slow on a cold
+  // start, so retry the load a few times before giving up.
+  let ready = false
+  for (let attempt = 1; attempt <= 4 && !ready; attempt++) {
+    try {
+      await page.goto(baseUrl, { waitUntil: 'domcontentloaded', timeout: 90000 })
+      await waitReady(page)
+      ready = true
+    } catch (e) {
+      console.log(`  [${name}] load attempt ${attempt} failed (${e.message.split('\n')[0]}), retrying…`)
+      await page.waitForTimeout(3000)
+    }
+  }
+  if (!ready) throw new Error(`${name}: app never became ready at ${baseUrl}`)
   return { context, page }
 }
 

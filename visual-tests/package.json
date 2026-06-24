@@ -4,6 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Compares the legacy Meteor baseline against the new static build",
+  "scripts": {
+    "test": "node run.mjs",
+    "test:quick": "node run.mjs --quick",
+    "setup": "npm install && npx playwright install --with-deps chromium"
+  },
   "dependencies": {
     "playwright": "^1.48.0"
   }

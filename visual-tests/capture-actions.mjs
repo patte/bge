@@ -25,7 +25,21 @@ async function main() {
     const context = await browser.newContext({ viewport: VIEWPORTS[vp] })
     const page = await context.newPage()
     page.on('pageerror', (e) => console.log(`  [pageerror:${name}/${vp}] ${e.message}`))
-    await page.goto(baseUrl, { waitUntil: 'domcontentloaded', timeout: 90000 })
+    // The legacy oracle is a scale-to-zero fly VM that can answer 503 / be slow
+    // on a cold start. Retry the initial load+render a few times so a transient
+    // cold start doesn't fail the whole run.
+    let loaded = false
+    for (let attempt = 1; attempt <= 4 && !loaded; attempt++) {
+      try {
+        await page.goto(baseUrl, { waitUntil: 'domcontentloaded', timeout: 90000 })
+        await page.waitForSelector('#bubblesSVG', { timeout: 45000 })
+        loaded = true
+      } catch (e) {
+        console.log(`  [${name}/${vp}] load attempt ${attempt} failed (${e.message.split('\n')[0]}), retrying…`)
+        await page.waitForTimeout(3000)
+      }
+    }
+    if (!loaded) throw new Error(`${name}/${vp}: app never became ready`)
     const result = await runScenario(page)
     out.viewports[vp] = result
     const favs = result.steps.find((s) => s.label === 'evaluation')?.net?.favStars

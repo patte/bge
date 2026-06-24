@@ -108,17 +108,46 @@ export async function runScenario(page) {
   await page.waitForTimeout(200)
 
   // ---- language switch (de -> fr -> it -> de), capture the question label ----
-  const langLabels = {}
-  for (const lang of ['fr', 'it', 'de']) {
-    const span = page.locator(`#app-header .languages span[data-lang="${lang}"]`)
-    if ((await span.count()) > 0) {
-      await span.first().click()
-      await page.waitForTimeout(500)
-    }
-    langLabels[lang] = await page.evaluate(() => {
+  // The switcher is only shown/clickable on desktop; on mobile it is hidden, so
+  // we record null on both apps (which still compares equal).
+  // Select by the span's text (the lang code) so it works on both apps — the
+  // legacy switcher has no data-lang attribute. Records the visible question
+  // label after the switch, or null if the switcher is hidden (mobile).
+  //
+  // The legacy app loads each language's question text over DDP on demand, so
+  // after clicking we must WAIT for the label to actually change (the new app
+  // switches instantly, client-side). We go de -> fr -> it and, for fr/it, wait
+  // until the label differs from the German one.
+  const readLabel = () =>
+    page.evaluate(() => {
       const el = document.querySelector('.the-question')
       return el ? el.textContent.replace(/\s+/g, ' ').trim() : null
     })
+  const langLabels = {}
+  let deLabel = null
+  for (const lang of ['de', 'fr', 'it']) {
+    const clicked = await page.evaluate((code) => {
+      const spans = Array.from(document.querySelectorAll('#app-header .languages span'))
+      const span = spans.find((s) => s.textContent.replace(/\s+/g, '').toLowerCase() === code)
+      if (!span) return false
+      const r = span.getBoundingClientRect()
+      if (r.width === 0 || r.height === 0) return false // hidden (mobile)
+      span.click()
+      return true
+    }, lang)
+    if (!clicked) {
+      langLabels[lang] = null
+      continue
+    }
+    // poll for the label to settle (and, for fr/it, to leave German)
+    let label = null
+    for (let t = 0; t < 30; t++) {
+      await page.waitForTimeout(200)
+      label = await readLabel()
+      if (label && (lang === 'de' || label !== deLabel)) break
+    }
+    langLabels[lang] = label
+    if (lang === 'de') deLabel = label
   }
 
   return { infoExpanded, steps, about: { geom: aboutGeom, anchors }, langLabels }
