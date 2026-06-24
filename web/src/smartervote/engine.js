@@ -9,7 +9,7 @@ import { Network } from '../lib/network.js'
 // d3 v3 is provided as a global by the classic <script> in index.html.
 const d3 = window.d3
 import { Questions, NUM_QUESTIONS } from '../lib/collections.js'
-import { persistAnswers, loadStoredAnswers } from '../lib/store.js'
+import { persistAnswers, loadStoredAnswers, clearStoredAnswers } from '../lib/store.js'
 
 // ---- tiny event bus (replaces Blaze reactivity) ---------------------------
 const bus = {
@@ -84,6 +84,7 @@ const _breakpointX = 768
 
 let _questionIndices = [] // back-navigation history (was Session_ 'questionIndices')
 let _sharedMode = false // viewing a shared result -> don't persist
+let _resetting = false // tearing down for a reset reload -> don't persist
 
 let _previousRadiusMax = null
 let _previousLinkDistanceMax = null
@@ -423,12 +424,12 @@ class AnswerSaver {
     this.saveTimeout = null
   }
   upsertAnswer() {
-    if (_sharedMode) return
+    if (_sharedMode || _resetting) return
     if (this.saveTimeout != null) clearTimeout(this.saveTimeout)
     this.saveTimeout = setTimeout(() => persistAnswers(_answers), 1000)
   }
   flush() {
-    if (_sharedMode) return
+    if (_sharedMode || _resetting) return
     if (this.saveTimeout != null) clearTimeout(this.saveTimeout)
     persistAnswers(_answers)
   }
@@ -718,8 +719,13 @@ function gotoQuestions() {
 }
 
 function reset() {
-  // resetVisit: clear all answers and reload (matches old window.location.reload)
-  if (!_sharedMode) persistAnswers({})
+  // resetVisit: clear all answers and reload (matches old window.location.reload).
+  // Guard against the pagehide/visibilitychange flush that fires *during* the
+  // reload: without it that flush re-persists the still-full in-memory _answers
+  // over the cleared store, so the app came back in the exact previous state.
+  _resetting = true
+  if (_answerSaver && _answerSaver.saveTimeout != null) clearTimeout(_answerSaver.saveTimeout)
+  if (!_sharedMode) clearStoredAnswers()
   // wipe shared token if present
   if (window.location.hash) {
     history.replaceState(null, '', window.location.pathname + window.location.search)
