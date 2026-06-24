@@ -43,11 +43,25 @@ node multilang-baseline.mjs # fr/it/de question text
 node compare-actions.mjs    # network + UI + about + language, per action
 ```
 
-## What is compared
+## What is deterministic (and what isn't)
 
-The D3 force-layout **positions are non-deterministic**, so we never pixel-diff
-the bubbles. Everything else is a pure function of the answers and must match
-exactly.
+This was originally stated too broadly ("positions are non-deterministic, so we
+don't pixel-diff") and the conclusion was wrongly stretched over the whole UI.
+Measured reality:
+
+- **The entire HTML UI is deterministic and run-stable** — the question panel,
+  the importance **slider and its handle**, the buttons, the header, the gauge,
+  the evaluation panel and the about modal all lay out identically every run.
+  This surface **is** pixel-diffed.
+- **Only the force-driven bubble `<circle>` positions are timing-variable** (the
+  d3 layout is still cooling and its tick count tracks wall-clock). That single
+  layer is excluded from pixel comparison and checked **structurally** instead
+  (radii / colours / images / link count — see `extractNetwork`).
+- **Pixels carry small antialiasing/subpixel noise** even run-to-run on one app,
+  so pixel diffs use a **tolerance** (pixelmatch), never exact hashing.
+
+Everything below the bubble layer is a pure function of the answers and must
+match exactly.
 
 **Derived state** ([`compare.mjs`](compare.mjs)) — across 4 scripted answer
 patterns (`max` / `min` / `mixed` / `skip`) × 2 viewports (desktop / mobile):
@@ -57,8 +71,8 @@ patterns (`max` / `min` / `mixed` / `skip`) × 2 viewports (desktop / mobile):
 - the multiset of bubble radii
 
 **Action scenario** ([`scenario.mjs`](scenario.mjs) + [`compare-actions.mjs`](compare-actions.mjs)) —
-one rich run, both viewports, exercising **every button/feature of the main app**
-and snapshotting the network + UI after each step. The two apps must produce
+one rich run, both viewports, exercising these interactive actions and
+snapshotting the network + UI after each step. The two apps must produce
 identical snapshot sequences:
 
 - answer **max** / **min** / **skip** across all 21 questions
@@ -71,6 +85,9 @@ identical snapshot sequences:
 - the **about** modal: header nav is pixel-aligned with the body, and clicking
   the **About / Impressum / Daten und Technisches** headers scrolls to them
 - the **language** switch (de/fr/it) changes the question text
+
+> Not yet driven by the scenario: the importance **slider** — added in the
+> pixel-diff pass (its handle is deterministic, so it belongs under visual diff).
 
 The network signature it diffs (positions excluded): node/circle counts, the
 radii multiset, fill colours, fill-opacities, link count, favourite-star and

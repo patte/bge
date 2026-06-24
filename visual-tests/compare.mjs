@@ -1,8 +1,10 @@
 // Compares the derived state captured from the legacy baseline vs the new
-// build. The force-layout POSITIONS are non-deterministic, so we do NOT diff
-// those; instead we assert equality of everything that is a pure function of
-// the answers: the score gauge %, the evaluation score, the per-topic %, and
-// the multiset of bubble radii.
+// build. Only the force-layout bubble POSITIONS are timing-variable; everything
+// else is deterministic. Here we assert equality of the derived numbers — a
+// pure function of the answers: the score gauge %, the evaluation score, the
+// per-topic %, and the multiset of bubble radii. (Pixel parity of the rendered
+// surface is covered separately by the screenshot diff; bubble structure by
+// extractNetwork.)
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'

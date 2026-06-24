@@ -1,8 +1,17 @@
 // Shared harness used to drive BOTH the legacy baseline and the new static
-// build through identical, deterministic interactions and to extract the
-// derived state that should match regardless of the (non-deterministic) force
-// layout positions: the score gauge %, the evaluation score + per-topic %,
-// and the multiset of bubble radii.
+// build through identical, deterministic interactions and compare the results.
+//
+// Determinism, precisely (measured, not assumed):
+//   - The whole HTML UI — question panel, the importance slider + its handle,
+//     buttons, header, gauge, evaluation panel, about modal — renders at a
+//     deterministic, run-stable LAYOUT. It can (and should) be pixel-diffed.
+//   - Only the ONE thing is timing-variable: the x/y of the force-driven bubble
+//     <circle>s in #bubblesSVG (the d3 layout is still cooling and its tick
+//     count depends on wall-clock). So we exclude *those positions* from pixel
+//     comparison and instead compare the SVG's structure (radii / colours /
+//     images / link count — see extractNetwork).
+//   - Pixels carry small antialiasing/subpixel noise even run-to-run on one app,
+//     so pixel diffs use a tolerance (pixelmatch), never exact hashing.
 //
 // Both apps expose the exact same selectors (.max/.min/#next/#gotoEvaluation,
 // #score-gauge span, .final-score span, .topics .topic, #bubblesSVG circle),
@@ -136,8 +145,10 @@ export async function clearStorage(page) {
 // ---------------------------------------------------------------------------
 // Network (D3 bubble graph) signature.
 //
-// The force-layout x/y POSITIONS are non-deterministic, so we never compare
-// those. Everything else the renderer draws IS a pure function of the answers
+// The force-layout x/y POSITIONS are timing-variable (the d3 simulation is
+// still cooling), so we compare the graph's STRUCTURE rather than its pixels —
+// this is the only part of the app we don't pixel-diff. Everything the renderer
+// draws here IS a pure function of the answers
 // and is identical between the legacy app and the port (network.coffee ->
 // network.js is a verbatim port, same star/dead base64 images & sizes). We
 // snapshot that structure so we can assert the graph LOOKS and BEHAVES the same:

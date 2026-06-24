@@ -4,10 +4,16 @@
 // the two apps must produce identical snapshot sequences (positions excluded).
 //
 // This is what verifies the bubble network "looks the same AND behaves the
-// same", and exercises every interactive action: answer max/min/skip, favourite
+// same", and exercises these interactive actions: answer max/min/skip, favourite
 // toggle, info expand/collapse, next/back, go-to-evaluation, topic select +
 // deselect, go-to-questions, the about modal (nav alignment + anchor scroll),
 // and the language switch.
+//
+// NOT yet exercised here: the importance SLIDER. Its handle position is fully
+// deterministic (verified run-stable), so the earlier "too hard to drive
+// deterministically, skip it" was wrong — and that gap is exactly where a real
+// rendering bug (handle drawn left of the track) went undetected. It is covered
+// by the pixel-diff pass (see screenshot-diff.mjs) and will be driven here too.
 import {
   waitReady,
   extractNetwork,
