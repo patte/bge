@@ -17,6 +17,12 @@
 /* --- base (from the original style.less, trimmed to the smartervote view) --- */
 html {
   height: 99.9%;
+  // The original ran under Bootstrap 3, whose scaffolding sets the root font
+  // size to 10px. The whole stylesheet's `rem` sizing (e.g. the answer buttons'
+  // `min-height: 8rem`) was authored against that root; without it the browser
+  // default (16px) made every rem 1.6× too big, inflating the answer/nav
+  // buttons and pushing the bottom-anchored footer up the panel.
+  font-size: 10px;
 }
 body {
   min-height: 99.9%;
@@ -25,6 +31,10 @@ body {
   background: white;
   color: black;
   font-family: 'SabonLTStd-Roman', serif;
+  // Body text stays 16px (matches the original); only the ROOT is 10px, which
+  // is what `rem` units resolve against. Without this, the 10px root above would
+  // also shrink all the body/content text.
+  font-size: 16px;
   line-height: @line-height-default;
 }
 
@@ -33,7 +43,10 @@ body {
   display: inline-block;
   margin-bottom: 0;
   padding: 6px 12px;
-  font-size: 14px;
+  // This app customised Bootstrap's @font-size-base to 16px (body is 16px), so
+  // its `.btn` base is 16px too. The shim previously hardcoded Bootstrap's
+  // stock 14px, which shrank the nav buttons (Zurück/Auswertung/Weiter).
+  font-size: 16px;
   line-height: 1.428571429;
   text-align: center;
   white-space: nowrap;
@@ -50,6 +63,27 @@ body {
 .btn-default,
 .btn-danger {
   color: #333;
+}
+
+// Bootstrap 3 base `label` rule — the question heading is a <label>, and the
+// original got its bold weight from here. Without it the heading rendered at
+// weight 400 (narrower, mis-wrapping vs the original).
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+// Bootstrap 3 base typography. Without these the about-modal/evaluation headings
+// inherited the 1.3 body line-height (vs Bootstrap's 1.1) and paragraphs used
+// the UA 1em top+bottom margin (vs Bootstrap's `0 0 10px`); over the 21-question
+// overview that accumulated into a much taller modal.
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+p {
+  margin: 0 0 10px;
 }
 
 .sr-only {

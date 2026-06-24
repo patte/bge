@@ -89,11 +89,17 @@ async function runViewport(browser, vp) {
   const page = await context.newPage()
   page.on('pageerror', (e) => console.log(`  [pageerror:${name}/${vp}] ${e.message}`))
   await loadFresh(page)
-  // Hide ONLY the non-deterministic layer: the force-driven bubbles in
+  // Hide ONLY the timing-variable layer: the force-driven bubbles. That layer is
   // #bubbles-container (incl. the floating pitcher bubble that drifts over the
-  // panel). Everything we screenshot (#content, the slider handle, the modal,
-  // the gauge) lives outside it, so the captured surface becomes pixel-stable.
-  await page.addStyleTag({ content: '#bubbles-container{visibility:hidden !important}' })
+  // panel) AND #mybubbles-preview — the evaluation screen's share image, which is
+  // a PNG SNAPSHOT of those same bubbles and therefore drifts run-to-run too
+  // (measured: without this the mobile evaluation/topic frames differ ~2.5%
+  // between two captures of the *same* app). Everything else we screenshot
+  // (#content, the slider handle, the modal, the gauge) is deterministic, so the
+  // captured surface becomes pixel-stable.
+  await page.addStyleTag({
+    content: '#bubbles-container,#mybubbles-preview{visibility:hidden !important}',
+  })
 
   // --- first-question panel frames (non-destructive) ---
   await shot(page, vp, 'q-initial', '#content')
@@ -136,10 +142,16 @@ async function runViewport(browser, vp) {
   }
   if ((await page.locator('.final-score').count()) === 0) await tryClick(page, '#gotoEvaluation', 500)
   await page.waitForTimeout(500)
-  await shot(page, vp, 'evaluation', '#content')
+  // Screenshot the DETERMINISTIC evaluation sub-sections only. We skip the
+  // .sharing block on purpose: it holds #mybubbles-preview (a non-deterministic
+  // PNG of the bubbles, with a generated size) and the redesigned share buttons
+  // (the server-upload feature was replaced by client copy-link/download), so it
+  // legitimately differs from the original.
+  await shot(page, vp, 'eval-score', '.final-score')
+  await shot(page, vp, 'eval-topics', '.topics')
 
-  // topic selected
-  if (await tryClick(page, '.topics .topic', 500)) await shot(page, vp, 'topic-selected', '#content')
+  // topic selected (dimming applies; the panel text is deterministic)
+  if (await tryClick(page, '.topics .topic', 500)) await shot(page, vp, 'topic-selected', '.topics')
 
   // back to questions + about modal
   await tryClick(page, '#gotoQuestions', 400)

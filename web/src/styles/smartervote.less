@@ -31,7 +31,12 @@ html {
     border: 0;
     border-radius: 0;
     color: black;
-    
+    // Form controls don't inherit the font by default; the original got this
+    // from Bootstrap's `button, input { font-family: inherit }` reset. Without
+    // it the JA/NEIN answer buttons and the reset button fell back to the UA
+    // font (Arial), which also rendered them taller and shifted the panel.
+    font-family: inherit;
+
     &:focus,
     &:hover,
     &:active {

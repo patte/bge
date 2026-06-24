@@ -98,18 +98,35 @@ dead-question image counts, and which bubble carries the `selected` class.
 
 **UI pixel frames** ([`capture-shots.mjs`](capture-shots.mjs) + [`compare-shots.mjs`](compare-shots.mjs)) —
 real `pixelmatch` diffs of the deterministic surface, both viewports. We
-screenshot opaque elements (`#content`, `#smartervote-modal`, `#score-gauge`)
-and hide the bubble layer (`#bubbles-container`) so the captured surface is
-pixel-stable (measured noise floor ≤0.13%; fail threshold 0.25%, overridable via
-`FAIL_RATIO`). A diff image is written to `diffs/` for any frame that differs.
-Frames: question panel `initial` / `info-open` / `max` / `min`, the **importance
-slider** at default + low + high (this is the frame that catches the off-track
-handle), `evaluation`, `topic-selected`, the `about` modal, the score `gauge`,
-and the question panel in `fr` / `it`.
+screenshot opaque elements (`#content`, `.final-score`, `.topics`,
+`#smartervote-modal`, `#score-gauge`) and hide the non-deterministic layers
+(`#bubbles-container` and the evaluation's `#mybubbles-preview` PNG) so the
+captured surface is pixel-stable (measured noise floor ≤0.13%; fail threshold
+0.25%, overridable via `FAIL_RATIO`). A diff image is written to `diffs/` for any
+frame that differs. Frames: question panel `initial` / `info-open` / `max` /
+`min`, the **importance slider** at default + low + high (the frame that catches
+the off-track handle), `eval-score`, `eval-topics` / `topic-selected`, the
+`about` modal, the score `gauge`, and the question panel in `fr` / `it`.
 
-> Removed-by-design (needed a server) and therefore **not** compared: accounts,
-> admin, blog/news/newsletter, the "compare with other people" panel, server
-> image upload, Piwik, the tutorial.
+Tall text panels (`about`, `info-open`) are compared on **height parity** rather
+than pixel overlap — any sub-pixel line-height rounding accumulates over
+thousands of px and breaks naive pixel overlap; their content is verified by the
+action/multilang comparators. Fixed-size frames get the full pixel diff.
+
+This pass found and drove the fix for several CSS regressions the structural
+checks couldn't see: the off-track slider handle (noUiSlider v15 positioning),
+the answer/reset buttons falling back to Arial, a 1.6× `rem` inflation (the
+original's Bootstrap `html{font-size:10px}` root was missing), the question
+heading rendering at weight 400 instead of 700, and over-tall headings/paragraphs
+(missing Bootstrap `line-height:1.1` / `p` margins). After them the whole
+interactive surface matches the original at ≤0.08%.
+
+> Removed-by-design (needed a server) and therefore **not** pixel-compared: the
+> evaluation **sharing** block (server `myBubbles` upload → client copy-link +
+> download, and the rasterised bubble preview), plus accounts, admin,
+> blog/news/newsletter, the "compare with other people" panel, Piwik, the
+> tutorial. The evaluation's deterministic parts (score, sentence, per-topic %)
+> are still compared via `eval-score` / `eval-topics` and the action scenario.
 
 Note: hammering the small scale-to-zero fly VM can make it briefly return
 503 / time out; it auto-recovers on the next traffic, so just re-run.

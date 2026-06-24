@@ -9,11 +9,12 @@
 // deselect, go-to-questions, the about modal (nav alignment + anchor scroll),
 // and the language switch.
 //
-// NOT yet exercised here: the importance SLIDER. Its handle position is fully
+// NOT exercised here: the importance SLIDER. Its handle position is fully
 // deterministic (verified run-stable), so the earlier "too hard to drive
 // deterministically, skip it" was wrong — and that gap is exactly where a real
-// rendering bug (handle drawn left of the track) went undetected. It is covered
-// by the pixel-diff pass (see screenshot-diff.mjs) and will be driven here too.
+// rendering bug (handle drawn left of the track) went undetected. It is now
+// covered by the pixel-diff pass (capture-shots.mjs + compare-shots.mjs), which
+// taps the slider and screenshots the panel.
 import {
   waitReady,
   extractNetwork,
