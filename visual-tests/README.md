@@ -38,9 +38,12 @@ node capture.mjs        baseline http://localhost:4190/de   # derived state + sc
 node capture.mjs        new      http://localhost:4180
 node capture-actions.mjs baseline http://localhost:4190/de  # action scenario
 node capture-actions.mjs new      http://localhost:4180
+node capture-shots.mjs   baseline http://localhost:4190/de  # UI pixel frames
+node capture-shots.mjs   new      http://localhost:4180
 node compare.mjs            # questions(de) + scoring/radii
 node multilang-baseline.mjs # fr/it/de question text
 node compare-actions.mjs    # network + UI + about + language, per action
+node compare-shots.mjs      # pixel diff of the UI frames (baseline vs new)
 ```
 
 ## What is deterministic (and what isn't)
@@ -92,6 +95,17 @@ identical snapshot sequences:
 The network signature it diffs (positions excluded): node/circle counts, the
 radii multiset, fill colours, fill-opacities, link count, favourite-star and
 dead-question image counts, and which bubble carries the `selected` class.
+
+**UI pixel frames** ([`capture-shots.mjs`](capture-shots.mjs) + [`compare-shots.mjs`](compare-shots.mjs)) —
+real `pixelmatch` diffs of the deterministic surface, both viewports. We
+screenshot opaque elements (`#content`, `#smartervote-modal`, `#score-gauge`)
+and hide the bubble layer (`#bubbles-container`) so the captured surface is
+pixel-stable (measured noise floor ≤0.13%; fail threshold 0.25%, overridable via
+`FAIL_RATIO`). A diff image is written to `diffs/` for any frame that differs.
+Frames: question panel `initial` / `info-open` / `max` / `min`, the **importance
+slider** at default + low + high (this is the frame that catches the off-track
+handle), `evaluation`, `topic-selected`, the `about` modal, the score `gauge`,
+and the question panel in `fr` / `it`.
 
 > Removed-by-design (needed a server) and therefore **not** compared: accounts,
 > admin, blog/news/newsletter, the "compare with other people" panel, server
