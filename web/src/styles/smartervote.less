@@ -16,8 +16,15 @@ html {
   min-height: 99.9%;
   //bottom: 0;
   //overflow: hidden;
-  
-  
+
+  // Reveal the shell once this (bundled) stylesheet is applied. index.html sets
+  // it hidden + transparent up front so the unstyled markup never flashes before
+  // boot; fade opacity in here so the styled UI eases in rather than popping.
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.12s ease-in;
+
+
   background: white;
   
   font-family: 'BuenosAires', sans-serif;

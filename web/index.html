@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="/favicon.png" />
+    <style>
+      /* Boot: hide the app shell until the real stylesheet is applied, to avoid
+         a flash of unstyled content. In dev, Vite injects the CSS via JS after
+         main.js runs, so without this the raw markup (a 358px logo, the bare
+         score gauge) paints for a moment on every reload. The bundled CSS sets
+         #smartervote back to `visible`, so this can never hide it for real:
+         in prod the render-blocking <link> reveals it at first paint. The
+         bundled CSS fades opacity 0 -> 1, so the styled UI eases in. */
+      #smartervote { visibility: hidden; opacity: 0; }
+    </style>
   </head>
   <body>
     <!-- Mirrors the original smartervote.html structure -->
