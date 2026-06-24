@@ -91,6 +91,11 @@ async function main() {
     console.log('\n▶ capture action scenario — new')
     await run('node', ['capture-actions.mjs', 'new', URL_NEW], { cwd: __dirname })
 
+    console.log('\n▶ capture UI pixel frames — baseline')
+    await run('node', ['capture-shots.mjs', 'baseline', URL_BASE], { cwd: __dirname })
+    console.log('\n▶ capture UI pixel frames — new')
+    await run('node', ['capture-shots.mjs', 'new', URL_NEW], { cwd: __dirname })
+
     if (!QUICK) {
       console.log('\n▶ compare derived state (gauge / score / topics / radii)')
       await run('node', ['compare.mjs'], { cwd: __dirname }).catch(() => (failed = true))
@@ -100,6 +105,9 @@ async function main() {
 
     console.log('\n▶ compare action scenario (network + UI + about + lang)')
     await run('node', ['compare-actions.mjs'], { cwd: __dirname }).catch(() => (failed = true))
+
+    console.log('\n▶ compare UI pixel frames (panel / slider / modal / gauge)')
+    await run('node', ['compare-shots.mjs', 'baseline', 'new'], { cwd: __dirname }).catch(() => (failed = true))
   } finally {
     killAll()
   }

@@ -73,7 +73,13 @@
   .noUi-handle {
     width: 40px;
     height: 40px;
-    left: -19px;
+    // noUiSlider v15 anchors the handle at the RIGHT edge of .noUi-origin (the
+    // value point), so it must be offset from `right`, not `left`. The original
+    // `left: -19px` was for the old noUiSlider model and left the dot stranded
+    // ~half the track to the left. Offset by half the handle width to centre it
+    // on the value, and clear `left` so it doesn't override the base `right`.
+    left: auto;
+    right: -20px;
     top: -19px;
 
     background: black;
@@ -96,7 +102,8 @@
     @media only screen and (min-width: @screen-sm-min) {
       width: 5vh;
       height: 5vh;
-      left: -2.35vh;
+      left: auto;
+      right: -2.5vh;
       top: -2.35vh;
     }
   }
