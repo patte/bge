@@ -77,6 +77,10 @@ html {
   right: 0;
   z-index: 1000;
 
+  // border-box (which the original got from Bootstrap globally) so the 10px
+  // padding stays inside the fixed 32px width on mobile — otherwise the header
+  // box is 52px and the right-anchored logo shifts 20px from the original.
+  box-sizing: border-box;
   width: 32px;
   padding: 10px;
   
@@ -84,8 +88,13 @@ html {
     display: inline-block;
     position: relative;
     top: -4px;
+    vertical-align: middle;
   }
-  
+
+  .languages {
+    vertical-align: middle;
+  }
+
   .site-menu-toggle {
     float: right;
     width: 22px;

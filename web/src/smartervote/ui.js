@@ -165,9 +165,12 @@ function toggleAboutModal() {
 function renderLanguageSwitcher() {
   const nav = document.querySelector('#app-header .languages')
   if (!nav) return
+  // join with a space: the original's Blaze {{#each}} emitted collapsed
+  // whitespace *between* items in addition to the trailing &nbsp;, so the DE/FR/IT
+  // row is ~8px wider than a tight join('') would render.
   nav.innerHTML = LANGUAGES.map(
     (l) => `<span class="pointer text-uppercase ${l === getLanguage() ? 'current' : ''}" data-lang="${l}" tabindex="0">${l}</span>&nbsp;`
-  ).join('')
+  ).join(' ')
 }
 
 // ---- global event delegation ----------------------------------------------
@@ -195,7 +198,14 @@ function wireEvents() {
       if (closest('#gotoQuestions')) return engine.gotoQuestions()
       if (closest('.topic')) {
         const topic = closest('.topic').getAttribute('data-topic')
-        return engine.selectTopic(topic)
+        engine.selectTopic(topic)
+        // Reveal the mobile "Ansehen" toggle, exactly like the original's
+        // `click .topic` handler. Its CSS keeps the button display:none until a
+        // topic is picked (and display:none !important on desktop, so this is a
+        // no-op there). Without it the topics panel rendered 27px shorter than
+        // the original on mobile.
+        $('#mobile-content-toggle-topics').slideDown(300)
+        return
       }
       if (closest('.url-copy')) {
         evt.preventDefault()

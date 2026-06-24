@@ -104,6 +104,7 @@ async function runViewport(browser, vp) {
   // --- first-question panel frames (non-destructive) ---
   await shot(page, vp, 'q-initial', '#content')
   await shot(page, vp, 'gauge', '#score-gauge')
+  await shot(page, vp, 'app-header', '#app-header') // logo + language switcher
 
   // languages
   for (const lang of ['fr', 'it', 'de']) {

@@ -85,6 +85,17 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin: 0 0 10px;
 }
+// Bootstrap 3 base link styling. The UA default underlines links; the original
+// got `text-decoration: none` (underline only on hover) from Bootstrap, so e.g.
+// the "mehr Informationen" toggle was not underlined. The app's own `a` rules
+// only set colour, so they relied on this.
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
 
 .sr-only {
   position: absolute;
