@@ -1,0 +1,10 @@
+{
+  "name": "bge-visual-tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Compares the legacy Meteor baseline against the new static build",
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

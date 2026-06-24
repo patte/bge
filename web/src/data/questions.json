@@ -1,0 +1,737 @@
+[
+  {
+    "index": 0,
+    "cluster": "a",
+    "topic": "Individuum",
+    "hrid": "Zwang",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Würden die Menschen mehr Sinnvolles tun, wenn der Zwang zum Geldverdienen wegfällt?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein, weniger",
+        "info": "Das Grundeinkommen könnte eine Chance sein, sich bei der Wahl der Arbeit\nstärker vom Sinn leiten zu lassen – Dinge, die gut sind für die\nGesellschaft, für einen selber und für die Familie.\n\n*Was spricht dafür?*\n\nDer **Zwang**, Geld zu verdienen, führt dazu, dass viele Menschen an\nProdukten und Dienstleistungen arbeiten, die für sie nicht sinnvoll\nsind. Man kann sich jedoch aus finanziellen Gründen nicht aus der\njeweiligen Situation befreien. Mit einem bedingungslosen Grundeinkommen\nhätten die Menschen zudem die Möglichkeit, ein Anstellungsverhältnis zu\nbeenden, bevor der nächste Job beginnt. Auch kann man sich **mehr Zeit\nnehmen** für die Ausbildung oder eine Auszeit einschalten, um eine\nWeiterbildung zu absolvieren. Dadurch kann das **individuelle\nPotential** besser genutzt werden, was der ganzen Gesellschaft zugute\nkommt. Zudem gibt es heute schon sehr viele Menschen, die\ngesellschaftlich wertvolle, aber **unbezahlte Arbeit** leisten. Dies\njedoch oft auf Kosten der finanziellen Unabhängigkeit.\n\n*Was spricht dagegen?*\n\nWas dem Einzelnen sinnvoll erscheint, muss noch lange nicht für die\nGesellschaft Sinn ergeben. Heute gibt es einen **Indikator** dafür, ob etwas von anderen Menschen gebraucht wird oder nicht: Das **Geld**: Wer Geld findet für\ndie Umsetzung einer Idee, bekommt damit das Signal, dass seine Arbeit\nvon anderen gefragt ist. Mit einem Grundeinkommen ist es möglich, dass\njemand das ganze Leben lang Dinge tut, die irrelevant für die\nMitmenschen sind. Die Menschen wären auch **überfordert mit der neuen\nFreiheit**. Ohne Teilhabe an einem Produktionsprozess in einem grösseren\nZusammenhang mit anderen Menschen, sind die meisten nicht in der Lage,\nihren Alltag zu strukturieren und ihre Ideen umzusetzen. Die\nvermeintliche Freiheit könnte sich als grosse Leere entpuppen."
+      },
+      "fr": {
+        "label": "Les gens se consacreraient-ils plus à des activités utiles si travailler n’était plus une nécessité?",
+        "minLabel": "Oui",
+        "maxLabel": "Non, moins",
+        "info": "Le revenu de base offre l’opportunité de se laisser davantage guider par\nle critère de l’utilité lorsqu’il s’agit de choisir un travail – des\nactivités qui sont dans le meilleur intérêt de la société, de soi-même\net de la famille.\n\n*Quels sont les arguments pour?* \n\nLa **nécessité** de gagner de l’argent\nfait que de nombreuses personnes travaillent pour des produits et des\nservices qui n’ont, pour elles, pas de sens. Une situation dont elles\nrestent cependant prisonnières pour des raisons financières. Avec le\nrevenu de base, les gens ont de plus la possibilité de mettre fin à un\nrapport de travail avant de commencer le prochain emploi. Ils ont\négalement la possibilité de **s’accorder plus de temps** pour se former\nou de faire une pause pour suivre un perfectionnement. Cela permet de\nmieux exploiter le potentiel de chacun, ce qui profite à la société dans\nson ensemble. De plus, aujourd’hui déjà, nombreuses sont les personnes\nqui fournissent un **travail** d’utilité sociale **non rémunéré**. Et\ncela, toutefois, au détriment de l’indépendance financière.\n\n*Quels sont les arguments contre?* \n\nCe qui semble judicieux à une\npersonne n’est pas forcément utile à la société. Aujourd’hui, il existe\nun **indicateur** permettant de savoir si quelque chose est utile aux\nautres ou pas : l’argent. Celui qui trouve l’**argent** nécessaire pour\nréaliser une idée reçoit par la même occasion le signal que son travail\nest demandé par les autres. Avec le revenu de base, il est possible\nqu’une personne voue l’ensemble de son existence à faire des choses\ndénuées de sens pour ses semblables. Les gens seraient également\n**dépassés par cette nouvelle liberté**. Sans participation à un\nprocessus de production intégré dans un contexte plus large et incluant\nd’autres personnes, la plupart des gens sont incapables de structurer\nleur quotidien et de mettre en œuvre leurs idées. La prétendue liberté\npourrait ainsi laisser place à un grand vide."
+      },
+      "it": {
+        "label": "Le persone si dedicherebbero ad attività più sensate se venisse a cadere l’obbligo di guadagnare?",
+        "minLabel": "Sì",
+        "maxLabel": "No, meno",
+        "info": "Il reddito di base incondizionato rappresenta un’opportunità per\nlasciarsi maggiormente guidare dalle proprie intenzioni nella scelta del\nlavoro che si vuole svolgere – scegliendo attività che beneficiano la\nsocietà, se stessi e la famiglia.\n\n*Quali sono gli argomenti favorevoli?* L’**obbligo** di guadagnare porta\nmolte persone a lavorare per prodotti e servizi che non ritengono\nsensati. Per motivi finanziari risulta però impossibile porre termine a\ntale situazione. Con un reddito di base incondizionato le persone\navrebbero inoltre la possibilità di mettere termine a un rapporto di\nlavoro prima di aver trovato una nuova occupazione. Ci si può anche\n**prendere più tempo** per la formazione o mettersi in aspettativa per\nseguire un corso di perfezionamento. In questo modo il **potenziale\nindividuale** può essere sfruttato meglio, con conseguente beneficio per\nl’intera società. Va ricordato che molte persone danno già oggi un\nimportante contributo alla società con il loro **lavoro non\nremunerato**, per il quale spesso sacrificano la propria indipendenza\neconomica.\n\n*Quali sono gli argomenti contrari?* Non è detto che ciò che ha senso\nper il singolo lo abbia anche per la società. Oggi esiste un\n**indicatore** che stabilisce le necessita delle persone: il denaro: chi\nriceve un finanziamento per realizzare la propria idea sa che il suo\nlavoro è richiesto. Con il reddito di base incondizionato una persona\npuò svolgere durante tutta la vita attività irrilevanti per la società.\nLe persone **non sarebbero peraltro in grado di gestire la nuova\nlibertà**. All’infuori di un processo produttivo inserito in un più\nampio contesto fatto di altre persone, la maggioranza non sarebbe in\ngrado di strutturare il proprio quotidiano e di realizzare le proprie\nidee. La presunta libertà potrebbe rivelarsi un grande vuoto."
+      }
+    }
+  },
+  {
+    "index": 1,
+    "cluster": "b",
+    "topic": "Individuum",
+    "hrid": "Bildung",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": false,
+    "languages": {
+      "de": {
+        "label": "Würden sich die Menschen mit einem Grundeinkommen weniger bilden?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein, mehr",
+        "info": "*Die Menschen würden sich weniger bilden, weil...*\n\n\n-   sie sich **nicht anstrengen müssen**, um Geld zu verdienen. Dann\n    gibtes auch keinen Grund, sich durch Schule, Lehre oder Uni\n    zu quälen.\n\n-   das Grundeinkommen die **Teilung in Ober- und\n    Unterschicht** zementiert. Die einen lernen schon zuhause von den\n    Eltern und dem Umfeld den Sinn von Bildung und deren Chancen. Die\n    anderen verlieren durch die Möglichkeit, das ganze Leben mit einem\n    Grundeinkommen zu leben, jeglichen Anreiz und klinken sich von\n    Anfang an aus.\n\n-   viele nicht mehr das lernen würden, was die **Wirtschaft wirklich\n    braucht**.\n\n*Die Menschen würden sich mehr bilden, weil...*\n\n\n-   jede und jeder **neugierig** zur Welt kommt. Weil Bildung spannend\n    ist, einen weiter bringt und viele Türen öffnet. Das Grundeinkommen\n    baut den Druck ab, so schnell wie möglich Geld zu verdienen, und\n    erleichtert Auszeiten im Berufsleben.\n\n-   die meisten Menschen trotz existenzsicherndem Grundeinkommen\n    **zusätzliches Geld** verdienen möchten. Dadurch haben sie auch\n    weiterhin einen finanziellen Anreiz für gute Ausbildung.\n\n-   das Grundeinkommen ein wichtiger Fortschritt für die\n    **Chancengleichheit** ist. Wie viel Zeit jemand in die Ausbildung\n    investiert, hängt nicht mehr von den finanziellen Möglichkeiten der\n    Eltern ab. Jeder kann so viel und lange studieren, wie er oder sie\n    will – ohne Nebenjobs und langen Prozedere für Stipendien."
+      },
+      "fr": {
+        "label": "Avec un revenu de base, les gens seraient-ils moins enclins à se former ?",
+        "minLabel": "Oui",
+        "maxLabel": "Non, d'avantage",
+        "info": "*Les gens se formeraient moins, car…*\n\n-   ils n’ont **pas d’effort** à faire pour gagner de l’argent. Il n’y a\n    donc pas non plus de raison de se « torturer » en allant à l’école,\n    en suivant un apprentissage ou en fréquentant l’université.\n-   le revenu de base renforce la **division entre la classe supérieure\n    et les milieux défavorisés**. Les uns apprennent déjà l’importance\n    de se former et les chances que cela constitue grâce à leurs parents\n    et à leur environnement. Puisque la possibilité d’assurer son\n    existence durant toute sa vie grâce au revenu de base existe, les\n    autres perdent toute émulation et capitulent dès le départ.\n-   beaucoup ne sauraient plus ce dont l’**économie a vraiment besoin**.\n\n*Les gens se formeraient davantage, car...*\n\n-   chacune et chacun est foncièrement **curieux/euse**. Car suivre une\n    formation est passionnant, nous fait avancer et nous ouvre de\n    nombreuses portes. Le revenu de basse réduit la pression qui nous\n    pousse à vouloir gagner de l’argent aussi vite que possible. Il nous\n    permet de prendre plus facilement un congé pour suivre une formation\n    au cours de notre vie professionnelle.\n-   bien que l’existence soit assurée par un revenu de base, la plupart\n    des gens veulent gagner **davantage d’argent**. Ainsi, l’aspect\n    financier les incite à bien se former.\n-   le revenu de base constitue un progrès important pour l’égalité\n    des chances. La quantité de temps que quelqu’un investit dans sa\n    formation ne dépend plus de la situation financière des parents.\n    Chacune et chacun peut étudier autant et aussi longtemps qu’elle ou\n    il le souhaite – sans travail accessoire et sans longues procédures\n    pour obtenir une bourse."
+      },
+      "it": {
+        "label": "Le persone si formerebbero meno con un reddito di base?",
+        "minLabel": "Sì",
+        "maxLabel": "No, di più",
+        "info": "*Le persone si formerebbero meno, perché...*\n\n-   **non devono faticare** per guadagnare e viene a mancare la\n    motivazione per affrontare la scuola, l’apprendistato\n    o l’università.\n-   il reddito di base consolida l’appartenenza ai ceti sociali. Mentre\n    ad alcuni grazie ai genitori e all’ambiente in cui crescono viene\n    trasmessa l’importanza della formazione e le possibilità che questa\n    apre, altri perdono sin dall’inizio qualsiasi stimolo a causa della\n    prospettiva di poter vivere l’intera esistenza con il reddito\n    di base.\n-   molti non si formerebbero più nei profili **richiesti\n    dall’economia**.\n\n*Le persone si formerebbero maggiormente, perché...*\n\n-   ciascuna e ciascuno di noi nasce **curioso**. Perché formarsi è\n    appassionante, permette di crescere e apre molte porte. Il reddito\n    di base permette di diminuire la pressione di dover guadagnare il\n    prima possibile e facilita la possibilità di prendere aspettative\n    nella vita professionale.\n-   nonostante un reddito di base in grado di assicurare l’esistenza, la\n    maggioranza vuole **guadagnare di più,** per cui ci sarà comunque\n    una motivazione finanziaria che spinge all’ottenimento di una\n    buona formazione.\n-   il reddito di base rappresenta un importante progresso per le **pari\n    opportunità**. Il tempo investito nella formazione di fatto non\n    dipenderà più dalle possibilità finanziarie dei genitori. Ognuno può\n    studiare quanto vuole, può fare a meno di affiancare un lavoro\n    all’università e di sottoporsi a lunghe procedure per l’ottenimento\n    della borsa di studio."
+      }
+    }
+  },
+  {
+    "index": 2,
+    "cluster": "c",
+    "topic": "Individuum",
+    "hrid": "Freiheit",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": true,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Ohne Zwang zur Erwerbsarbeit könnten die Menschen freier über ihre Zeit verfügen. Überfordert diese Freiheit?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Das bedingungslose Grundeinkommen wäre eine grosse Veränderung für die\nMenschen und es würde viele Lebensentwürfe in Frage stellen. Für einige\nwäre es **Befreiung und Chance**, für andere würde sich **nicht viel\nändern**, und wiederum andere fielen in eine **Sinnkrise**. Die Frage\nist, ob eine Mehrheit davon profitieren könnte.\n\nMan kann argumentieren, dass mit Grundeinkommen alle nur noch auf dem\nSofa liegen würden. Weil wir nie aus dem Säuglingsstadion herauskämen:\n**Zuerst sorgen die Eltern für uns und dann der Staat.** Frei von\nVerantwortung für unser eigenes Leben. Aber ist das wirklich das 21.\nJahrhundert? Die Menschen gestehen sich und allen anderen nicht zu, **so\nfrei wie möglich** zu sein, aus Angst davor, dass wir nicht mit dieser\nFreiheit umgehen könnten?\n\nAber vielleicht kann das nicht so pauschal abhandeln und die erste Frage\nsollte sein: Von wem sprechen wir überhaupt? Jemand, der sich sein\nganzes Leben an eine Struktur durch verschiedene Zwänge gewöhnt hat,\nwird auf eine Freiheit, wie sie das Grundeinkommen bietet, ganz anders\nreagieren als jemand, der mit der Realität des Grundeinkommens\naufgewachsen ist.\n"
+      },
+      "fr": {
+        "label": "Sans la nécessité d’exercer une activité lucrative, les gens pourraient disposer plus librement de leur temps libre. Se sentira-t-on dépassé par cette liberté? \n",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "Le revenu de base inconditionnel constituerait un grand changement pour\nles gens et remettrait en question de nombreux projets de vie. Pour un\ncertain nombre de personnes, il s’agirait d’une libération et d’une\nopportunité. Pour d’autres, cela ne changerait pas grand chose. Tandis\nque d’autres entreraient dans une crise existentielle. La question est\nde savoir si une majorité en profiterait.\n\nOn peut argumenter qu’avec le revenu de base la plupart des gens se\nprélasseraient sur leur canapé, car ils ne sortiraient jamais du stade\ndu nourrisson: d’abord maternés par les parents, puis par l’État. Libres\nde toute responsabilité vis-à-vis de leur propre existence. Mais est-ce\nvraiment cela, le 21^ème^ siècle? Les gens ne se permettent pas et ne\npermettent pas aux autres d’être libres par simple peur de ne pas savoir\nque faire de cette liberté?\n\nMais on ne peut pas mettre tout le monde dans le même panier et l’on\ndoit commencer par se poser la question suivante: De qui parle-t-on?\nQuelqu’un qui, toute sa vie, s’est accoutumé à une structure sous\ndiverses contraintes réagira de manière totalement différente face à la\nliberté qui lui est offerte par le revenu de base que quelqu’un qui a\ngrandit avec la réalité de ce dernier.\n"
+      },
+      "it": {
+        "label": "Affrancate dall’obbligo di svolgere un’attività lucrativa, le persone potrebbero disporre più liberamente del loro tempo. Sono in grado di gestire questa libertà?\n",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Il reddito di base incondizionato rappresenterebbe un importante cambiamento per le persone e metterebbe in questione molti progetti di vita. Per alcune sarebbe una liberazione e un’opportunità, per altre non cambierebbe molto e altre ancora potrebbero vivere un momento di crisi. La domanda è se sia la maggioranza a poterne approfittare. \n\nSi può avanzare l’argomento che con il reddito di base ci sederemmo tutti in panciolle perché non riusciremmo più a uscire dalla fase di accudimento: in un primo tempo di noi si occupano i genitori e in seguito lo Stato. Liberi dalla responsabilità per la nostra stessa vita. Siamo sicuri di parlare del XXI secolo? Possibile che le persone non accordino a se stesse e agli altri di essere le più libere possibile per timore di non essere in grado di gestire tale libertà? \n\nLa questione forse non può però essere affrontata in modo così generale e la prima domanda da porsi dovrebbe essere: di chi stiamo parlando in realtà? Qualcuno che ha dovuto imparare a convivere con una struttura e si è abituato a piegarsi a svariate ingiunzioni reagirà in modo del tutto diverso alla realtà che porta con sé il reddito di base rispetto a qualcuno che vi è cresciuto.\n"
+      }
+    }
+  },
+  {
+    "index": 3,
+    "cluster": "d",
+    "topic": "Wirtschaft",
+    "hrid": "Umfrage",
+    "optional": true,
+    "type": "scale",
+    "min": 0,
+    "max": -0.5,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": true,
+    "isLeftPositiv": false,
+    "languages": {
+      "de": {
+        "label": "Würde noch genug Erwerbsarbeit geleistet?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Umfragen ergeben, dass 90 Prozent der Menschen behaupten, dass sie\nweiter einer Erwerbsarbeit nachgehen würden, auch wenn sie bedingungslos\njeden Monat genug Geld zum Leben auf dem Konto hätten.\n\nKritiker des Grundeinkommens sagen, dass sich viele von der\nErwerbsarbeit verabschieden würden. Das führte dazu, dass **nicht mehr\ngenügend Güter produziert** werden, die Gesellschaft verarmt, und\nschliesslich kann auch das Grundeinkommen nicht mehr finanziert werden.\n\nBefürworter hingegen glauben, dass Geld für den Lebensunterhalt zu\nverdienen, nur einer der Gründe ist, warum Menschen arbeiten. **Andere\nwichtige Motive** sind: Um etwas Sinnvolles zu tun, weil es sonst\nlangweilig wäre, um Anerkennung zu bekommen, weil die Arbeit Spass\nmacht, damit man am Abend gut schlafen kann, weil man etwas zur\nGesellschaft beitragen will, aus Neugierde, und nicht zuletzt auch, um\nzusätzliches Geld zu verdienen.\n\nViele glauben, dass **genug für alle** da ist. Wir sind reich genug und\nkönnen es uns leisten, dass ein Teil der Menschen ihre Zeit und Kraft in\nZukunft nicht mehr in Erwerbsarbeit stecken. Einige werden nichts tun,\nandere dafür viel wertvolle, aber unbezahlte Arbeit leisten.\n\nKlar ist, wenn zu viele Menschen aus der Erwerbsarbeit aussteigen,\n**bricht die Wirtschaft zusammen**. Wer noch einer Erwerbsarbeit\nnachgeht, müsste entsprechend produktiver sein, damit das Grundeinkommen\nüberhaupt finanzierbar ist. Sollte das Grundeinkommen zu massiven\nProblemen im aktuellen Wirtschaftssystem führen, könnte dies auch eine\nChance sein, alte Strukturen radikal zu reformieren.\n"
+      },
+      "fr": {
+        "label": "Suffisamment d’activités rémunérées seraient-elles encore exercées? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "Les **sondages** indiquent que 90 pour cent des gens affirment qu’ils\ncontinueraient à exercer une activité lucrative, même s’ils avaient,\nsans condition, chaque mois, assez d’argent pour subvenir à leurs\nbesoins.\n\nLes opposants au revenu de base pensent que de nombreuses personnes\nprendraient congé de leur emploi rémunéré. Les **biens ne seraient ainsi\nplus produits en quantité suffisante**, la société appauvrie et,\nfinalement, le financement du revenu de base ne pourrait lui non plus\nplus être assuré.\n\nLes partisans croient au contraire que subvenir à leurs besoins n’est\nque l’une des raisons qui pousse les gens à travailler. Il existe en\neffet d’autres motifs: faire quelque chose d’utile, ne pas s’ennuyer, la\nreconnaissance, exercer un travail passionnant, pouvoir bien dormir le\nsoir, apporter sa contribution à la société, la curiosité et, bien sûr,\ngagner plus d’argent.\n\nBeaucoup estiment que les ressources sont **suffisantes pour tous **:\nnous sommes suffisamment riches et nous pouvons nous permettre qu’une\npartie des gens ne consacre plus son temps et ses forces à une activité\nrémunérée. Certains ne feront rien, tandis que d’autres fourniront un\ntravail non rémunéré - et d’autant plus précieux.\n\nIl est clair que si trop de gens se retirent du travail rémunéré\nl’économie s’effondre. Celui qui continue à exercer une activité\nrémunérée devrait être encore plus productif pour qu’il soit possible de\nfinancer le revenu de base. Si le revenu de base venait à causer de\ngraves problèmes dans le système économique actuel, cela pourrait\négalement constituer une opportunité de restructurer radicalement\nl’ancien système."
+      },
+      "it": {
+        "label": "Verrebbe ancora svolto abbastanza lavoro salariato?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Stando ai **sondaggi**, il 90 per cento delle persone dichiara di voler\ncontinuare a svolgere un lavoro salariato anche se ogni mese disponesse\nin modo incondizionato di sufficiente denaro sul conto per vivere.\n\nChi si oppone al reddito di base sostiene che molti cesserebbero la loro\nattività lucrativa. Di conseguenza **non verrebbero più prodotti beni\nsufficienti**, la società si impoverirebbe e si finirebbe per non essere\npiù in grado di finanziare il reddito di base.\n\nI sostenitori invece sono dell’opinione che guadagnare sia soltanto uno\ndei motivi per cui le persone lavorano. Altre **importanti ragioni**\nsono: impiegare il proprio tempo in modo sensato, non soccombere alla\nnoia, ottenere riconoscimento, la soddisfazione che si prova lavorando,\nprovare una sana stanchezza a fine giornata, dare il proprio contributo\nalla società, il piacere di imparare cose nuove, e non da ultimo,\nguadagnare qualcosa in più.\n\nMolti credono che **ce n’è abbastanza per tutti**. Siamo\nsufficientemente benestanti e ci possiamo permettere che in futuro una\nparte della società non investirà più il proprio tempo e le proprie\nrisorse in un’attività lucrativa. Alcuni non faranno nulla, altri però\nsvolgeranno molto lavoro prezioso, ma non salariato.\n\nChiaramente se un numero troppo elevato di persone abbandonasse la\npropria attività lucrativa, **crollerebbe l’economia.** Chi continua a\nessere salariato si vedrebbe costretto ad aumentare la propria\nproduttività per garantire il finanziamento del reddito di base."
+      }
+    }
+  },
+  {
+    "index": 4,
+    "cluster": "e",
+    "topic": "Staat",
+    "hrid": "Migration",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": true,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Führt das Grundeinkommen zu unlösbaren Problemen bei der Einwanderung?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Oft hört man, dass das bedingungslose Grundeinkommen nicht lange\nfunktionieren kann, weil dann noch **mehr Menschen einwandern** würden.\nUm dieser Behauptung auf den Grund zu gehen, müssen wir drei\nunterschiedliche Kategorien von Immigrantinnen und Immigranten\nbetrachten.\n\n-   *Bürger der EU*: In der Schweiz gilt derzeit das\n    **Personenfreizügigkeits-Abkommen mit der EU**. Das heisst, die\n    Bürgerinnen und Bürger der EU-Länder dürfen frei entscheiden, wo sie\n    arbeiten und wohnen wollen. Ohne Arbeitsstelle in der Schweiz gibt\n    es dennoch weder eine Bewilligung zur Niederlassung noch ein Recht\n    auf Sozialhilfe. Eine mögliche Lösung wäre, das Grundeinkommen so zu\n    handhaben wie die Sozialhilfe. Ob eine grosse Sogwirkung entstünde,\n    hängt dann von der Lage auf dem Arbeitsmarkt ab. Heute schon ist die\n    Schweiz eines der reichsten Länder Europas – und seit der Einführung\n    der Personenfreizügigkeit ist die Einwanderung aus dem europäischen\n    Raum nicht übermässig gestiegen.\n\n-   *Flüchtlinge:* Ob Menschen, die in einem Asylverfahren sind, ein\n    Grundeinkommen erhalten werden, ist offen. Der politische Zeitgeist\n    scheint dagegen zu sein. **Anerkannte Flüchtlinge** sind heute **im\n    Sozialversicherungsrecht** hingegen **den Schweizer Bürgern\n    gleichgestellt**. Dies ändert nichts an den Bedingungen, die\n    Flüchtlinge erfüllen müssen, damit ihrem Antrag auf Asyl\n    stattgegeben wird. Der Unterschied zu heute wäre, dass sie anstatt\n    andere Sozialversicherungsleistungen ein Grundeinkommen erhielten.\n    Ob diese Differenz zu erheblich mehr Asylanträgen führen würde,\n    weiss niemand. Heute lässt sich beobachten, dass Flüchtlingsströme\n    vor allem durch die politische Weltlage beeinflusst werden.\n\n-   *Arbeitskräfte aus nicht EU-Staaten.* Ohne einen Arbeitsvertrag\n    dürfen diese Menschen nicht in der Schweiz leben. Es gibt Quoten,\n    und es gilt der **Inländervorrang** – das heisst, ein Arbeitgeber\n    muss nachweisen, dass er keine qualifizierte Schweizerin und keinen\n    qualifizierten Schweizer finden konnte, bevor er eine Stelle mit\n    jemandem aus einem Nicht-EU Land besetzen darf. Dies wird sich mit\n    Grundeinkommen kaum ändern."
+      },
+      "fr": {
+        "label": "Le revenu de base mène-t-il à des problèmes insurmontables en matière d’immigration? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "On entend souvent dire que le revenu de base ne peut pas fonctionner\nlongtemps, car il engendrerait **une immigration encore plus forte**.\nPour examiner cette affirmation de manière plus approfondie, nous devons\nconsidérer trois catégories d’immigrantes et d’immigrants.\n\n-   *Citoyens de l’UE*: En Suisse, l'**accord sur la libre circulation\n    des personnes entre la Suisse et l'UE** est actuellement en vigueur.\n    Cela signifie que les citoyennes et citoyens des pays de l’UE\n    peuvent décider librement du lieu où ils souhaitent vivre\n    et travailler. Sans un emploi en Suisse, une personne ne se voit pas\n    délivrer d’autorisation de séjour et n’a pas droit à l’aide sociale.\n    Une solution possible serait d’appliquer les mêmes règles pour le\n    revenu de base que pour l’aide sociale. Un tel attrait verrait-il le\n    jour ? Cela dépendra alors de la situation du marché du travail.\n    Aujourd’hui déjà, la Suisse est l’un des pays les plus riches\n    d’Europe – et, depuis l’introduction de la libre circulation des\n    personnes, l’immigration en provenance des pays de l’espace européen\n    n’a pas augmenté de manière excessive.\n\n-   *Réfugiés:* Il faudra encore décider si les personnes qui sont en\n    procédure d’asile recevront ou non le revenu de base. L’esprit\n    politique semble y être opposé. Actuellement, les personnes **au\n    bénéfice du statut de réfugié** sont mises **à pied d’égalité avec\n    les citoyens suisses en matière de sécurité sociale**. Cela ne\n    change rien aux conditions que doivent remplir les réfugiés pour que\n    leur demande d’asile soit acceptée. La différence avec la situation\n    actuelle serait que les réfugiés recevraient le revenu de base en\n    lieu et place d’autres prestations des assurances sociales. Personne\n    ne sait si cette différence conduirait à une augmentation\n    considérable des demandes d’asile. On constate aujourd’hui que les\n    flux de réfugiés sont avant tout influencés par la situation\n    politique dans le monde.\n\n-   *Travailleurs en provenance des États non membres de l'UE.* Sans un\n    contrat de travail, ces personnes ne sont pas autorisées à vivre\n    en Suisse. Il y a des quotas et la **priorité des travailleurs\n    indigènes** s’applique – cela signifie que l’employeur doit prouver\n    qu’il n’a pas trouvé d’employé suisse qualifié avant de pourvoir un\n    poste avec une personne en provenance d’un État non membre de l'UE.\n    Le revenu de base ne changera rien à cela."
+      },
+      "it": {
+        "label": "Il reddito di base porta con sé problemi irrisolvibili legati all’immigrazione?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Spesso si sente dire che il reddito di base incondizionato non potrebbe\nfunzionare a lungo perché porterebbe a **un ulteriore aumento\ndell’immigrazione**. Per esaminare la questione dobbiamo distinguere tre\ncategorie diverse di immigranti.\n\n-   *Cittadini UE*: in Svizzera è attualmente in vigore l’**accordo\n    sulla libera circolazione delle persone** con l’UE. Questo significa\n    che i cittadini dell’UE sono liberi di decidere dove vogliono\n    lavorare e vivere. Per ottenere il permesso di soggiorno e il\n    diritto alle prestazioni sociali i cittadini dell’UE devono però\n    avere un posto di lavoro in Svizzera. Una possibile soluzione per la\n    concessione del reddito di base potrebbe consistere nell'attuazione\n    delle attuali disposizioni sulle assicurazioni sociali.\n    L’attrattività del paese dipenderebbe così dalla richiesta\n    di manodopera. La Svizzera è già oggi tra i paesi più benestanti\n    d’Europa – ciononostante dall’introduzione della libera circolazione\n    delle persone l’immigrazione dallo spazio europeo non ha conosciuto\n    una crescita sproporzionata.\n\n-   *Rifugiati:* La questione se le persone coinvolte in una procedura\n    d’asilo riceveranno un reddito di base è aperta. L’attuale\n    orientamento politico sembra opporvisi. I **rifugiati riconosciuti**\n    sono già oggi **equiparati ai cittadini svizzeri** **dal diritto\n    delle assicurazioni sociali**.\n\n-   *Forza lavoro proveniente da paesi terzi.* Le persone provenienti da\n    paesi terzi possono soggiornare in Svizzera soltanto se in possesso\n    di un contratto di lavoro. Il rilascio del permesso di soggiorno è\n    limitato da quote e vincolato dalla regola della **priorità agli\n    indigeni** – ciò significa che il datore di lavoro deve dimostrare\n    di non aver trovato un cittadino svizzero qualificato prima di poter\n    assumere una persona proveniente da un paese terzo. L’introduzione\n    del reddito di base non modificherà la situazione attuale."
+      }
+    }
+  },
+  {
+    "index": 5,
+    "cluster": "f",
+    "topic": "Wirtschaft",
+    "hrid": "Innovation",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Befreit vom Zwang zur Erwerbsarbeit wären die Menschen motivierter. Dies führt zu einem Innovationsschub.",
+        "minLabel": "Ja",
+        "maxLabel": "Nein, im Gegenteil",
+        "info": "Laut Befürwortern entsteht durch das Grundeinkommen mehr Innovation.\n\n*Warum?*\n\n\nHeute sind viele Menschen in Anstellungen quasi gefangen und mit den\nArbeitsbedingungen unzufrieden. Sie haben keine Wahl, sich aus dieser\nSituation zu befreien, weil Arbeitslosigkeit droht. **Es fehlt das Geld\nfür Auszeit, Weiterbildung oder Neuorientierung.** Durch das\nGrundeinkommen wären die Menschen freier bei der Wahl ihrer\nArbeitssituation. Dadurch wären sie vermehrt in Positionen tätig, die\nsie wirklich befriedigen. Motivierte Mitarbeiter sind bessere\nMitarbeiter. Neue Möglichkeiten, sich selbständig zu machen oder in ein\nJungunternehmen einzusteigen, tun sich auf. Das öffnet Raum für\nInnovation.\n\n*Oder doch nicht?*\n\n\nWenn jemand wirklich etwas will und dafür geeignet ist – eine\nWeiterbildung absolvieren, eine neue Stelle finden oder eine Idee\nselbstständig oder in einem Start-Up umsetzten – dann **kann er oder sie\ndas heute schon**. Die finanziellen Unsicherheiten sind oft nur ein\nVorwand. Es ist wahrscheinlicher, dass die Menschen mit einem\nGrundeinkommen ihre faule Seite ausleben und weniger arbeiten würden.\nDadurch entsteht weniger Innovation."
+      },
+      "fr": {
+        "label": "Libérés de la nécessité d’avoir un travail rémunéré, les gens seraient davantage motivés. Ce qui déclenche une vague d’innovation.",
+        "minLabel": "Oui",
+        "maxLabel": "Non, au contraire",
+        "info": "Les partisans affirment que le revenu de base serait à l’origine d’une\nplus grande innovation.\n\n*Pourquoi?*\n\nBeaucoup de gens sont aujourd’hui quasi prisonniers de leur emploi et ne\nsont pas satisfaits de leurs conditions de travail. Ils n’ont aucune\npossibilité de se libérer de cette situation, car le chômage menace.\n**L’argent nécessaire pour un « congé », une formation continue ou une\nréorientation fait défaut.**\n\nAvec le revenu de base, les gens bénéficieraient d’une plus grande\nliberté dans le choix dans le cadre de leur situation professionnelle.\nDe cette manière, ils occuperaient davantage un poste qui les satisfait\nvraiment. Les collaborateurs motivés sont de meilleurs collaborateurs.\nDe nouvelles possibilités de devenir indépendant ou d’entrer dans une\njeune entreprise sont créées. Ce qui ouvre la voie à l’innovation.\n\n*Ou pas?*\n\nSi quelqu’un veut vraiment quelque chose et s’il est fait pour ça –\nsuivre une formation continue, trouver un nouvel emploi, réaliser une\nidée en tant qu’indépendant ou dans une start-up – c’est déjà possible\naujourd’hui. Les incertitudes financières ne sont souvent qu’un\nprétexte. Il est plus probable qu’avec un revenu de base les gens\nlaisseraient s’exprimer leur côté paresseux et travailleraient moins. Ce\nqui constitue un frein à l’innovation."
+      },
+      "it": {
+        "label": "Affrancate dall’obbligo di svolgere un’attività lucrativa, le persone sarebbero più motivate e di riflesso si diffonderebbe una spinta all’innovazione.\n",
+        "minLabel": "Sì",
+        "maxLabel": "No, al contrario",
+        "info": "I sostenitori credono che il reddito di base incrementi l’innovazione.\n\n*Perché?*\n\nOggi molte persone vivono il loro rapporto di lavoro come una sorta di\nprigionia e sono insoddisfatte delle condizioni di lavoro. Non vedono\nalternative alla loro situazione a causa della minaccia di ritrovarsi\nsenza un impiego. **Manca il denaro per un periodo di aspettativa, corsi\ndi perfezionamento o per un nuovo orientamento professionale.**\n\nGrazie al reddito di base le persone godrebbero di maggiori libertà\nnella scelta del proprio contesto professionale. In questo modo\ncoprirebbero più spesso posizioni appaganti. Impiegati motivati sono\ncollaboratori migliori. Si aprono nuove possibilità per rendersi\nindipendenti o per associarsi a una startup e ciò offre spazio\nall’innovazione.\n\n*Oppure no?*\n\nSe una persona vuole veramente ottenere qualcosa e ne ha le capacità –\nseguire un corso di perfezionamento, trovare una nuova occupazione o\nrealizzare un’idea come indipendente o in seno a una startup – ebbene\noggigiorno già lo può fare. Le incertezze economiche spesso sono\nsoltanto un pretesto. È più probabile che con il reddito di base prenda\nil sopravvento la pigrizia e le persone lavorerebbero di meno a scapito\ndell’innovazione."
+      }
+    }
+  },
+  {
+    "index": 6,
+    "cluster": "g",
+    "topic": "Gesellschaft",
+    "hrid": "Einkommen",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Mit Grundeinkommen wird ein Teil des Volkseinkommens gleichmässig und ohne Diskriminierung der Geschlechter verteilt. Ist das ein Schritt in Richtung Gleichberechtigung? ",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "In der Schweiz verdienen Frauen für ihre Arbeit durchschnittlich\ndeutlich weniger als Männer. Dies hat verschiedene Gründe. Der\nwichtigste ist, dass viele Frauen gar keiner bezahlten Arbeit nachgehen\noder Teilzeit arbeiten. Hingegen leisten Frauen den grössten Teil an\nunbezahlter Care-Arbeit: zum Beispiel Kinder gross ziehen und ältere\nMenschen betreuen. Zudem arbeiten Frauen vermehrt in Branchen und\nPositionen, die unterdurchschnittlich entlöhnt werden. Und bis heute\nverdient eine Frau im Schnitt für die gleiche Arbeit weniger als ein\nMann.\n\nDas Volkseinkommen ist die Summe aller Einkommen, die in der Schweiz\nerwirtschaftet werden. **Ein Grundeinkommen würde rund ein Drittel -\nsofern die Wirtschaftsleistung konstant bleibt - des Volkseinkommens\ngleichmässig auf Männer und Frauen verteilen.** Dadurch hätten Frauen\nanteilmässig mehr Geld, über das sie selber verfügen könnten."
+      },
+      "fr": {
+        "label": "Avec le revenu de base, une partie du revenu national sera réparti équitablement, sans discrimination sexuelle. S’agit-il d’un pas vers l’égalité entre femmes et hommes? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non ",
+        "info": "En Suisse, les femmes gagnent en moyenne nettement moins pour leur\ntravail que les hommes. Il y a plusieurs raisons à cela. La principale\nest que de nombreuses femmes n’ont pas d’activité rétribuée ou\ntravaillent à temps partiel. Cependant, les femmes assument la majorité\ndu travail de care non rémunéré: élever les enfants et s’occuper des\npersonnes âgées, par exemple. De plus, les femmes travaillent de plus en\nplus dans des secteurs et occupent de plus en plus de postes dont la\nrémunération est inférieure à la moyenne. Et, jusqu’à nos jours, une\nfemme gagne moins qu’un homme à travail égal.\n\nLe revenu national correspond à la somme des revenus réalisés en Suisse.\n**Un revenu de base permettrait de répartir équitablement environ un\ntiers du revenu national – pour autant que la performance économique\nreste constante – entre femmes et hommes.** Ainsi, les femmes\ndisposeraient proportionnellement de plus d’argent."
+      },
+      "it": {
+        "label": "Con il reddito di base una parte del reddito nazionale è distribuito equamente e senza discriminazione di sesso. Si tratta di un passo nella direzione delle pari opportunità? ",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "In Svizzera le donne guadagno in media significativamente meno degli uomini. Le ragioni per questo dato sono diverse, tra cui le più importanti sono da ascrivere al fatto che molte donne non svolgono un lavoro remunerato o lavorano a tempo parziale. Le donne compiono però la maggior parte dei lavori non pagati legati alla cura, come crescere i figli e assistere le persone anziane. Le donne sono inoltre presenti in modo maggiore in settori lavorativi e posizioni in cui i salari sono al di sotto della media, oltre al fatto che a oggi per lo stesso lavoro le donne continuano a guadagnare meno degli uomini.  Il reddito nazionale si ottiene sommando tutti i redditi prodotti in Svizzera. Un reddito di base spalmerebbe equamente su uomini e donne circa un terzo del reddito nazionale. In questo modo le donne avrebbero proporzionalmente una maggiore quantità di denaro a disposizione. "
+      }
+    }
+  },
+  {
+    "index": 7,
+    "cluster": "h",
+    "topic": "Individuum",
+    "hrid": "Stigma",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": false,
+    "languages": {
+      "de": {
+        "label": "Was ist besser: Arbeitslose und Invalide mit Kontrollen oder bedingungslos zu unterstützen?",
+        "minLabel": "Kontrolle",
+        "maxLabel": "Bedingungslos",
+        "info": "Arbeitslose, behinderte Menschen oder andere, die abhängig von\nstaatlichen Leistungen sind, berichten, das Schlimmste an ihrer\nSituation seien die **Schikanen**, die sie von den Behörden erfahren.\nAuch litten sie unter dem Urteil der Gesellschaft, die sie in eine von\n**Vorurteilen** geprägte Schublade stecke.\n\nBezügerinnen und Bezüger von Arbeitslosentaggeldern sehen sich daran\ngehindert, etwas Sinnvolles zu tun, weil sie sich auf unpassende Stellen\nbewerben müssen. Sie erzählen, dass sie **ohne behördliche Auflagen**\nschneller wieder in den Arbeitsmarkt einsteigen könnten. Oder, wenn dies\nohnehin nicht gelingen kann, sich anderen schönen und nützlichen Dingen\nwidmen würden: Die Enkel hüten, Musik machen, einen Gemüsegarten\npflegen.\n\nDagegen spricht, dass es für niemanden gut ist, einfach unterstützt zu\nwerden. Zu Beginn ist es möglicherweise angenehmer, nicht aufs RAV zu\ngehen oder auf den Nachweis zu verzichten, dass man wirklich krank ist.\nDie Abhängigkeit von staatlicher Unterstützung – ob von heutigen Formen\noder von einem Grundeinkommen – führt jedoch langfristig dazu, dass das\nBewusstsein vom **Wert der eigenen Leistung** verloren geht. Auf dem\nArbeitsmarkt Geld zu verdienen, ist in jedem Fall besser."
+      },
+      "fr": {
+        "label": "Qu’est-ce qui est le mieux: soutenir les chômeurs et les invalides en les contrôlant ou inconditionnellement? \n",
+        "minLabel": "Contrôle",
+        "maxLabel": "Inconditionel",
+        "info": "Les chômeurs, les personnes handicapées ou autres qui dépendent des\nprestations de l’État affirment que le pire dans leur situation sont les\n**chicanes** que les autorités leur font subir. Ils souffrent également\ndu jugement de la société qui les met dans une case empreinte de\n**préjugés**.\n\nLes personnes qui perçoivent les indemnités journalières du chômage se\nsentent empêchées de faire quelque chose d’utile, car elles doivent\nsoumettre leur candidature à des postes qui ne leur conviennent pas.\nElles racontent que **sans ces formalités** **administratives** elles\npourraient revenir plus rapidement sur le marché du travail. Et si cela\nn’est de toute façon pas possible, elles pourraient se consacrer à\nd’autres choses, belles ou utiles: garder les petits-enfants, faire de\nla musique, cultiver un potager.\n\nPar contre, être assisté ne fait du bien à personne. Au début, il est\npeut-être plus agréable de ne pas devoir se rendre à l’ORP ou de ne pas\ndevoir fournir la preuve que l’on est réellement malade. Être dépendant\nd’un soutien étatique – dans sa forme actuelle ou celle du revenu de\nbase – conduit à long terme à la perte de la **valeur des prestations\npropres**. Gagner de l’argent sur le marché du travail est dans tous les\ncas la meilleure option."
+      },
+      "it": {
+        "label": "Cos’è più auspicabile: controllare disoccupati e invalidi o il loro sostegno incondizionato?\n",
+        "minLabel": "Controllare",
+        "maxLabel": "Incondizionato",
+        "info": "Disoccupati, diversamente abili o altri che dipendono dalle prestazioni statali riferiscono come la cosa peggiore della loro situazione siano le vessazioni inflitte dalle autorità. Soffrirebbero inoltre del fatto di essere marchiati dalla società in base a diffusi pregiudizi. \n\nI beneficiari di un’indennità di disoccupazione si sentono ostacolati nel fare qualcosa di sensato perché costretti a candidarsi per posti di lavoro inadatti. A loro avviso sarebbe più facile tornare nel mercato del lavoro senza le condizioni loro imposte dalle autorità. Nei casi in cui risulti invece improbabile trovare un posto di lavoro, avrebbero la volontà di dedicarsi a occupazioni sensate: curare i nipoti, suonare, coltivare un orto. \n\nGli argomenti contrari vertono sul fatto che l’assistenza non è di per se positiva per nessuno. In un primo tempo non doversi recare all’ufficio regionale di collocamento o non dover presentare il certificato in caso di malattia può indubbiamente sembrare apprezzabile. Dipendere dalle prestazioni sociali – sia per come sono erogate oggi, sia sotto forma di un reddito di base – provoca a lungo termine la perdita della consapevolezza del valore della propria prestazione. È senz’altro meglio vivere del proprio lavoro. "
+      }
+    }
+  },
+  {
+    "index": 8,
+    "cluster": "I",
+    "topic": "Gesellschaft",
+    "hrid": "Ablassprämie",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": false,
+    "languages": {
+      "de": {
+        "label": "Führt das Grundeinkommen zu einer Spaltung der Gesellschaft?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein, im Gegenteil",
+        "info": "Kritiker des bedingungslosen Grundeinkommens argumentieren oft, dass\nsich die Gesellschaft in verschiedene Gruppen spalten wird: Jene, für\ndie das Grundeinkommen die einzige Einnahmequelle ist und jene, die\nweiterhin einer Lohnarbeit nachgehen.\n\n-   *Die Erfolgreichen:* Vom emanzipatorischen Potential des\n    Grundeinkommens profitieren würden eher Menschen aus einem\n    **bildungsnahen Umfeld**. Befreit von finanziellen Ängsten und\n    gesellschaftlichen Zwängen würden sich diese besser bilden und\n    **selbstbestimmt arbeiten**. Sie hätten hohe Löhne und würden sich\n    in politischen und anderen ehrenamtlichen Aktivitäten ausleben.\n\n-   *Die Verlierer:* Menschen aus einem **bildungsfernen oder schlecht\n    integrierten soziokulturellen Umfeld** haben schon heute eine\n    schlechtere Ausgangsposition, um gut bezahlte Jobs und\n    einflussreiche gesellschaftliche Stellungen zu erreichen. Diese\n    verlieren durch das Grundeinkommen den Druck, trotzdem eine\n    möglichst gute schulische Bildung zu erwerben, und die\n    Notwendigkeit, einer Erwerbsarbeit nachzugehen. Dadurch, dass sie\n    weder Bildung noch Arbeit haben, **verlieren sie jede Chance** auf\n    gesellschaftlichen Aufstieg und entlassen sich selbst vor\n    den Fernseher.\n\n-   *Die dazwischen:* Dazwischen bleibt dann noch eine **leidende\n    Mittelschicht**, die versucht, ein bisschen mehr vom Kuchen\n    zu kriegen. Sie zahlen hohe Steuern, um jene, die nicht\n    arbeiten, durchzufüttern. Trotz guter Ausbildung und einer intakten\n    Arbeitsmoral müssen sie hart kämpfen, um einigermassen gut zu leben.\n\nAndere sagen, dass es diese **Spaltung schon heute** gibt. Es ist nicht\nsicher, ob sie durch ein Grundeinkommen grösser würde. Das\nGrundeinkommen hat auch Effekte, die dieser Segregation entgegen wirken.\nZum Beispiel wird es einfacher sein, eine verpasste Ausbildungen\nnachzuholen.\n\nZudem ist fraglich, ob es wirklich erstrebenswert ist, Menschen ohne\nChance auf einen gut bezahlten Job zu zwingen, einer sinnfreien und\nkrank machenden Beschäftigung nachzugehen. Wenn doch klar ist, dass sie\nsich sofort in die Frühpensionierung zurückziehen würden, wenn dies\nmöglich wäre. Vielleicht gibt es erfolgversprechendere Methoden, den\nZusammenhalt in der Gesellschaft zu fördern als kollektiver Zwang zur\nErwerbsarbeit."
+      },
+      "fr": {
+        "label": "Le revenu de base conduit-il à une fracture sociale? \n",
+        "minLabel": "Oui",
+        "maxLabel": "Non, au contraire",
+        "info": "Les opposants au revenu de base inconditionnel argumentent souvent que\nla société se divisera en différents groupes: ceux pour qui le revenu de\nbase est l’unique source de revenu et ceux qui conservent un travail\nrémunéré.\n\n-   *Les gagnants:* Ce sont plutôt les personnes provenant d’un **milieu\n    favorisé en matière de formation** qui profiteront du potentiel\n    émancipatoire du revenu de base. Libérés des craintes financières et\n    des contraintes sociales, ces dernières se formeraient mieux et\n    **travailleraient de manière autonome**. Elles auraient des salaires\n    élevés et se réaliseraient dans la politique ou d’autres\n    activités bénévoles.\n\n-   *Les perdants:* Les personnes issues d’un **milieu à bas niveau de\n    formation ou d’un milieu socioculturel mal intégré** démarrent\n    aujourd’hui déjà sur de mauvaises bases pour espérer pouvoir obtenir\n    un travail bien payé ou occuper une position influente. Avec le\n    revenu de base, elles ne ressentent plus la nécessité d’acquérir\n    malgré tout une bonne formation scolaire et d’exercer une\n    activité rémunérée. Puisqu’elles n’ont ni formation ni travail,\n    leurs chances d’ascension sociale sont réduites à néant et elles se\n    congédient elles-mêmes devant leur petit écran.\n\n-   *Les entre-deux:* Entre les deux se trouve une **classe moyenne qui\n    souffre** et qui tente d’avoir sa part du gâteau. Elle paie des\n    impôts élevés pour nourrir ceux qui ne travaillent pas. Malgré une\n    bonne formation et une ardeur au travail toujours intacte, elle doit\n    batailler dur pour pouvoir vivre à peu près normalement.\n\nD’autres pensent que ce **clivage existe déjà aujourd’hui**. Il n’est\npas certain qu’il prenne de l’ampleur avec le revenu de base. Les effets\nde ce dernier contrecarrent également cette ségrégation. Il sera par\nexemple plus facile de rattraper une formation manquée.\n\nOn peut en outre se demander s’il est vraiment souhaitable de\ncontraindre des gens qui n’ont aucune chance d’occuper un poste bien\npayé à se livrer à une occupation qui n’a aucun sens et qui les fatigue\nmoralement. Il est pourtant clair qu’ils opteraient pour un départ\nimmédiat à la retraite anticipée si c’était possible. Il y a peut-être\ndes méthodes plus prometteuses que la contrainte collective au travail\nrémunéré pour promouvoir la cohésion sociale.\n"
+      },
+      "it": {
+        "label": "Il reddito di base provocherà una spaccatura della società?\n",
+        "minLabel": "Sì",
+        "maxLabel": "No, al contrario",
+        "info": "I contrari al reddito di base incondizionato sostengono che la società si dividerebbe in diversi gruppi: coloro per cui il reddito di base rappresenterà l’unica fonte di guadagno e coloro che continueranno a recarsi al lavoro.  \n\nI vincenti : Del potenziale emancipatore del reddito di base approfitterebbero soprattutto persone vicine agli ambienti colti. Affrancate dalle preoccupazioni finanziarie e libere dai condizionamenti della società si formerebbero meglio e lavorerebbero seguendo la propria autodeterminazione. Godrebbero di ottimi stipendi e coprirebbero cariche politiche o altre posizioni di prestigio. \n\nI perdenti: Persone lontane dagli ambienti colti o scarsamente integrate nel tessuto socioculturale hanno già oggi più scarse possibilità di ottenere un lavoro altamente retribuito o di raggiungere posizioni di rilievo capaci di influire sulla società. A queste persone con il reddito di base verrebbe a mancare la pressione che ciononostante li spinge a ottenere la miglior formazione possibile per poi accedere a un reddito da lavoro. Privi di formazione e di lavoro si auto-escluderebbero davanti al televisore. \n\nI mediani: In mezzo rimarrebbe una classe media sofferente che cercherebbe di ottenere qualcosa in più. Pagherebbe molte tasse per mantenere chi non lavora. Nonostante una buona formazione e una morale lavorativa integra sarebbe costretta a lavorare sodo per riuscire a mantenere uno standard di vita consono alle proprie aspirazioni. \n\nAltri sono dell’opinione che questa spaccatura sia già realtà. Non è detto che aumenterebbe con l’introduzione del reddito di base, al contrario si produrrebbero degli effetti in grado di contrastarla. Sarà per esempio più semplice recuperare una formazione che non si era potuta fare in precedenza. \n\nC’è poi da chiedersi se è sensato costringere persone che non hanno la possibilità di ottenere un posto di lavoro remunerato degnamente a svolgere un’attività priva di senso e logorante quando è scontato che se ne avessero la possibilità ricorrerebbero alla pensione anticipata. Potrebbero esistere metodi più promettenti dell’obbligo alla rendita di lavoro per promuovere la coesione della società. "
+      }
+    }
+  },
+  {
+    "index": 9,
+    "cluster": "j",
+    "topic": "Wirtschaft",
+    "hrid": "Ersetzen",
+    "optional": true,
+    "type": "scale",
+    "min": 0,
+    "max": -0.5,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": true,
+    "isLeftPositiv": false,
+    "languages": {
+      "de": {
+        "label": "Die Finanzierung des Grundeinkommens ist möglich, weil es weitgehend heutige Einkommen ersetzt. Einverstanden?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Wenn wir mit 2’500 Franken für Erwachsenen und 625 Franken für Kinder\nrechnen, dann müssen **rund 200 Milliarden Franken pro Jahr** verteilt\nwerden.\n\nBefürworter argumentieren, dass der grössere Teil dieser Summe\nbestehenden Einkommens ersetzt. Wenn jemand zum Beispiel 6’000 Franken\nverdient, würde er neu 3’500 Franken verdienen und 2’500 Franken als\nGrundeinkommen erhalten. Der ersetzende Teil ist also **kein\nzusätzliches Geld**, der Lohn ist nur anders zusammen gesetzt, aus\nErwerbseinkommen und Grundeinkommen.\n\nAnders macht es auch nicht viel Sinn. Geld fällt nicht vom Himmel. Der\nStaat kann Geld abschöpfen und dann wieder verteilen. Stammt das Geld\nvon anderen Menschen als von denen, die es wieder bekommen, ist das\nUmverteilung.\n\nBefürworter argumentieren, dass das Grundeinkommen zu einem grossen Teil\n**umverteilungsneutral** ist. Viele Menschen zahlen gleich viel in den\nGrundeinkommenstopf ein, wie sie daraus bekommen. Ein grosser Teil der\n200 Milliarden fliesst wieder dahin zurück, wo er hergekommen ist.\n\nOb das wirklich so sein wird – oder überhaupt möglich ist – hängt von\nvielen Faktoren ab. Zum Beispiel wie hoch das Grundeinkommen sein wird,\nwie viele Menschen einer Lohnarbeit nachgehen oder über welche Steuern\ndas Grundeinkommen finanziert wird.\n\nEs hängt auch davon ab, was wir wollen. Es folgen drei verschiedene\nBeispiele, wie verschiedene Vorstellungen von Umverteilung mit der Idee\nGrundeinkommen vereinbar sind:\n\n-   Das Grundeinkommen soll die **Umverteilung von Oben nach Unten\n    stärken**. Weniger gut Verdienende sollen weniger als ihr\n    Grundeinkommen einbezahlen, besser Verdienenden mehr. Die Lohnschere\n    soll kleiner werden. Es gibt Leute, welche dieses Ziel mit einer\n    stärkeren Steuerprogression erreichen möchten. Auch andere\n    Mechanismen sind denkbar.\n\n-   Das Grundeinkommen soll die **Schmarotzer und Faulen bestrafen**:\n    Wer nicht fähig oder willig ist, sich auf dem Arbeitsmarkt zu\n    behaupten, soll weniger als heute bekommen. Das könnte erreicht\n    werden, indem man den Betrag für das Grundeinkommen sehr tief\n    ansetzt und alle anderen Sozialleistungen, wie IV oder\n    Sozialhilfe streicht.\n\n-   Das Grundeinkommen soll **so wenig wie möglich umverteilen**: Die\n    meisten Menschen hätten mit Grundeinkommen gleich viel Geld in der\n    Tasche wie ohne, sofern sie in ihrem Job weiter arbeiten. Nur jene\n    mit einem ein Einkommen von weniger als 2’500 Franken hätten mehr.\n    Die Frage ist lediglich, ob wir geeignete Instrumente finden, um das\n    Grundeinkommen aus fiskaler Sicht mehrheitlich als Nullsummenspiel\n    zu organisieren."
+      },
+      "fr": {
+        "label": "Le financement du revenu de base est possible, car ce dernier remplace largement les revenus actuels. D’accord ? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "Si l’on compte 2'500 francs par adulte et 625 francs par enfant, ce sont\nprès de 200 milliards qui seront distribués chaque année.\n\nLes partisans arguent que la majeure partie de cette somme ne fera que\nremplacer une part du revenu existant. Une personne qui gagne par\nexemple 6'000 francs aujourd’hui aura à l’avenir 3'500 francs de revenu\nprovenant d’une activité lucrative et 2'500 francs de revenu de base. La\npart de remplacement ne correspond donc pas à de l’argent\nsupplémentaire, le salaire est simplement composé de manière\ndifférente : du revenu lucratif et du revenu de base.\n\nAutrement, cela ne ferait pas non plus vraiment sens. L’argent ne tombe\npas du ciel. L’État peut intercepter l’argent, puis le redistribuer. Si\nl’argent provient d’autres personnes que celles qui le reçoivent à\nnouveau, il s’agit d’une redistribution.\n\nLes partisans argumentent que le revenu de base est en majeure partie\nneutre du point de vue de la redistribution. Beaucoup de personnes\nversent autant dans la caisse du revenu de base que ce qu’elles\nreçoivent. Une grande part des 200 milliards retourne là d’où elle\nvient.\n\nLes choses se passeront-elles vraiment de cette manière? Est-ce vraiment\npossible? Cela dépend de nombreux facteurs: Le montant auquel s’élèvera\nle revenu de base, par exemple, ou combien de personnes continueront à\nexercer une activité salariale et grâce à quel impôt le revenu de base\nsera financé.\n\nCela dépend aussi de ce que nous voulons. Voici trois visions\ndifférentes de la manière dont la redistribution et le revenu de base\npourraient être conciliés :\n\n- Le revenu de base permettra de renforcer une redistribution du haut\nvers le bas. Ceux qui gagnent le moins devront verser un montant\ninférieur à celui du revenu de base et ceux qui gagnent le mieux\npaieront plus. L’écart entre les salaires diminuera. Il y a des\npersonnes qui souhaitent atteindre cet objectif avec une plus forte\nprogressivité des impôts. On peut aussi envisager d’autres mécanismes.\n\n- Le revenu de base punira les profiteurs et les paresseux : celui qui\nn’est pas capable ou ne veux pas s’affirmer sur le marché du travail\nrecevra moins qu’aujourd’hui. On pourrait atteindre ce but en fixant le\nmontant du revenu de base à un niveau très bas et en supprimant toutes\nles autres prestations sociales, comme l’AI ou l’aide sociale.\n\n- Le revenu de base devrait redistribuer le moins possible : La plupart\ndes gens auraient la même somme d’argent en poche avec ou sans le revenu\nde base, pour autant qu’ils continuent à travailler. Seuls ceux avec un\nrevenu inférieur à 2'500 francs auraient plus. La question est de savoir\nsi nous trouverons l’outil approprié pour que, d’un point de vue fiscal,\nle revenu de base soit organisé dans la majorité des cas comme un jeu à\nsomme nulle."
+      },
+      "it": {
+        "label": "Il finanziamento del reddito di base è possibile perché in gran parte sostituirebbe rendite già esistenti. D’accordo?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Se calcoliamo 2'500 franchi per ogni adulto e 625 per ogni minore, devono essere distribuiti circa 200 miliardi di franchi l’anno.\n\nChi è favorevole avanza l’argomento che la maggior parte di questa somma sostituisce redditi già esistenti. Se qualcuno guadagna per esempio 6'000 franchi, percepirà 3'500 franchi di rendita da lavoro e 2'500 di reddito di base. La parte sostitutiva non consiste dunque in più denaro, la composizione del salario è più semplicemente suddivisa tra reddito da lavoro e reddito di base.\n\nDiversamente non avrebbe molto senso. I soldi non cadono dal cielo. Lo Stato può raccogliere denaro per in seguito ripartirlo. Quando i soldi provengono da persone diverse rispetto a coloro che lo ricevono, ciò si chiama redistribuzione.   \n\nI sostenitori argomentano che gran parte del reddito di base abbia sostanzialmente un impatto neutrale sulla redistribuzione. Molte persone versano nel fondo del reddito di base tanto quanto ne ricevono. Gran parte dei 200 miliardi torna indietro da dove è venuto. \n\nSe sarà effettivamente così – o se sarà davvero possibile – dipende da diversi fattori. Per esempio quanto elevato sarà il reddito di base, quanto persone svolgeranno un lavoro retribuito o da quali tasse sarà finanziato il reddito di base. \n\nDipende anche da ciò che vogliamo. Seguono tre esempi che illustrano come diverse prospettive di redistribuzione si concilino con il reddito di base:\n\nIl reddito di base dovrebbe rafforzare la redistribuzione dall’alto verso il basso. Chi meno guadagna dovrebbe versare meno del suo reddito di base, chi meglio guadagna di più. La forbice dei redditi dovrebbe assottigliarsi. Alcuni vorrebbero raggiungere questo obbiettivo attraverso una tassazione più fortemente progressiva. È possibile pensare anche ad altri meccanismi.\nIl reddito di base deve punire gli approfittatori e i pigri: a chi non ha la volontà o non riesce a farsi valere sul mercato del lavoro spetta di meno. Questo obiettivo si potrebbe raggiungere fissando un reddito di base molto basso e cancellando tutte le prestazioni quali AI o aiuti sociali. \nIl reddito di base dovrebbe redistribuire il meno possibile: continuando a lavorare, la maggior parte delle persone disporrebbe con l’introduzione del reddito di base degli stessi introiti di prima. Soltanto chi attualmente guadagna meno di 2'500 franchi beneficerebbe di maggiori introiti. La domanda da porsi sarebbe in seguito quella di capire se si sia in grado di trovare gli strumenti necessari affinché dal punto di vista fiscale il reddito di base sia organizzato sostanzialmente come un’operazione a costo zero. "
+      }
+    }
+  },
+  {
+    "index": 10,
+    "cluster": "f",
+    "topic": "Wirtschaft",
+    "hrid": "Rest",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": true,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Wer heute weniger als das Grundeinkommen verdient, hätte mit Grundeinkommen mehr Geld. Andere würden sich aus dem Arbeitsmarkt verabschieden. Ist die Finanzierung dieser Mehrkosten ein Problem?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Wenn sich Menschen dazu entscheiden, mit dem Grundeinkommens keiner\nErwerbsarbeit mehr nachzugehen, müssen die, die noch einer Erwerbsarbeit\nnachgehen, das Grundeinkommen für jene bezahlen. Es ist irrelevant wie\nviel Sinnvolles die Menschen tun, ob sie Kranke pflegen oder\nweltbewegende Bücher schreiben. Wenn sie diese **Arbeit ausserhalb der\nGeld-Wirtschaft** tun, können darauf **keine Steuern** erhoben werden,\nund sie tragen daher nicht direkt zur Finanzierung des Grundeinkommens\nbei.\n\nDie Frage ist also: wie viele Menschen können sich dafür entscheiden,\nkeiner Erwerbsarbeit mehr nachzugehen, ohne dass das System\nzusammenbricht?\n\nUm diese Frage zu beantworten, müssen viele Faktoren berücksichtigt\nwerden: Wie hoch ist das Grundeinkommen? Mit welchen Instrumenten\nerheben wir das Geld? Wer bezahlt den Grossteil? Wie viel sind sie\nbereit abzugeben, bevor sie auswandern oder das Grundeinkommen wieder\nabschaffen? Welche technologischen Entwicklungen bringen die nächsten\nJahre?\n\nOb das Grundeinkommen finanzierbar ist, hängt hauptsächlich von zwei\nDingen ab: Erstens, wie viele Menschen sich dafür entscheiden, **aus dem\nheutigen Arbeitsmarkt auszusteigen** und zweitens, wie viel\n**produktiver die Verbleibenden arbeiten**."
+      },
+      "fr": {
+        "label": "Celui qui a aujourd’hui moins d’argent que le revenu de base aurait davantage d’argent avec le revenu de base. D’autres se retireraient du marché du travail. Le financement de ce surcoût est-il un problème?",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "Si, avec le revenu de base, des personnes décident de ne plus exercer\nd’activité lucrative, ceux qui continuent à travailler doivent payer le\nrevenu de base pour eux. La quantité de choses utiles qu’ils font\nimporte peu. Qu’ils soignent des malades ou écrivent des livres à\nsuccès, s’ils exercent ce travail en dehors de l’économie de l’argent,\nil n’est pas possible de percevoir des impôts sur ces activités. Ils ne\nparticipent donc pas directement au financement du revenu de base.\n\nLa question est donc: combien de gens peuvent décider de ne plus exercer\nd’activité lucrative sans que le système ne s’effondre?\n\nPour pouvoir répondre à cette question, de nombreux facteurs doivent\nêtre pris en compte: À combien s’élève le revenu de base? Avec quels\noutils prélevons-nous l’argent? Qui paie la plus grande part? Combien\nest-on prêt à céder avant de partir pour l’étranger ou d’abolir le\nrevenu de base? Quelles seront les avancées technologiques des années à\nvenir?\n\nEst-il possible de financer le revenu de base? Cela dépend avant tout de\ndeux choses: Premièrement, combien de personnes décident de se retirer\ndu marché du travail et, deuxièmement, quelle est la productivité de\nceux qui continuent à travailler."
+      },
+      "it": {
+        "label": "Chi oggi guadagna meno del reddito di base con esso avrebbe più soldi. Altri lascerebbero il mercato del lavoro. Il finanziamento di questi costi aggiuntivi è un problema?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Le persone che decidono di vivere con il reddito di base rinunciando a un’attività lucrativa saranno a carico di coloro che invece continueranno a svolgere un lavoro remunerato, indipendentemente da quante attività sensate svolgano, dalla cura dei malati alla scrittura di libri in grado di cambiare il mondo. Se svolgono tali attività fuori dell’economia di mercato non si possono riscuotere tasse e non partecipano dunque direttamente al finanziamento del reddito di base.\n\nDa qui la domanda: quante persone possono scegliere di non svolgere più un’attività lucrativa senza che il sistema collassi?\n\nPer rispondere a questa domanda devono essere presi in considerazione diversi fattori: a quanto ammonta il reddito di base? Con quali strumenti si raccoglie il denaro? Chi paga la parte più consistente? Quanto sarebbero disposti a cedere, prima di emigrare o abolire il reddito di base? Quali progressi tecnologici porteranno gli anni a venire? \n\nLa finanziabilità del reddito di base dipende sostanzialmente da due elementi: il numero di persone che sarebbero pronte a lasciare l’odierno mercato del lavoro e l’accresciuta produttività di quanti invece continueranno a parteciparvi. "
+      }
+    }
+  },
+  {
+    "index": 11,
+    "cluster": "e",
+    "topic": "Gesellschaft",
+    "hrid": "Herdprämie",
+    "optional": true,
+    "type": "scale",
+    "min": -0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": true,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Das Grundeinkommen fördertet finanziell ein veraltetes Familienmodell. Richtig?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Durch ein bedingungsloses Grundeinkommen könnte sich die **Begünstigung\nder klassischen Rollenverteilung verstärken**: Es wird noch stärker als\nheute für Familien die vernünftige Entscheidung sein, dass der Mann\nvollzeit ausser Haus arbeitet und die Frau zuhause bleibt und sich um\nKinder und Haushalt kümmert.\n\n*Weil:*\n\n-   das Grundeinkommen keine direkte Auswirkung auf die **ungleiche\n    Chancenverteilung** und Lohnstruktur zwischen Frau und Mann auf dem\n    Arbeitsmarkt hat.\n\n-   Menschen, die **keiner Erwerbsarbeit** nachgehen, finanziell am\n    stärksten von einem Grundeinkommen profitieren.\n\n-   der soziale Druck steigt, seine **Kinder bis zur Einschulung zu\n    Hause gross zu ziehen** – denn es sollte mit einem bedingungslosen\n    Grundeinkommen finaziell möglich sein.\n\n*Es gibt auch die Ansicht, dass das bedingungslose Grundeinkommen die\nEmanzipation der Frauen stärkt:*\n\n-   Obwohl es stimmt, dass das Grundeinkommen an den diskriminierenden\n    Strukturen des Arbeitsmarktes per se nichts ändert, wird es mit der\n    Zeit trotzdem besser. Weil die Menschen weniger Angst vor der\n    Arbeitslosigkeit haben, sind sie alle – Frauen und Männer – in einer\n    **stärkeren Position gegenüber den Arbeitgebern**. Dies bringt eine\n    neue Dynamik in Verhandlungen und dadurch eine neue Chance, diese\n    diskriminierenden Strukturen zu überwinden.\n\n-   Die Frauen haben ohne Grundeinkommen machmal keine Wahl und müssen\n    einer Erwerbsarbeit nachgehen. **Mit Grundeinkommen haben sie die\n    Wahl**. Mehr Wahlfreiheit ist immer besser.\n"
+      },
+      "fr": {
+        "label": "D’un point de vue financier, le revenu de base favorise un modèle familial dépassé. Vrai?",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "La répartition traditionnelle des rôles pourrait être renforcée par le\nrevenu de base. De plus en plus de familles prendront la décision\nsuivante: l’homme travaille à plein temps à l’extérieur et la femme\nreste à la maison pour s’occuper des enfants et des tâches ménagères,\ncar: …\n\n-   le revenu de base n’a pas d’influence immédiate sur l’inégalité des\n    chances et des revenus entre femmes et hommes sur le marché\n    du travail.\n-   les personnes qui n’exercent pas d’activité lucrative tirent un\n    maximum de profit du revenu de base.\n-   la pression sociale qui veut que les enfants soient élevés à la\n    maison jusqu’à leur scolarisation devient plus forte – puisque,\n    grâce au revenu de base, cela devient possible d’un point de\n    vue financier.\n\nCertains sont au contraire d’avis que le revenu de base renforcera\nl’émancipation féminine:\n\n-   Bien qu’il soit vrai que le revenu de base ne change rien aux\n    structures discriminatoires du marché du travail, il apportera tout\n    de même une amélioration à long terme. Puisque les gens craignent\n    moins le chômage, tous – femmes et hommes – bénéficient d’un\n    position plus forte face aux employeurs. Cela fait progresser les\n    négociations et constitue ainsi une opportunité de surmonter les\n    structures discriminatoires.\n-   Sans revenu de base, les femmes n’ont souvent pas le choix et sont\n    contraintes à exercer une activité lucrative. Avec le revenu de\n    base, elles ont le choix. Et une plus grande liberté de choix est\n    toujours préférable."
+      },
+      "it": {
+        "label": "Il reddito di base è uno strumento finanziario che promuove un modello familiare antiquato, giusto?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Con il reddito di base incondizionato si potrebbe rafforzare il ruolo tradizionale della donna: in famiglia la scelta di assegnare alla donna il compito di occuparsi dei figli e della casa e al marito quello di svolgere un lavoro a tempo pieno apparirà ancora più ragionevole di oggi. Perché:…\n\nil reddito di base non ha una ripercussione diretta sul mercato del lavoro e quindi sulle pari opportunità e le strutture salariali tra uomo e donna. \nle persone che non si dedicano a un’attività lucrativa approfittano maggiormente del reddito di base. \ncresce la pressione sociale affinché i figli vengano educati a casa fino al raggiungimento dell’età scolastica, perché con il reddito di base incondizionato ciò dovrebbe essere sostenibile dal punto di vista finanziario. \n\nCi sono argomenti a sostegno del fatto che il reddito di base incondizionato rafforzerebbe l’emancipazione femminile:\n\nA lungo termine la situazione migliora pur essendo vero che il reddito di base di per se non cambia le strutture discriminatorie del mercato del lavoro. In effetti la posizione - di uomini e donne - è rafforzata nei confronti del datore di lavoro perché priva dei timori legati alla perdita del posto. Il risultato è una nuova dinamica in seno alle contrattazioni, capace di superare queste strutture discriminatorie. \nCi sono donne che senza il reddito di base non hanno scelta e devono svolgere un’attività lucrativa. Con il reddito di base possono scegliere e una maggiore libertà di scelta è sempre auspicabile. \n"
+      }
+    }
+  },
+  {
+    "index": 12,
+    "cluster": "d",
+    "topic": "Gesellschaft",
+    "hrid": "Abhängigkeit",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Heute verfügt oft ein Familienmitglied über das gesamte Haushalts-Einkommen. Das führt zu finanziellen Abhängigkeiten. Kann das bedingungslose Grundeinkommen diese reduzieren?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": ""
+      },
+      "fr": {
+        "label": "Aujourd’hui, c’est souvent un seul membre de la famille qui dispose de l’ensemble du revenu du ménage, ce qui conduit à une dépendance financière. Le revenu de base peut-il réduire cette dernière? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": ""
+      },
+      "it": {
+        "label": "Oggi spesso un membro della famiglia dispone della totalità degli introiti dell’economia domestica con conseguente dipendenza finanziaria degli altri componenti familiari. Il reddito di base incondizionato può ridurre tale dipendenza? ",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": ""
+      }
+    }
+  },
+  {
+    "index": 13,
+    "cluster": "g",
+    "topic": "Individuum",
+    "hrid": "Roboter",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Weil durch die Automatisierung viele Arbeitsplätze verschwinden, müssen neue Formen der Einkommensverteilung gefunden werden: Ist das Grundeinkommen dazu die richtige Form? ",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "*Warum Grundeinkommen und Automatisierung gut zusammen passen:*\n\n\n-   **Arbeitslosigkeit** ist schlimm für die Betroffenen. Durch die\n    Automatisierung droht dies für mehr Menschen Realität zu werden.\n    Darum muss man darüber nachdenken, wie man besser damit\n    umgehen kann. Das Grundeinkommen ist ein Ansatz, den schwierigen\n    Gang zum Arbeitsamt und das damit verbundene Stigma aufzuheben.\n\n-   Wenn viele Arbeitsplätze verschwinden, verändern sich\n    die Rahmenbedingungen. Um neue Strukturen zu schaffen, braucht es\n    **Flexibilität** – auf Seiten der Arbeitnehmer und Arbeitgeber. Das\n    Grundeinkommen könnte mehr Flexibilität bringen, weil die Menschen\n    weniger existentielle Ängste hätten. Dadurch können sie frühzeitig\n    Umschulungen und Weiterbildungen machen oder eigene Ideen\n    selbständig verwirklichen. Zusätzlich könnte mehr Innovation und\n    dadurch neue Arbeitsplätze entstehen.\n\n-   Die Wirtschaft braucht **Konsum**. Wenn nun viele Menschen keinen\n    Job haben, haben sie auch kein Geld, das sie ausgeben können. Das\n    Grundeinkommen sorgt dafür, dass die Menschen weiter kaufen können\n    und die Wirtschaft nicht kollabiert.\n\n*Warum Grundeinkommen und Automatisierung nicht gut zusammen passen:*\n\n\n-   Man stelle sich vor, es gibt eines Tages wirklich fast keine\n    Jobs mehr. Die Roboter arbeiten. Wer die Roboter besitzt, hat\n    das Sagen. Damit die Menschen nicht ins Elend geraten und\n    revolutionäre Ideen entwickeln, bezahlt man ihnen\n    ein Grundeinkommen. Sie sind ruhig, konsumieren und halten die\n    Wirtschaft am Laufen. Ihr Einfluss auf die Gestaltung der Welt\n    jedoch schmilzt. **Wer finanziert, befiehlt**. Wenn die Mehrheit der\n    Menschen direkt vom Grundeinkommen abhängig ist, kann keine\n    Demokratie mehr funktionieren.\n"
+      },
+      "fr": {
+        "label": "De nombreux emplois disparaissent en raison de l’automatisation, ce qui nous contraint à trouver de nouvelles formes de distribution des revenus: le revenu de base pourrait-il être la bonne solution? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "*Pourquoi le revenu de base et l’automatisation sont-ils\ncomplémentaires:*\n\n-   **Le chômage** est une situation douloureuse pour les\n    personnes concernées. Cela pourrait devenir une réalité pour un\n    nombre accru de personnes en raison de l’automatisation. Il s’agit\n    donc de se questionner sur la manière de mieux gérer cela. Le revenu\n    de base est une approche qui permet de mettre un terme au difficile\n    passage par l’office de placement et l’étiquette négative qui y\n    est attachée.\n-   Si de nombreux emplois disparaissent, les conditions\n    cadres changent. Créer de nouvelles structures demande de la\n    **flexibilité** – du côté de l’employé et de l’employeur. Le revenu\n    de base pourrait apporter davantage de flexibilité, car les peurs\n    existentielles des gens seraient moindres. Ils pourraient ainsi\n    suivre des reconversions ou des perfectionnements suffisamment tôt\n    ou réaliser leurs propres idées de manière indépendante. De plus,\n    cela pourrait donner lieu à davantage d’innovation et, par la même\n    occasion, à la création de nouveaux emplois.\n-   L’économie a besoin de la **consommation**. Si de nombreuses\n    personnes sont sans emploi, elles n’ont pas non plus d’argent\n    à dépenser. Le revenu de base permet aux gens de conserver un\n    pouvoir d’achat et empêche ainsi que l’économie ne s’effondre.\n\n*Pourquoi le revenu de base et l’automatisation ne sont-ils pas\ncomplémentaires:*\n\n-   Imaginons qu’un jour il n’y ait vraiment presque plus d’emplois. Les\n    robots travaillent. Celui qui possède les robots possède également\n    le pouvoir. Pour que les gens ne soient pas réduits à la misère et\n    ne développent pas des idées révolutionnaires, on leur verse un\n    revenu de base. Ils restent calmes, consomment et font\n    tourner l’économie. Ils contribuent cependant de manière moindre à\n    façonner le monde. **Qui paie commande**. Si la majorité des gens\n    dépend du revenu de base, la démocratie ne peut pas fonctionner."
+      },
+      "it": {
+        "label": "Siccome l’automatizzazione rende superflui molti posti di lavoro, devono essere trovate nuove forme di redistribuzione dei redditi: il reddito di base rappresenta il modello giusto?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "*Perché reddito di base si accorda con automatizzazione?*\n\n-   La **disoccupazione** rappresenta una condizione difficile per chi\n    ne è toccato. Attraverso l’automatizzazione questa realtà rischia di\n    coinvolgere molte più persone, perciò è necessario riflettere sulle\n    possibilità di gestirla meglio. Il reddito di base illustra un\n    approccio che elimina la sofferta presentazione all’ufficio del\n    lavoro e la connessa stigmatizzazione.\n-   Se vanno persi molti posti di lavoro cambia il quadro generale. Per\n    creare nuove strutture serve **flessibilità** – sia da parte di\n    lavoratrici e lavoratori, sia dei datori di lavoro. Il reddito di\n    base potrebbe portare a una maggiore flessibilità nella misura in\n    cui limiterebbe ** le paure esistenziali delle persone. Potrebbero\n    così affrontare tempestivamente corsi di riqualificazione e\n    perfezionamento o realizzare le proprie idee in modo indipendente.\n    Si darebbe inoltre spazio all’innovazione e quindi anche alla\n    creazione di nuovi posti di lavoro.\n-   L’economia dipende dai **consumi**. Se molte persone non hanno un\n    lavoro mancherà loro anche il denaro da spendere. Il reddito di base\n    permette alle persone di continuare a spendere e quindi all’economia\n    di non collassare.\n\n*Perché reddito di base non si accorda con automatizzazione?*\n\n-   Se davvero arrivasse il giorno in cui il numero di posti di lavoro\n    fosse molto ridotto, e le mansioni svolte da robot, questo\n    significherebbe che le decisioni sarebbero prese dai proprietari\n    dei robot. Per evitare alle persone di sprofondare nella miseria e\n    di escogitare idee rivoluzionarie, si pagherebbe loro un reddito\n    di base. In questo modo sarebbero tenute tranquille, consumando e\n    facendo funzionare l’economia. La loro influenza sull’andamento del\n    mondo però diminuirebbe drasticamente. **Chi finanzia tiene\n    le redini.** La democrazia non può più funzionare se la maggioranza\n    delle persone dipende dal reddito di base.\n"
+      }
+    }
+  },
+  {
+    "index": 14,
+    "cluster": "e",
+    "topic": "Gesellschaft",
+    "hrid": "Unbezahlt",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Das Grundeinkommen erlaubt Menschen, die unbezahlte Arbeit leisten, finanziell unabhängig zu leben. Ist das gut?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Heute werden in der Schweiz **2,3 Milliarden Arbeitsstunden für\nunbezahlte Care-Arbeit** in Form von Betreuungs- und Pflegeaufgaben\naufgewendet, was einem materiellen Wert von über 80 Milliarden Franken\nentspricht. Dazu kommen unbezahlte politische Arbeit und Arbeit in\nVereinen.\n\nDie Menschen, die diese Arbeit leisten, sind oft finanziell abhängig,\nsei es von einem Ehegatten oder von Sozialleistungen – obwohl sie **für\ndie Gesellschaft essentielle Dienste** erbringen. Das bedingungslose\nGrundeinkommen würde die finanzielle Situation dieser Menschen\nunmittelbar verbessern.\n\nHingegen muss man sich fragen, ob die unbezahlte Care-Arbeit nicht auf\n**andere Weise abgegolten** werden kann, und wie sich potentielle andere\nLösungen mit dem bedingungslosen Grundeinkommen vertragen würden:\nErgänzen sie sich oder verhindern sie sich gegenseitig?"
+      },
+      "fr": {
+        "label": "Le revenu de base permet aux personnes qui fournissent un travail non rémunéré de vivre de manière indépendante du point de vue financier. Est-ce une bonne chose ? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "Aujourd’hui, en Suisse, 2,3 milliards d’heures de travail care non\nrémunéré sont consacrées à des tâches de prise en charge et de soins, ce\nqui correspond à une valeur matérielle de plus de 80 milliards. À cela\ns’ajoute encore le travail politique et associatif non rémunéré.\n\nLes gens qui fournissent ce travail sont souvent financièrement\ndépendants, que ce soit du conjoint ou des prestations sociales – bien\nqu’ils fournissent des services essentiels à la société. Le revenu de\nbase améliorerait directement la situation financière de ces personnes.\n\nPar contre, on peut se demander si le travail care non rémunéré ne\npourrait pas être indemnisé de manière différente et comment les\nsolutions alternatives potentielles pourraient s’accorder avec le revenu\nde base inconditionnel : lui sont-elles complémentaires ou lui\nfont-elles barrage ?"
+      },
+      "it": {
+        "label": "Il reddito di base offre indipendenza economica alle persone che svolgono lavori non remunerati. È positivo?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Oggi in Svizzera le ore di lavoro non remunerate negli ambiti della cura e dell’assistenza ammontano a 2.3 miliardi di ore l’anno, quantificabili in 80 miliardi di franchi. Vanno inoltre menzionati l’impegno politico e il volontariato in seno alle associazioni. \n\nLe persone che svolgono queste attività spesso dipendono economicamente dal partner o da prestazioni sociali – nonostante offrano servizi essenziali per la società. Il reddito di base incondizionato porterebbe un miglioramento immediato della situazione finanziaria di queste persone. \n\nCi si deve invece chiedere se il lavoro non remunerato nella cura e nell’assistenza non possa essere finanziato altrimenti e come potrebbe essere conciliato con il reddito di base: sono in un rapporto complementare o si escludono a vicenda?\n"
+      }
+    }
+  },
+  {
+    "index": 15,
+    "cluster": "f",
+    "topic": "Individuum",
+    "hrid": "Unzufrieden",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Wird es mit einem Grundeinkommen weniger Menschen geben, die mit ihrer beruflichen Situation unzufrieden oder krank sind?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein, im Gegenteil",
+        "info": "Viele Mensche leiden heute an Krankheiten, die eine Folge ihrer\nErwerbsarbeit sind. Dies verursacht **individuelles Leid** aber auch\n**volkswirtschaftliche Kosten**.\n\nDas Grundeinkommen könnte zu einer Verbessern der Situation führen.\nJemand, der wegen seiner Arbeit krank ist, hätte **weniger Hürden**,\neine Auszeit zu nehmen, den Job zu wechseln oder auch einfach einmal\nnicht zu arbeiten.\n\nDoch es ist schliesslich **nicht nur das Geld**, das uns zur Arbeit\ndrängt. Darum kann das Problem der Unzufriedenheit und der Krankheit\ndurch Arbeit nicht nur mit Geld gelöst werden. Es könnte sein, dass der\n**Stress** eher zu- als abnimmt. Wir verlieren unter Umständen die\nBefriedigung, selber jeden Monat genug Geld zu verdienen und daher\nunabhängig zu sein. Nehmen wir an, vom Grundeinkommen zu leben, ist\nsalonfähig und wir arbeiten alle freiwillig. Dann steigt der Druck, sich\nim Job selbst zu verwirklichen, einen Sinn darin zu sehen und uns selbst\nund anderen zu beweisen, dass wir Spass haben und unsere Arbeit wichtig\nist. Das kann sehr anstrengend und **frustrierend** sein."
+      },
+      "fr": {
+        "label": "Avec un revenu de base, le nombre de personnes insatisfaites ou malades en raison de leur situation professionnelle sera-t-il moins élevé? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non, au contraire",
+        "info": "Beaucoup de gens souffrent de nos jours de maladies des suites de leur\ntravail. Cela est à l’origine de **souffrances individuelles**, mais\ncela a aussi des **conséquences économiques**.\n\nLe revenu de base pourrait conduire à une amélioration de cette\nsituation. Une personne qui est malade en raison de son travail serait\nconfrontée à moins d’obstacles pour prendre un congé, changer d’emploi\nou simplement ne plus travailler.\n\nCependant, ce n’est finalement **pas uniquement l’argent** qui nous\npousse à travailler. C’est pourquoi le problème de l’insatisfaction ou\nde la maladie ne peut pas simplement être résolu grâce à l’argent. Il se\npourrait que cela constitue même un regain de **stress** plutôt qu’une\ndiminution de ce dernier. Le cas échéant, nous n’avons plus la\nsatisfaction de gagner chaque mois nous-mêmes de l’argent et ainsi\nd’être indépendants. Partons du principe que le revenu de base entre\ndans les mœurs et que nous travaillions tous bénévolement. Faire\ncarrière, se rendre utile et se prouver à soi-même et aux autres que\nnotre travail a de l’importance devient une pression qui va en\naugmentant. Cela peut s’avérer épuisant et être **source de\nFrustration**."
+      },
+      "it": {
+        "label": "Con il reddito di base diminuiranno le persone scontente della loro situazione professionale o che soffrono di malattie riconducibili al lavoro? ",
+        "minLabel": "Sì",
+        "maxLabel": "No, al contrario",
+        "info": "Molte persone soffrono oggi di malattie riconducibili alla loro attività lucrativa. Queste provocano sofferenza individuale ma generano anche costi alla collettività. \n\nIl reddito di base potrebbe migliorare tale situazione. Una persona il cui lavoro arrecasse problemi di salute avrebbe meno ostacoli per chiedere un’aspettativa, cambiare lavoro o smettere per un periodo di lavorare. \n\nMa non sono solo i soldi che ci spingono a lavorare. Per questo motivo i problemi dell’insoddisfazione e della malattia legati al lavoro non possono essere risolti ricorrendo semplicemente al denaro. Lo stress potrebbe aumentare, anziché diminuire. Potremmo perdere il senso di soddisfazione di guadagnare ogni mese il nostro stipendio, e quindi di essere indipendenti. Presupponiamo che vivere del reddito di base sia socialmente accettato e che lavorassimo tutti volontariamente. Crescerebbe così la pressione di realizzarsi col proprio lavoro, di trovarci un senso e di dimostrare a noi stessi e agli altri che il nostro lavoro ci diverte ed è per noi importante, il che può rivelarsi molto faticoso e frustrante. \n"
+      }
+    }
+  },
+  {
+    "index": 16,
+    "cluster": "e",
+    "topic": "Staat",
+    "hrid": "Markt",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Der Arbeitsmarkt regelt Angebot und Nachfrage nach Arbeit. Mit dem Grundeinkommen gibt es mehr Entscheidungsfreiheit, nicht an diesem Markt teilzunehmen. Kommt das gut? ",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Wenn man sich eine Welt mit bedingungslosem Grundeinkommen denkt, muss\nman sich fragen: Würde noch genug und **das Richtige produziert**\nwerden, um unsere Bedürfnisse zu befriedigen? Dabei ist es wichtig, dass\ngenug Menschen arbeiten. Und dass diese etwas herstellen, was auch\nwirklich nachgefragt wird.\n\nHeute müssen die meisten Menschen ihre Arbeit für Geld verkaufen. Dies\ntun sie im Rahmen der Märkte. Durch die Marktmechanismen entstehen die\nPreise für eine Arbeit. Wenn niemand bereit ist, für eine Arbeit, sei es\nin Form einer Dienstleistung oder eines Produktes, zu bezahlen, dann\nwird diese nicht ausgeführt. Nach diesem Angebot-Nachfrage-Prinzip\nentscheidet sich, was gearbeitet wird und was nicht.\n\nZudem gibt es auch Güter, die auf einem unregulierten Markt nicht\nbezahlbar wären – zum Beipsiel Kultur, Bildung, Stromversorgung. Dies\nwird dann über staatliche Töpfe finanziert. Da entscheidet nicht das\nklassische Angebots-Nachfrage-Prizip darüber, ob ein Projekt realisiert\nwird, sondern die Demokratie.\n\nDurch das bedingungslose Grundeinkommen hätten die Meschen die Wahl,\nnicht an diesem Markt teilzunehmen. Sie könnten ihr ganzes Leben lang\narbeiten, ohne für ihre Arbeit Geld zu verlangen – denn leben können sie\nja vom Grundeinkommen – und sind so **weder auf das Feedback des\nMarktes, noch auf das der Demokratie angewiesen**.\n\nDazu drei möglich Haltungen:\n\n-   Die herrschenden Bedingungen führen zu **schlechten\n    Produktionsverhältnissen und absurden Produkten**. Darum ist es gut,\n    wenn wir die Möglichkeit haben, nicht am Arbeitsmarkt teilzunehmen.\n\n-   Dadurch, dass die Menschen nicht mehr am Arbeitsmarkt teilnehmen\n    müssen, sondern können, **fällt eine grosse Verzerrung weg** und er\n    wird besser funktionierten.\n\n-   Es ist schlecht, wenn die Menschen nicht am Markt teilnehmen müssen.\n    Sie werden zwar weiterhin arbeiten, es ist jedoch unmöglich für den\n    einzelnen abzuschätzen, was jemand anderes braucht. Die Menschen\n    werden **an den Bedürfnissen vorbei arbeiten**."
+      },
+      "fr": {
+        "label": "Le marché du travail régule l’offre et la demande selon le travail. Le revenu de base offre davantage la liberté de choisir de ne pas participer à ce marché. Est-ce viable?\n",
+        "minLabel": "Oui",
+        "maxLabel": "Non ",
+        "info": "Lorsqu’on imagine un monde avec le revenu de base inconditionnel, on\ndoit se poser cette question : La production serait-elle encore\nsuffisante et produirait-on ce dont on a besoin ? Il est important qu’un\nnombre suffisant de personnes travaille et que leur production réponde\nréellement à la demande.\n\nAujourd’hui, la plupart des gens doivent vendre leur travail pour de\nl’argent. Ils agissent ainsi dans le cadre de marchés. Le prix d’un\ntravail découle des mécanismes du marché. Si personne n’est prêt à payer\npour un travail, qu’il s’agisse d’un service ou d’un produit, alors ce\ntravail n’est pas effectué. C’est selon ce principe de l’offre et de la\ndemande que l’on décide si un travail sera mis en œuvre ou non.\n\nDe plus, sur un marché qui n’est pas régulé, certaines marchandises ne\npeuvent tout simplement pas être payées – par exemple la culture, la\nformation ou l’alimentation en électricité. Dans ce cas, elles doivent\nêtre financées pas les caisses de l’État. Ce n’est plus le principe\nclassique de l’offre et de la demande qui décide si un projet doit être\nréalisé ou non, mais la démocratie.\n\nGrâce au revenu de base, les gens auraient le choix de ne pas prendre\npart au marché. Ils pourraient travailler toute leur vie sans exiger\nd’argent en échange – puisqu’ils peuvent vivre du revenu de base – et\nils ne dépendraient ni des réactions du marché, ni de la démocratie.\n\nTrois attitudes sont possibles :\n\n-   Les conditions conduisent à une mauvaise production et à des\n    produits absurdes. Avoir le choix de ne pas participer au marché du\n    travail est ainsi une bonne chose.\n-   Du fait que les gens ne soient plus contraints à prendre part au\n    marché du travail, une grande distorsion est supprimée et ce dernier\n    fonctionnera mieux.\n-   Il ne s’agit pas d’une bonne chose que les gens ne soient plus\n    contraints à prendre part au marché du travail. Bien qu’ils\n    continuent à travailler, il est impossible pour eux d’évaluer les\n    besoins des autres et ils passent à côté de ces besoins."
+      },
+      "it": {
+        "label": "Il mercato del lavoro regola la propria domanda e offerta. Con il reddito di base aumenta la libertà di poter scegliere di non partecipare a tale mercato… potrà funzionare? \n",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Immaginando un mondo con il reddito di base incondizionato ci si deve chiedere: si continuerebbe a produrre i beni necessari per soddisfare i nostri bisogni? Per fare ciò è indispensabile che sufficienti persone continuino a lavorare e che soddisfino la reale domanda. \nOggi la maggior parte delle persone è costretta a vendere la proprio forza lavoro per denaro nell’ambito dei mercati. I meccanismi di mercato stabiliscono i prezzi per un lavoro. Se non c’è nessuno disposto a pagare per un bene, sia esso un prodotto o un servizio, non viene realizzato. Questo principio dell’offerta e della domanda stabilisce cosa viene prodotto. \nEsistono inoltre beni che non saremmo in grado di pagare su un mercato non regolato – per esempio la cultura, la formazione, l’approvvigionamento energetico. Questi sono finanziati da fondi statali e non è il classico principio di domanda e offerta che decide se un progetto sarà realizzato, ma la democrazia. \nGrazie al reddito di base incondizionato le persone avrebbero la possibilità di scegliere di non partecipare al mercato. Potrebbero lavorare tutta la vita senza chiedere uno stipendio – perché potrebbero vivere del reddito di base – non dipendendo così né dal feedback dei mercati né da quello della democrazia. \n\nTre posizioni possibili:\n\nLe attuali premesse di produzione conducono a cattive condizioni di produzione che generano prodotti assurdi. \nNon essendo più un obbligo ma una scelta per le persone partecipare al mercato del lavoro, ciò diminuirebbe la sua distorsione e migliorerebbe il suo funzionamento. \nIl fatto che le persone non debbano partecipare al mercato è negativo. Continuerebbero a lavorare ma diventerebbe impossibile per il singolo valutare le necessità altrui. La produzione non soddisferebbe più i reali bisogni.  "
+      }
+    }
+  },
+  {
+    "index": 17,
+    "cluster": "g",
+    "topic": "Staat",
+    "hrid": "Revolution",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Das bedingungslose Grundeinkommen verändert die Ausgangslage für Sozialstaat-Reformen. Es wird...",
+        "minLabel": "Besser",
+        "maxLabel": "Schlechter",
+        "info": "Diese Frage hat gar nicht nur mit der Idee des bedingungslosen\nGrundeinkommens an und für sich zu tun. Sondern es geht darum, welche\nanderen politischen Entwicklungen ausgelöst oder verhindert werden. Die\nDebatte um den Sozialstaat ist festgefahren, die Fronten zwischen denen,\ndie mehr Sozialstaat fordern und denen, die diesen abbauen wollen, sind\nverhärtet.\n\nDie einen haben **Angst vor einem Abbau des Sozialstaates** durch die\nEinführung des Grundeinkommens. Sie befürchten, dass mit einem Verweis\nauf das existenzsichernde Grundeinkommen weitergehende\nUnterstützungsleistungen gestrichen werden könnten und sich die\nSituation von vielen vom Staat abhängiger Menschen verschlechtern würde.\nDies könnte Subeventionen für Krippenplätze betreffen oder auch einfach\nnur jetzt noch kostenlose Beratungsleistungen der Sozialämter.\n\nAndere lehnen das Grundeinkommen von Anfang an ab, weil sie in ihm vor\nallem einen **massiven Ausbau des Sozialastaates sehen**.\n\nFakt ist, dass im Moment des Entscheides zur Einführung des\nbedingungslosen Grundeinkommen gar nichts ab- oder ausgebaut wird. Wie\ndie sozialstaatlichen Einrichtungen in einer Schweiz mit Grundeinkommen\nausgestaltet sein werden, wird Gegenstand einer jahrelangen politischen\nDiskussion sein und sehr wahrscheinlich wird auch der eine oder andere\nVolksentscheid notwendig sein.\n"
+      },
+      "fr": {
+        "label": "Le revenu de base inconditionnel change la donne en ce qui concerne la réforme de l'État social. Avec ce changement, la situation... ",
+        "minLabel": "S'améliore",
+        "maxLabel": "Se péjore",
+        "info": "Cette question ne concerne pas uniquement l’idée du revenu de base en\ntant que telle. Il s’agit de savoir quels autres développements\npolitiques seront initiés ou évités.\n\nLes débats sur l'État social sont dans l’impasse. Les fronts – ceux qui\nveulent renforcer l'État social et ceux qui veulent son démantèlement -\nrestent sur leurs positions.\n\nLes uns craignent que l’introduction du revenu de base signe la fin de\nl'État social: les prestations de soutien supplémentaires pourraient\nêtre supprimées et la situation de nombreuses personnes qui dépendent de\nl'État pourrait se détériorer. Cela pourrait par exemple concerner les\nplaces de crèche subventionnées ou les prestations de conseil des\noffices sociaux, aujourd’hui gratuites.\n\nLes autres rejettent le revenu de base dès le départ car ils y voient un\ndéveloppement massif de l'État social.\n\nFait est qu’au moment où l’on décidera de l’introduction du revenu de\nbase inconditionnel rien ne sera ni supprimé, ni renforcé. La manière\ndont les services sociaux seront structurés dans une Suisse avec un\nrevenu de base sera l’objet d’un débat politique de plusieurs années et\nle peuple devra certainement se prononcer encore une fois."
+      },
+      "it": {
+        "label": "Il reddito di base incondizionato modifica le premesse per le riforme dello stato sociale. Con questa modifica...",
+        "minLabel": "Sarà meglio",
+        "maxLabel": "Sarà peggio",
+        "info": "Questa domanda di per sé non c’entra con il reddito di base incondizionato. Si tratta piuttosto di capire le possibili evoluzioni politiche che potrebbero scaturirne o esserne ostacolate. \n\nIl dibattito sullo stato sociale si è arenato a causa dell’irrigidimento delle posizioni di chi esige maggiori prestazioni sociali e di chi invece ne invoca lo snellimento.\n\nGli uni temono una riduzione delle prestazioni sociali a causa dell’introduzione del reddito di base, avanzando la preoccupazione che un rimando a un reddito di base in grado di assicurare l’esistenza possa comportare l’eliminazione di ulteriori prestazioni e di conseguenza peggiorare la situazione di molte persone che dipendono dallo Stato. \n\nAltri rifiutano categoricamente il reddito di base, vedendolo come un’ingente estensione delle prestazioni sociali. \n\nFatto sta che al momento della decisione sull’introduzione del reddito di base incondizionato non verrà esteso o ridotto nulla. L'organizzazione delle strutture che assicurano le prestazioni sociali in una Svizzera con il reddito di base sarà oggetto di discussioni politiche annose che renderanno probabilmente necessarie diverse consultazioni popolari.  "
+      }
+    }
+  },
+  {
+    "index": 18,
+    "cluster": "f",
+    "topic": "Gesellschaft",
+    "hrid": "Alle",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "In einer arbeitsteiligen Gesellschaft gibt es keine Selbstversorger. Heute lebt keiner mehr direkt von den Früchten seiner Arbeit.  Passt das Grundeinkommen zu dieser Entwicklung?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Viele Menschen glauben, dass sie unabhängig sind, weil sie mit dem\nLohnihrer Arbeit die notwendigen Dinge zum Leben kaufen können. Nun kann\nman behaupten, dies sei eine Illusion.\n\nDie Schweiz ist wohlhabend, weil die allgemeine **Arbeitsproduktivität**\nhoch ist. Zentrales Element dafür ist die hohe **Arbeitsteilung**. Jede\nund jeder macht in seiner Arbeit einen spezifischen Arbeitsschritt. Am\nEnde sind an der Produktion einer Tomate Tausende indirekt beteiligt:\nDie Mechanikerin, die den Traktor flickt. Der Programmierer der Software\nfür die Arbeitszeitenerfassung der Ölraffinerie in Saudiarabien, die das\nBenzin für das Auto des Bauerns liefert. Die Kleinkindererzieherin, die\nwährend der Ernte auf den Sohn der Bäuerin aufgepasst hat. Nun werden\ndiese alle auch am Erlös aus dem Verkauf der Tomate beteiligt. Was ist\naber mit dem Nachbarn, der kurzfristig eingesprungen ist, als die\nBäuerin ihre kranke Mutter besuchte? Und der Autor des Buches, das den\nBauer dazu inspirierte, Tomaten zu pflanzen? Und die Kinder im Dorf, die\nso schön singen, dass die Mechanikerin für einmal all ihre Sorgen\nvergessen kann und nicht in einer Depression versinkt, sodass sie\nweiterhin Traktoren flicken kann?\n\nNun kann man argumentieren, dass alles mit allem zusammenhängt. Und alle\ntragen etwas bei. Aber am Ende haben die einen ganz viel Geld auf ihrem\nKonto und andere gar keines. Nur **unabhängig** ist bestimmt niemand. Es\nist in unserer komplexen Welt unmöglich, einen fairen oder richtigen\nVerteilschlüssel für das Einkommen zu finden. Oder zu messen, wer\neffektiv wie viel zu etwas beigetragen hat.\n\nDas bedingungslose Grundeinkommen würde diesem Umstand teilweise gerecht\nwerden. Denn das Grundeinkommen macht den Teil des Einkommens, den man\nunbedingt zum Leben braucht, bedingungslos.\n\nDagegen kann man einwenden, dass es sehr wohl ein Intrument gibt, das\nmisst, wer wie viel zu etwas beigetragen hat: Der **Markt** und das\n**Geld**. Ein Arbeit ist genau so viel wert, wie jemand anders bereit\nist, dafür zu bezahlen. Es ist unbestreitbar, dass es Externalitäten\ngibt: Das sind Auswirkungen, für die niemand bezahlt oder einen\nAusgleich erhält. Es stellte sich hier die Frage, wie diese\nExternalitäten vermindert werden können, anstatt einfach Geld zu verteilen."
+      },
+      "fr": {
+        "label": "Dans une société basée sur la division du travail, il n’y a pas de personnes autosuffisantes. Aujourd’hui, plus personne ne vit directement des fruits de son travail. Le revenu de base est-il compatible avec cette évolution ? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "Nombreux sont ceux qui pensent être indépendants car ils achètent ce\ndont ils ont besoin pour vivre avec leur salaire. On pourrait cependant\nsoutenir qu’il s’agit d’une illusion.\n\nLa Suisse est un pays riche car la productivité du travail est élevée en\ngénéral. Dans le cadre de son emploi, chacun effectue une tâche\nspécifique. Au final, de nombreuses personnes participent indirectement\nà la production d’une tomate : Le mécanicien qui répare le tracteur. Le\nprogrammateur du logiciel pour la saisie des temps de travail dans la\nraffinerie de pétrole en Arabie saoudite qui fournit l’essence pour la\nvoiture de l’agriculteur. L’éducatrice de la petite enfance qui s’est\noccupée du fils de l’agricultrice durant la récolte. Et ils seront\négalement tous impliqués dans le produit de la vente de la tomate. Qu’en\nest-il du voisin qui a remplacé l’agricultrice au dernier moment alors\nqu’elle visitait sa mère malade ? Et l’auteur du livre qui a poussé\nl’agriculteur à cultiver des tomates ? Et les enfants du village, qui,\ngrâce à leurs chants, permettent au mécanicien d’oublier ses soucis et\nde ne pas tomber dans la dépression, ce qui lui permet de réparer le\ntracteur ?\n\nOn peut donc argumenter que tout est lié à tout. Et tous y participent.\nMais, au final, certains ont beaucoup d’argent sur leur compte en\nbanque, tandis que d’autres n’ont pas un sous. La seule certitude est\nque personne n’est indépendant.\n\nDans le monde complexe où nous vivons, il est impossible de trouver une\nclé de répartition du revenu qui soit équitable ou juste. Ou de mesurer\nà quelle hauteur chacun a effectivement participé à une tâche.\n\nEn rendant la part de revenu nécessaire pour subvenir aux besoins de\nchacun inconditionnelle, le revenu de base permettrait en partie de\nprendre en compte cette situation.\n\nOn peut objecter qu’il existe un instrument permettant de mesurer\nl’importance de la contribution de chacun: le marché et l’argent. La\nvaleur d’un travail correspond à la somme que quelqu’un est prêt à payer\npour ce même travail. Il existe indiscutablement des facteurs extérieurs\nqui ont une incidence et pour lesquels personne ne paie ou n’est payé.\nLa question qui ce pose ici est donc la suivante : comment réduire ces\nfacteurs extérieurs sans pour autant distribuer de l’argent?"
+      },
+      "it": {
+        "label": "In una società della divisione del lavoro l’autosostentamento non è possibile: nessuno oggi vive solo dei frutti del suo lavoro: il reddito di base si adatta a questa evoluzione?",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Molte persone credono di essere indipendenti perché sono in grado di acquistare quanto necessario per vivere con il loro salario. Si può però sostenere che si tratti di un’illusione. \n\nIl benessere della Svizzera è determinato dall’alto livello di produzione che poggia sull’elevata divisione del lavoro. Ognuno è responsabile per uno specifico processo produttivo. Nella produzione di un pomodoro sono indirettamente coinvolte migliaia di persone: il meccanico che ripara il trattore; il programmatore del software che registra le ore di lavoro degli impiegati della raffineria petrolifera in Arabia Saudita che fornisce la benzina per la macchina del contadino; la tata che ha accudito il figlio della contadina nel periodo della raccolta. Ed è così che sono tutti legati al ricavato del pomodoro. Ma cosa ne è del vicino che ha sostituito la contadina mentre andava a trovare la madre malata? E dell’autore del libro che ha ispirato il contadino a coltivare pomodori? E dei bambini del paese che con le loro belle canzoni fanno dimenticare per un istante le preoccupazioni al meccanico, strappandolo alla depressione e permettendogli così di continuare a riparare trattori?\n\nSi può dunque avanzare l’argomento secondo cui tutto è collegato e tutti sono partecipi. Ma alla fine c’è chi si ritrova con un’importante somma di denaro sul conto e chi invece non ne ricava nulla. Certo è che nessuno è indipendente. \n\nIn questo nostro mondo complesso è impossibile stabilire una chiave di ripartizione equa per il reddito o di misurare chi e in che misura ha contribuito a qualcosa. \n\nIl reddito di base incondizionato renderebbe parzialmente conto di questa situazione sancendo che la parte di reddito indispensabile per vivere è, per l’appunto, incondizionata. \n\nCi si può opporre dicendo che invece esiste uno strumento che misura chi e quanto ha contribuito a qualcosa: il mercato e il denaro. Un lavoro vale esattamente quanto qualcuno è disposto a pagarlo. È innegabile che esistano fattori esterni per i cui effetti nessuno paga o riceve una compensazione. Si porrebbe quindi la questione sul come questi fattori potrebbero essere attenuati senza per questo distribuire denaro. "
+      }
+    }
+  },
+  {
+    "index": 19,
+    "cluster": "e",
+    "topic": "Staat",
+    "hrid": "Schweiz",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": -0.5,
+    "step": 0.1,
+    "start": 0,
+    "isOneSided": false,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Soll die Schweiz eine Vorreiterrolle in der Welt einnehmen, indem sie unerprobte Wege geht?",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Zurzeit werden ähnliche Ideen wie das bedingungslose Grundeinkommen in\nverschiedenen Ländern getestet. Finnlands Regierung arbeitet an einem\nVersuch mit einem Grundeinkommen von 800 Euro. In Holland läuft ein\nExperiment mit einer handvoll Probanden. Das bedingungslose\nGrundeinkommen ist also durchaus ein Konzept, das aktuell internationale\nBeachtung findet.\n\nEs gibt immer wieder grosse Gesellschaftliche Veränderungen und irgendwo\nwerden diese Ideen zuerst umgesetzt. Das beste Beispiel ist vielleicht\ndie AHV: Es war Deutschland, das 1889 die damals neue und radikale Idee\neiner flächendeckenden Rente einführte. Danach zogen die meisten\neuropäischen Staaten und die USA nach.\n\nMan kann argumentieren, dass die Schweiz als reiches und demokratisches\nLand in einer sehr guten Position ist, um fortschrittliche Ideen\numzusetzen und zu testen. Die Schweiz kann es sich leisten, mit\n**internationalen Trends voranzugehen**.\n\nDagegen kann man sagen, dass sich das differenzierte und bedarfsgerechte\nSystem der Sozialleistungen in der Schweiz bewährt hat. Wir sind so\nwohlhabend und demokratisch, weil wir **Bewährtes nicht leichtfertig\naufgeben**. Eine Vorreiterrolle ist kein Wert für sich. Oder: Wir warten\nnoch ein bisschen bis eine radikalere und **bessere Idee** als das\nGrundeinkommen auftaucht, um unsere Fortschrittlichkeit unter Beweis zu\nStellen."
+      },
+      "fr": {
+        "label": "La Suisse doit-elle jouer un rôle précurseur à l’échelle mondiale en empruntant une voie encore inconnue ? ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "En ce moment, des idées similaires à celle du revenu de base\ninconditionnel sont en phase d’essai dans différents pays. Le\ngouvernement finlandais travaille à une tentative avec un revenu de base\nde 800 euros. Aux Pays-Bas, une expérience est en cours avec quelques\nparticipants. Le revenu de base est un concept qui retient actuellement\nl’attention internationale.\n\nLa société change constamment et les nouvelles idées doivent bien\ncommencer par être mises en œuvre quelque part. L’AVS est peut-être le\nmeilleur exemple : C’est l’Allemagne qui a introduit un rente de\nvieillesse généralisée en 1889. Une idée nouvelle et révolutionnaire à\nl’époque, qui a par la suite été reprise par la plupart des États\neuropéens et les USA.\n\nOn peut argumenter que la Suisse, en tant que pays riche et\ndémocratique, est bien placée pour mettre en œuvre et tester des idées\navant-gardistes. La Suisse peut se permettre de devancer les tendances\ninternationales.\n\nA contrario, on peut affirmer qu’en Suisse le système de prestations\nsociales différencié et adapté aux besoins est éprouvé. Nous devons\nnotre richesse et notre système démocratique au fait que nous ne\nrenonçons pas inconsidérément à ce qui a fait ses preuves. Jouer le rôle\nde pionnier n’est pas une valeur en soi. Ou : Attendons encore un peu\nqu’une **meilleure idée** encore plus révolutionnaire que celle du\nrevenu de base émerge pour prouver notre progressivité."
+      },
+      "it": {
+        "label": "La Svizzera dovrebbe assumere un ruolo pionieristico a livello mondiale affrontando soluzioni inedite? ",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "Attualmente idee simili al reddito di base incondizionato vengono sperimentate in diversi paesi. Il governo finlandese lavora a un progetto pilota che prevede un reddito di base di 800 euro. Nei Paesi Bassi è in corso un test che coinvolge una manciata di persone. Il reddito di base incondizionato è dunque un concetto che al momento trova risonanza internazionale.   \n\nLe società sono regolarmente interessate da importanti cambiamenti che richiedono nuove idee che qualcuno deve attuare per primo. L’esempio migliore è forse l’AVS: è stata la Germania a introdurre nel 1889 la allora nuova e radicale idea di una rendita estesa a tutta la popolazione. In seguito l’esempio è stato seguito dalla maggioranza degli Stati europei e dagli Stati Uniti d’America. \n\nSi può avanzare l’argomento secondo cui la Svizzera quale paese benestante e democratico si trovi in un’ottima posizione per realizzare e sperimentare idee progressiste. La Svizzera si può permettere un ruolo pioneristico nei confronti delle tendenze internazionali. \n\nSi può controbattere dicendo che il sistema svizzero delle prestazioni sociali differenziate e adeguate al fabbisogno si è rivelato efficace. Siamo benestanti e democratici perché non abbandoniamo facilmente modelli di funzionamento comprovati. Un ruolo pioneristico non è di per sé un valore. Oppure: aspettiamo ancora un po’ fino a quando non emerga un’idea più radicale e migliore del reddito di base per mettere alla prova la nostra capacità di progresso. "
+      }
+    }
+  },
+  {
+    "index": 20,
+    "cluster": "d",
+    "topic": "Staat",
+    "hrid": "Demokratie",
+    "optional": true,
+    "type": "scale",
+    "min": 0.5,
+    "max": 0,
+    "step": 0.05,
+    "start": 0,
+    "isOneSided": true,
+    "isOnlyNegative": false,
+    "isLeftPositiv": true,
+    "languages": {
+      "de": {
+        "label": "Die Demokratie wird gestärkt, weil die Menschen mehr Zeit dafür haben.",
+        "minLabel": "Ja",
+        "maxLabel": "Nein ",
+        "info": "Politisches Engagement braucht viel Zeit – vom gut informierten\nAbstimmen über das Sammeln von Unterschriften bis hin zum Kandidieren\nfür ein Parlament. Um die politischen Pflichten und Rechte ernst zu\nnehmen, braucht man Zeit. Ein bedingungsloses Grundeinkommen könnte zur\n**Chancengleichheit in der Politik** beitragen. Heute gibt es Menschen,\ndie es sich leisten können, grössere politische Verantwortung zu\nübernehmen und sich zum Beispiel in einer Partei einzubringen und\nsolche, die dies nicht können, weil sie von morgens bis abends Geld\nverdienen müssen."
+      },
+      "fr": {
+        "label": "La démocratie sera renforcée, car les gens auront plus de temps à y consacrer. ",
+        "minLabel": "Oui",
+        "maxLabel": "Non",
+        "info": "L’engagement politique prend beaucoup de temps – d’une votation bien\ninformée, aux candidats pour un Parlement, en passant par la récolte des\nsignatures. Prendre au sérieux les devoirs et les droits politiques\ndemande du temps. Le revenu de base pourrait contribuer à l’égalité des\nchances en politique. Aujourd’hui, certaines personnes peuvent se\npermettre d’assumer des responsabilités politiques et de s’engager dans\nun parti politique, par exemple. D’autres n’ont pas cette possibilité,\ncar elles sont contraintes à gagner de l’argent du matin jusqu’au soir."
+      },
+      "it": {
+        "label": "La democrazia si rafforza perché le persone hanno più tempo da dedicarvi.",
+        "minLabel": "Sì",
+        "maxLabel": "No",
+        "info": "L’impegno politico richiede molto tempo – dal voto con cognizione alla raccolta di firme fino alla candidatura al parlamento. Per affrontare seriamente i doveri e i diritti politici serve tempo. Un reddito di base incondizionato potrebbe contribuire alle pari opportunità in politica. Oggi ci sono persone che si possono permettere di assumersi maggiori responsabilità politiche e per esempio entrare a far parte di un partito e altre che non lo possono fare perché costrette a lavorare dalla mattina alla sera per sbarcare il lunario.  "
+      }
+    }
+  }
+]

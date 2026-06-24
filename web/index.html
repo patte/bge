@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>bedingungsloses Grundeinkommen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="/favicon.png" />
+  </head>
+  <body>
+    <!-- Mirrors the original smartervote.html structure -->
+    <!-- d3 v3 (force layout). Classic script so its UMD gets a real global `this`. -->
+    <script src="/vendor/d3.v3.min.js"></script>
+
+    <div id="smartervote">
+      <div id="app-header">
+        <img src="/img/sv-logo-horizontal.svg" alt="smartervote" />
+        <nav class="languages"></nav>
+      </div>
+
+      <div id="bubbles-container"></div>
+
+      <button type="button" id="mobile-content-toggle" class="mobile-content-toggle">
+        <span class="icon-eye"></span>
+      </button>
+
+      <div id="content"></div>
+
+      <div id="score-gauge" style="bottom: 50%"><span>50%</span></div>
+
+      <div id="smartervote-modal" tabindex="-1" aria-role="dialog" aria-labelledby="modalLabel"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

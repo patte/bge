@@ -1,0 +1,123 @@
+/* Entry stylesheet for the static smartervote build.
+   Pulls in the original app's smartervote + slider styles verbatim, plus the
+   few bootstrap variables/classes those styles relied on (the full bootstrap
+   was only needed by the now-removed pages). */
+
+/* --- bootstrap breakpoint variables the original .less files reference --- */
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+@text-color: #333;
+
+@import 'webfonts.less';
+@import 'variables.less';
+@import 'slider.less';
+@import 'smartervote.less';
+
+/* --- base (from the original style.less, trimmed to the smartervote view) --- */
+html {
+  height: 99.9%;
+}
+body {
+  min-height: 99.9%;
+  margin: 0;
+  overflow-x: hidden;
+  background: white;
+  color: black;
+  font-family: 'SabonLTStd-Roman', serif;
+  line-height: @line-height-default;
+}
+
+/* --- minimal bootstrap shims used by the smartervote markup --- */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-image: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn-default,
+.btn-danger {
+  color: #333;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: ' ';
+}
+.clearfix:after {
+  clear: both;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* inline "eye" icon replacing the original Font Awesome fa-eye */
+.icon-eye {
+  display: inline-block;
+  width: 1.2em;
+  height: 1em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'><path fill='black' d='M288 32c-80 0-145 49-192 96C49 175 16 224 16 256s33 81 80 128c47 47 112 96 192 96s145-49 192-96c47-47 80-96 80-128s-33-81-80-128c-47-47-112-96-192-96zm0 320a96 96 0 110-192 96 96 0 010 192z'/></svg>");
+}
+
+/* share buttons in the evaluation panel (icon links) */
+.sharing {
+  .url-copy,
+  .img-download {
+    color: white;
+    svg {
+      display: block;
+      width: 2.2rem;
+      height: 2.2rem;
+      margin: 0.9rem auto;
+    }
+  }
+}
