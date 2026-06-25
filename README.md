@@ -1,12 +1,25 @@
 # bedingungslos.ch — archive
 
-Static archive of **bedingungslos.ch**, the *smartervote* basic-income quiz built
-in 2016 for the Swiss popular initiative
-*«Für ein bedingungsloses Grundeinkommen»*.
+Repository for the *smartervote* basic-income quiz by [bedingungslos.ch](https://bedingungslos.ch), built for the 2016 Swiss popular initiative *«Für ein bedingungsloses Grundeinkommen»*.
 
-Answer 21 questions on the unconditional basic income (de / fr / it); your answers
-become coloured D3 "bubbles" sized and placed by how you answered, with a live
-"% pro" gauge and a per-topic evaluation.
+Answer 21 questions and find out where you stand on universal basic income!
+
+> This archives **only the smartervote quiz** — the interactive game. The
+> original bedingungslos.ch was a much larger Meteor site (blog, news, etc);
+> those server-backed parts are not part of this static archive (see
+> [The original (Meteor) app](#the-original-meteor-app) and
+> [What changed vs the original](#what-changed-vs-the-original)).
+
+## Features
+
+- **21 questions** on the unconditional basic income, in **German, French and Italian**
+- For each, pick a **side** (pro / contra) and how **important** it is to you
+- Your answers grow into coloured **bubbles** — a D3 force layout, sized by
+  importance and placed by your stance — with a live **"% pro"** gauge
+- An **evaluation** with your overall score and a **per-topic** breakdown
+- **Share** your result via a link (answers are encoded in the URL — no server)
+- **Download** your bubble picture as a PNG
+- Runs entirely in the browser: **no backend, no tracking**, answers stay on your device
 
 ## Repository layout
 
@@ -24,7 +37,7 @@ The site was originally a **Meteor 1.2 + CoffeeScript + Blaze + MongoDB** app.
 That source — together with its fly.io / MongoDB deployment config (`app/`,
 `mongo/`) — lives on the
 **[`legacy-meteor`](https://github.com/patte/bge/tree/legacy-meteor)** branch
-(pinned by the **`v1-meteor`** tag). It is the baseline `visual-tests/` compares
+(pinned by the **`v1-meteor`** tag). It is the baseline `visual-tests/` compared
 against, and can still be rebuilt/redeployed from there via `app/Dockerfile`.
 
 ## Quickstart (the static app)
@@ -36,11 +49,33 @@ pnpm dev         # http://localhost:5173
 pnpm build       # -> web/dist (static files, ready to host)
 ```
 
-The 21 questions (de/fr/it) are baked from the original `questions.csv` into JSON
-at build time — there is no backend. Answers are kept in `localStorage`; sharing
-encodes the full answer set into the URL hash. See [`web/README.md`](web/README.md)
-for the porting details and what was removed (accounts, admin, blog, server image
-upload, …).
+`pnpm build` bakes the questions and emits `web/dist`. `cd web && pnpm bake`
+regenerates `src/data/questions.json` from `src/data/questions.csv` on its own;
+`pnpm preview` serves the built `dist/`.
+
+## What changed vs the original
+
+- **Out of scope.** This port covers the *smartervote game* only. The rest of
+  the bedingungslos.ch site — blog, news, newsletter signup, etc. —
+  was never part of the game and was deliberately not ported.
+- **No backend.** The 21 questions (de/fr/it) are baked from `web/src/data/questions.csv` — a copy of the original app's questions.csv, committed here so the build is self-contained — into `src/data/questions.json` (`web/scripts/bake-questions.mjs`).
+- **Persistence → localStorage.** Your answers are kept in the browser (the old
+  per-browser "visit").
+- **Sharing → URL.** "Share" encodes all answers into the URL hash (`#s=…`); the
+  recipient's static page reconstructs the bubbles. No server, no DB.
+- **Image download.** The bubble image is rendered to a PNG client-side.
+- **Removed** (the game's own server-backed bits): accounts, admin, the
+  "compare with other people" panel, server-side image upload, Piwik analytics,
+  the tutorial.
+
+The D3 engine (`web/src/lib/network.js`) and the bubble state machine
+(`web/src/smartervote/engine.js`) are faithful ports of the original
+`network.coffee` / `smartervote.coffee`; the original LESS styles and assets are
+reused verbatim. d3 v3 is loaded as a classic `<script>` (`web/public/vendor/`)
+because its UMD wrapper needs a non-strict global `this`.
+
+This port — the `web/` rebuild and the `visual-tests/` parity harness — was done
+by **Claude** (Anthropic).
 
 ## Verify against the original
 
