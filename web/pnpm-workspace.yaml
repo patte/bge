@@ -1,2 +1,4 @@
-allowBuilds:
-  esbuild: true
+# Allow esbuild (a Vite dependency) to run its install script so its native
+# binary is fetched; pnpm 10+ blocks dependency build scripts by default.
+onlyBuiltDependencies:
+  - esbuild

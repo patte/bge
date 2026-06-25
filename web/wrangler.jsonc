@@ -1,0 +1,14 @@
+{
+  // Assets-only Worker: serves the static Vite build in ./dist.
+  // No Worker script (`main`) is needed for a purely static site.
+  // `name` must match the Worker in the Cloudflare dashboard.
+  "name": "bge",
+  "compatibility_date": "2026-06-25",
+  "assets": {
+    // Relative to this file (root directory = web/), i.e. web/dist.
+    "directory": "./dist"
+    // Default not_found_handling (404): the real pages /, /fr/, /it/ are
+    // served from files; genuine misses return 404 (correct for SEO).
+    // Routing is hash-based (#s=…), so no SPA fallback is required.
+  }
+}
