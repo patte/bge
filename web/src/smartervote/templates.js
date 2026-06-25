@@ -184,7 +184,7 @@ Danach kannst du dein Bild ~~über Facebook, Twitter oder~~ per Mail mit Freunde
 
 # Impressum
 
-Idee und Konzept: Patrick Recher, Clara Vuillemin – [bge@patpat.org](mailto:bge@patpat.org) (PGP ID: 342DD599)
+Idee und Konzept: Patrick Recher, Clara Vuillemin – [bge@patpat.org](mailto:bge@patpat.org) (PGP ID: [458c7704](https://mail-api.proton.me/pks/lookup?op=get&search=bge@patpat.org) ProtonMail)
 
 Inhaltliche Umsetzung und Projektleitung: Clara Vuillemin
 
@@ -199,17 +199,20 @@ Produktion: Daniel Straub, Christian Müller – [info@bedingungslos.ch](mailto:
 
 # Daten und Technisches
 
-Wir speichern sämtliche Antworten ~~und Daten zu den Benutzerinteraktionen auf der Website~~. ~~Zur Analyse des Surf-Verhaltens verwenden wir kein Google Analytics sondern die open-source Lösung [PIWIK](http://piwik.org/).~~
+
+
+~~Wir speichern sämtliche Antworten und Daten zu den Benutzerinteraktionen auf der Website. Zur Analyse des Surf-Verhaltens verwenden wir kein Google Analytics sondern die open-source Lösung [PIWIK](http://piwik.org/).~~ In diesem Archiv werden keine Antworten oder Daten serverseitig gespeichert: Deine Antworten bleiben in deinem Browser (localStorage) und werden, wenn du dein Bild teilst, in den Link kodiert – kein Server, keine Datenbank, kein Tracking.
 
 Personenbezogene Daten (IP-Adresse, E-mail etc.) werden nicht an Dritte weitergegeben.
 
 
-Wir sind kein böser Datenpolyp und betrachten Daten nicht als Eigentum. Wenn du interessiert bist an den anonymisierten Daten, schreib uns an: [bge@patpat.org](mailto:bge@patpat.org) (PGP ID: 342DD599)
+Wir sind kein böser Datenpolyp und betrachten Daten nicht als Eigentum. ~~Wenn du interessiert bist an den anonymisierten Daten, schreib uns an: [bge@patpat.org](mailto:bge@patpat.org)~~ In diesem Archiv werden keine Daten mehr erhoben.
 
 Der ganze Quellcode ist auf [Github](https://github.com/patte/bge/) verfügbar und steht unter der GNU General Public License.
 
+Im Juni 2026 wurde die ursprüngliche Website mit Hilfe von LLMs «vibe-portiert»: Nur noch das Spiel selbst wurde in eine statische Version überführt. Das macht den Betrieb günstiger und datensparsamer, weil weder Server noch Datenbank nötig sind — und somit auch keine Daten mehr gesammelt werden.
 
-~~Wir sind auf gemieteten Servern von [Exoscale](https://www.exoscale.ch/) in der Schweiz, gehostet~~. Dieses Archiv der Website ist als statische Seite gehostet.`
+~~Wir sind auf gemieteten Servern von [Exoscale](https://www.exoscale.ch/) in der Schweiz, gehostet.~~ Dieses Archiv der Website ist ~~auf fly.io gehostet~~ als statische Seite auf [Cloudflare Pages](https://pages.cloudflare.com/) gehostet.`
 
 export function aboutModalHTML() {
   const lang = getLanguage()
