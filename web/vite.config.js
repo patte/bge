@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // Where the static site will be hosted — used for canonical / Open Graph / the
 // hreflang alternates / sitemap. Override at build: `SITE_URL=… npm run build`.
-const SITE_URL = (process.env.SITE_URL || 'https://bge.patpat.org').replace(/\/+$/, '')
+const SITE_URL = (process.env.SITE_URL || 'https://bedingungslos.ch').replace(/\/+$/, '')
 
 const LANGUAGES = ['de', 'fr', 'it']
 

@@ -59,15 +59,15 @@ live original to be reachable as the oracle.
 `web/dist` is plain static files, hostable anywhere. SEO (per-language `/`, `/fr/`,
 `/it/` pages with titles/description, Open Graph, `hreflang`, FAQ structured data,
 `robots.txt` + `sitemap.xml`) is generated at build time. The canonical/OG/sitemap
-URLs come from `SITE_URL` (default `https://bge.patpat.org`):
+URLs come from `SITE_URL` (default `https://bedingungslos.ch`):
 
 ```bash
-SITE_URL=https://bedingungslos.ch pnpm build
+SITE_URL=https://other-host.example pnpm build
 ```
 
-The intended public home is `https://bedingungslos.ch`; point `SITE_URL` at
-whichever domain actually **serves** the site (returns 200), and 301-redirect the
-others to it.
+The public home is `https://bedingungslos.ch`; point `SITE_URL` at whichever
+domain actually **serves** the site (returns 200), and 301-redirect the others
+to it.
 
 ## License
 
