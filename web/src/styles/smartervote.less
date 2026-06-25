@@ -648,6 +648,19 @@ html {
     left: 0.5rem;
     width: 5rem;
   }
+
+  // Copy feedback ("Link kopiert!") sits directly under the link button so it
+  // reads next to the action, not below the whole preview image.
+  .share-link-feedback {
+    // Pull up tight under the link button (it triggers the copy) and keep a
+    // bigger gap before the download button below.
+    margin: -0.4rem 0 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+  }
   
   .share-buttons {
     float: left;
@@ -655,7 +668,8 @@ html {
 
   .fb-share,
   .tw-share,
-  .url-copy {
+  .url-copy,
+  .img-download {
     display: inline-block;
     width: 4rem;
     height: 4rem;

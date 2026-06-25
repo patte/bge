@@ -163,6 +163,12 @@ a {
       width: 2.2rem;
       height: 2.2rem;
       margin: 0.9rem auto;
+      // The icons are inline SVGs with fill="currentColor", but the app's
+      // `#smartervote a { color: #000 }` (id specificity) wins over the white
+      // colour above, so currentColor resolves to black -> black-on-black icon.
+      // Set fill directly (a CSS fill beats the presentation attribute) so the
+      // icons are always white, visible without hover.
+      fill: #fff;
     }
   }
 }

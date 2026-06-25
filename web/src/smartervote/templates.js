@@ -155,11 +155,11 @@ export function evaluationHTML() {
       <div class="preview-wrapper">
         <div class="share-buttons-wrapper">
           <a class="url-copy" href="#" title="Link kopieren">${ICON_LINK}</a>
+          <p class="share-link-feedback" style="display:none;"></p>
           <a class="img-download" href="#" title="Bild herunterladen">${ICON_DOWNLOAD}</a>
         </div>
         <img id="mybubbles-preview" title="Rechts klicken, um das Bild herunterzuladen">
       </div>
-      <p class="share-link-feedback" style="display:none;font-size:0.85em;"></p>
     </div>
 
     <div class="topics">
@@ -184,7 +184,7 @@ Danach kannst du dein Bild ~~über Facebook, Twitter oder~~ per Mail mit Freunde
 
 # Impressum
 
-Idee und Konzept: Patrick Recher, Clara Vuillemin – [bge@patpat.org](mailto:bge@patpat.org) (PGP ID: [458c7704](https://mail-api.proton.me/pks/lookup?op=get&search=bge@patpat.org) ProtonMail)
+Idee und Konzept: Patrick Recher, Clara Vuillemin – [bge@patpat.org](mailto:bge@patpat.org) (PGP ID: [458c7704](https://mail-api.proton.me/pks/lookup?op=get&search=bge@patpat.org) Proton)
 
 Inhaltliche Umsetzung und Projektleitung: Clara Vuillemin
 
