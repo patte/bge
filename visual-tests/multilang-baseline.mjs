@@ -1,38 +1,45 @@
-import { chromium } from 'playwright'
+// Compares the new build's de/fr/it question text against the frozen baseline
+// (baseline/questions.json — captured from the original by capture-multilang.mjs,
+// or copied from the committed fixture by run.mjs). The new build ships all three
+// languages in new/state.json, so this needs no live app.
 import { readFileSync } from 'node:fs'
-import { extractQuestions } from './lib.mjs'
-const NEW = JSON.parse(readFileSync('new/state.json','utf8')).questions
-const b = await chromium.launch()
-const p = await (await b.newContext({viewport:{width:1280,height:800}})).newPage()
-await p.goto('http://localhost:4190/', { waitUntil:'domcontentloaded', timeout:60000 })
-await p.waitForSelector('#bubblesSVG',{timeout:45000}); await p.waitForSelector('.max',{timeout:45000})
-const got = {}
-for (const lg of ['de','fr','it']){
-  await p.evaluate((l)=>{ try{ if(window.I18NConf) I18NConf.setLanguage(l); else if(window.TAPi18n) TAPi18n.setLanguage(l) }catch(e){} }, lg)
-  // wait until the client has this language's fields loaded
-  await p.waitForFunction((l)=>{
-    if(!window.Questions) return false
-    const q = window.Questions.findOne({index:0})
-    return q && q.languages && q.languages[l] && q.languages[l].label
-  }, lg, { timeout: 20000 }).catch(()=>{})
-  await p.waitForTimeout(1500)
-  got[lg] = await extractQuestions(p)
-}
-await b.close()
-let diffs=0, checks=0
-for (const lg of ['de','fr','it']){
-  const arr = got[lg]
-  if(!arr){ console.log(lg,'NOT captured'); continue }
-  for(let i=0;i<arr.length;i++){
-    const bl=(arr[i].languages[lg])||{}, nl=(NEW[i].languages[lg])||{}
-    for(const k of ['label','minLabel','maxLabel','info']){
+import { fileURLToPath } from 'node:url'
+import { dirname, resolve } from 'node:path'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const base = JSON.parse(readFileSync(resolve(__dirname, 'baseline/questions.json'), 'utf8'))
+const NEW = JSON.parse(readFileSync(resolve(__dirname, 'new/state.json'), 'utf8')).questions
+
+// The legacy publication sends `info: ""` where the new build has it `undefined`
+// (a csv-parse vs fast-csv edge case); both render as "no info", so treat
+// empty/null/undefined as equal.
+const norm = (v) => (v == null || v === '' ? '' : v)
+
+let diffs = 0
+let checks = 0
+for (const lg of ['de', 'fr', 'it']) {
+  const arr = base[lg]
+  if (!arr) {
+    console.log(`  ${lg}: missing in baseline`)
+    continue
+  }
+  for (let i = 0; i < arr.length; i++) {
+    const bl = (arr[i].languages && arr[i].languages[lg]) || {}
+    const nl = (NEW[i] && NEW[i].languages && NEW[i].languages[lg]) || {}
+    for (const k of ['label', 'minLabel', 'maxLabel', 'info']) {
       checks++
-      if(JSON.stringify(bl[k])!==JSON.stringify(nl[k])){ diffs++
-        const bs=bl[k]==null?'<null>':String(bl[k]), ns=nl[k]==null?'<null>':String(nl[k])
-        let di=0; while(di<bs.length&&di<ns.length&&bs[di]===ns[di])di++
-        console.log(`DIFF q${i}.${lg}.${k} @${di}: base=${JSON.stringify(bs.slice(Math.max(0,di-10),di+15))} new=${JSON.stringify(ns.slice(Math.max(0,di-10),di+15))}`)
+      if (JSON.stringify(norm(bl[k])) !== JSON.stringify(norm(nl[k]))) {
+        diffs++
+        const bs = bl[k] == null ? '<null>' : String(bl[k])
+        const ns = nl[k] == null ? '<null>' : String(nl[k])
+        let di = 0
+        while (di < bs.length && di < ns.length && bs[di] === ns[di]) di++
+        console.log(
+          `  ✗ q${i}.${lg}.${k} @${di}: base=${JSON.stringify(bs.slice(Math.max(0, di - 10), di + 15))} new=${JSON.stringify(ns.slice(Math.max(0, di - 10), di + 15))}`
+        )
       }
     }
   }
 }
-console.log(`\nmultilingual question check: ${checks-diffs}/${checks} fields match (${diffs} diffs)`)
+console.log(`\n${diffs === 0 ? '✅' : '❌'} multilingual question text: ${checks - diffs}/${checks} fields match (${diffs} diffs)`)
+process.exit(diffs === 0 ? 0 : 1)

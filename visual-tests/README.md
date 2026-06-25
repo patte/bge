@@ -1,50 +1,49 @@
 # visual-tests
 
-Verifies the static rebuild in [`../web`](../web) against the **original**
-smartervote app by driving **both** through identical, deterministic interactions
-and comparing the results — the derived numbers, the full bubble-network
-structure, the UI state, and every interactive action.
+Verifies the static rebuild in [`../web`](../web) reproduces the **original**
+smartervote app. The default run is **self-contained**: it compares the new build
+against a **frozen snapshot of the original** committed in [`fixtures/`](fixtures/)
+— the original's exact questions, scores, per-topic %, bubble radii, de/fr/it
+text, and the full network + UI signature of every interactive action. No old app
+required.
 
-## Oracle
+`--reverify` re-captures the **live** original to re-prove fidelity (including the
+cross-app pixel diff) and refresh the fixtures.
 
-The original app is the **deployed** image at `https://bge.fly.dev` (the same
-`app/Dockerfile`; locally it only fails because node 0.10's native build is
-fragile under emulation). `https://bge.patpat.org` serves the same image.
-
-This environment blocks the headless browser's external network, so
-[`proxy.mjs`](proxy.mjs) reverse-proxies the live app onto `http://localhost:4190`
-(rewriting Meteor's DDP connection URL to the proxy) and the browser drives the
-real original app via localhost.
-
-## Run (one command)
+## Run
 
 ```bash
-npm run setup        # once: npm install + playwright chromium (+ system deps)
-npm test             # full suite: starts the new build + proxy, captures both, compares
-npm run test:quick   # skip the slower 4-pattern derived-state capture
+pnpm run setup         # once: install + playwright chromium (+ system deps)
+pnpm test              # self-contained: new build vs the frozen fixtures/
+pnpm run test:quick    # skip the slower 4-pattern derived-state pass
+pnpm run test:reverify # re-prove against the LIVE original (+ pixel diff; refresh fixtures/)
 ```
 
-`npm test` ([`run.mjs`](run.mjs)) starts everything it needs (the new build's
-Vite server on `:4180`, the baseline proxy on `:4190`), captures both apps, runs
-all comparators, and tears the servers down again. It exits non-zero on any
-mismatch. Ports are overridable via `PORT_NEW` / `PROXY_PORT`; `VERBOSE=1` echoes
-the server logs.
+`pnpm test` ([`run.mjs`](run.mjs)) starts the new build's Vite server on `:4180`,
+captures it, and compares against `fixtures/` — exiting non-zero on any mismatch.
+It needs no old app. `--reverify` additionally starts the proxy to the live
+original (see Oracle), captures it, runs the cross-app pixel diff, and rewrites
+`fixtures/` from the fresh capture. Ports overridable via `PORT_NEW` /
+`PROXY_PORT`; `VERBOSE=1` echoes server logs.
 
-To drive the pieces by hand (e.g. against an already-running dev server):
+## Fixtures (the frozen baseline)
 
-```bash
-node proxy.mjs &                                   # :4190 -> https://bge.fly.dev
-node capture.mjs        baseline http://localhost:4190/de   # derived state + screenshots
-node capture.mjs        new      http://localhost:4180
-node capture-actions.mjs baseline http://localhost:4190/de  # action scenario
-node capture-actions.mjs new      http://localhost:4180
-node capture-shots.mjs   baseline http://localhost:4190/de  # UI pixel frames
-node capture-shots.mjs   new      http://localhost:4180
-node compare.mjs            # questions(de) + scoring/radii
-node multilang-baseline.mjs # fr/it/de question text
-node compare-actions.mjs    # network + UI + about + language, per action
-node compare-shots.mjs      # pixel diff of the UI frames (baseline vs new)
-```
+[`fixtures/`](fixtures/) holds the original's captured behaviour — `baseline-state.json`
+(derived numbers), `baseline-actions.json` (the action-scenario network+UI
+signatures) and `baseline-questions.json` (de/fr/it text). These are **committed**
+and are what the default run compares against, so the suite keeps working after
+the legacy app is gone. Regenerate them from the live original with
+`pnpm run test:reverify`.
+
+## Oracle (only for `--reverify`)
+
+The original lives on the
+[`legacy-meteor`](https://github.com/patte/bge/tree/legacy-meteor) branch and is
+deployed as the fly image at `https://bge.fly.dev` (the same `app/Dockerfile`).
+[`proxy.mjs`](proxy.mjs) reverse-proxies it onto `http://localhost:4190` so the
+headless browser can drive it. Once the legacy app is decommissioned `--reverify`
+can no longer run, but the default `pnpm test` keeps working off the committed
+fixtures.
 
 ## What is deterministic (and what isn't)
 
@@ -96,8 +95,10 @@ The network signature it diffs (positions excluded): node/circle counts, the
 radii multiset, fill colours, fill-opacities, link count, favourite-star and
 dead-question image counts, and which bubble carries the `selected` class.
 
-**UI pixel frames** ([`capture-shots.mjs`](capture-shots.mjs) + [`compare-shots.mjs`](compare-shots.mjs)) —
-real `pixelmatch` diffs of the deterministic surface, both viewports. We
+**UI pixel frames** ([`capture-shots.mjs`](capture-shots.mjs) + [`compare-shots.mjs`](compare-shots.mjs))
+— **`--reverify` only** (a cross-app pixel diff needs the live original; pixel
+goldens don't travel across machines, so they aren't frozen). Real `pixelmatch`
+diffs of the deterministic surface, both viewports. We
 screenshot opaque elements (`#content`, `.final-score`, `.topics`,
 `#smartervote-modal`, `#score-gauge`) and hide the non-deterministic layers
 (`#bubbles-container` and the evaluation's `#mybubbles-preview` PNG) so the

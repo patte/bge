@@ -82,26 +82,19 @@ for (const vp of Object.keys(baseline.viewports)) {
   }
 
   // --- language switch ---
-  // The switcher is desktop-only; on mobile both apps record null.
-  // On the NEW app the switch is client-side and deterministic, so we hard-
-  // assert it changes the question text. The legacy app fetches each language's
-  // questions over DDP, which through the proxy is load-sensitive, so we only
-  // cross-check the exact strings when the baseline actually switched. (Full
-  // fr/it/de text parity across all 21 questions is covered by
-  // multilang-baseline.mjs regardless.)
-  const bL = b.langLabels
+  // The switcher is desktop-only; on mobile both apps record null. On the new
+  // app the switch is client-side and deterministic, so we assert it changes the
+  // current question's text per language. We do NOT compare the exact strings to
+  // the baseline: the legacy app *resets to the first question* on a language
+  // switch while the new build *keeps* the current question, so the labels are
+  // for different questions by design. Full fr/it/de text parity across all 21
+  // questions is covered exactly by multilang-baseline.mjs.
   const nL = n.langLabels
-  if (nL.de === null && bL.de === null) {
-    ok(`lang switcher hidden on ${vp} (both)`, true)
+  if (nL.de === null) {
+    ok(`lang switcher hidden on ${vp} (both)`, b.langLabels.de === null)
   } else {
     ok(`new: fr switches from de`, !!nL.fr && nL.fr !== nL.de, JSON.stringify(nL))
     ok(`new: it switches from de`, !!nL.it && nL.it !== nL.de, JSON.stringify(nL))
-    const baselineSwitched = !!bL.fr && bL.fr !== bL.de && !!bL.it && bL.it !== bL.de
-    if (baselineSwitched) {
-      eq(`lang labels match baseline (fr/it/de)`, bL, nL)
-    } else {
-      console.log(`  ~ lang cross-check skipped — baseline did not switch (cold VM / DDP). text parity covered by multilang-baseline.mjs`)
-    }
   }
 }
 

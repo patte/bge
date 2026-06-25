@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Compares the legacy Meteor baseline against the new static build",
+  "description": "Verifies the static build against the frozen original baseline (and, with --reverify, the live original)",
   "scripts": {
     "test": "node run.mjs",
     "test:quick": "node run.mjs --quick",
-    "setup": "npm install && npx playwright install --with-deps chromium"
+    "test:reverify": "node run.mjs --reverify",
+    "setup": "pnpm install && pnpm exec playwright install --with-deps chromium"
   },
   "dependencies": {
     "pixelmatch": "^7.2.0",

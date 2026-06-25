@@ -1,27 +1,35 @@
-// One-command, re-runnable verification of the new build against the live
-// legacy app.
+// One-command verification of the new build.
 //
-//   node run.mjs            # full run: derived-state + action-scenario, both viewports
-//   node run.mjs --quick    # skip the slower 4-pattern derived-state capture
+//   node run.mjs              # default: SELF-CONTAINED — compare the new build
+//                             # against the frozen fixtures/ (the original's
+//                             # captured behaviour). Needs no old app.
+//   node run.mjs --quick      # skip the slower 4-pattern derived-state pass
+//   node run.mjs --reverify   # RE-PROVE against the LIVE original: start the
+//                             # proxy, capture the old app, refresh fixtures/,
+//                             # and also run the cross-app pixel diff. Needs the
+//                             # legacy app reachable (or redeploy from
+//                             # `legacy-meteor`).
 //
-// It starts everything it needs and tears it down again:
-//   - the new build's Vite dev server on PORT_NEW   (default 4180)
-//   - the reverse proxy to the live baseline on PORT_PROXY (default 4190)
-// then captures both apps and runs the comparators, exiting non-zero on any
-// mismatch. Nothing needs to be running beforehand.
+// It starts the new build's Vite server (and, for --reverify, the proxy to the
+// legacy app), runs the comparators, and tears everything down again.
 import { spawn } from 'node:child_process'
+import { copyFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, resolve } from 'node:path'
 import net from 'node:net'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const WEB_DIR = resolve(__dirname, '../web')
+const FIX = resolve(__dirname, 'fixtures')
+const BASE = resolve(__dirname, 'baseline')
 
 const PORT_NEW = Number(process.env.PORT_NEW || 4180)
 const PORT_PROXY = Number(process.env.PROXY_PORT || 4190)
 const URL_NEW = `http://localhost:${PORT_NEW}`
 const URL_BASE = `http://localhost:${PORT_PROXY}/de`
+const URL_BASE_ROOT = `http://localhost:${PORT_PROXY}/`
 const QUICK = process.argv.includes('--quick')
+const REVERIFY = process.argv.includes('--reverify')
 
 const children = []
 function spawnProc(cmd, args, opts) {
@@ -65,54 +73,68 @@ function run(cmd, args, opts = {}) {
     c.on('exit', (code) => (code === 0 ? res() : rej(new Error(`${cmd} ${args.join(' ')} exited ${code}`))))
   })
 }
+const node = (args) => run('node', args, { cwd: __dirname })
+const cp = (from, to) => {
+  mkdirSync(dirname(to), { recursive: true })
+  copyFileSync(from, to)
+}
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 async function main() {
   console.log(`▶ starting new build (vite) on :${PORT_NEW} …`)
-  spawnProc('sh', ['-c', `npm run bake && npx vite --port ${PORT_NEW} --strictPort`], { cwd: WEB_DIR, tag: 'vite' })
-
-  console.log(`▶ starting baseline proxy on :${PORT_PROXY} …`)
-  spawnProc('node', ['proxy.mjs'], { cwd: __dirname, tag: 'proxy', env: { ...process.env, PROXY_PORT: String(PORT_PROXY) } })
-
-  await Promise.all([waitPort(PORT_NEW), waitPort(PORT_PROXY)])
-  // give the apps a moment to be fully serving
-  await new Promise((r) => setTimeout(r, 1500))
+  spawnProc('sh', ['-c', `pnpm bake && pnpm exec vite --port ${PORT_NEW} --strictPort`], { cwd: WEB_DIR, tag: 'vite' })
+  const waits = [waitPort(PORT_NEW)]
+  if (REVERIFY) {
+    console.log(`▶ starting baseline proxy on :${PORT_PROXY} …`)
+    spawnProc('node', ['proxy.mjs'], { cwd: __dirname, tag: 'proxy', env: { ...process.env, PROXY_PORT: String(PORT_PROXY) } })
+    waits.push(waitPort(PORT_PROXY))
+  }
+  await Promise.all(waits)
+  await sleep(1500)
 
   let failed = false
   try {
-    if (!QUICK) {
-      console.log('\n▶ capture derived state — baseline')
-      await run('node', ['capture.mjs', 'baseline', URL_BASE], { cwd: __dirname })
-      console.log('\n▶ capture derived state — new')
-      await run('node', ['capture.mjs', 'new', URL_NEW], { cwd: __dirname })
+    if (REVERIFY) {
+      // Capture the LIVE original and refresh the committed fixtures from it.
+      console.log('\n▶ capture the live original (refreshing fixtures/)')
+      if (!QUICK) await node(['capture.mjs', 'baseline', URL_BASE])
+      await node(['capture-actions.mjs', 'baseline', URL_BASE])
+      if (!QUICK) await node(['capture-multilang.mjs', 'baseline', URL_BASE_ROOT])
+      await node(['capture-shots.mjs', 'baseline', URL_BASE])
+      if (!QUICK) cp(resolve(BASE, 'state.json'), resolve(FIX, 'baseline-state.json'))
+      cp(resolve(BASE, 'actions.json'), resolve(FIX, 'baseline-actions.json'))
+      if (!QUICK) cp(resolve(BASE, 'questions.json'), resolve(FIX, 'baseline-questions.json'))
+    } else {
+      // Self-contained: the baseline IS the committed fixture snapshot.
+      if (!QUICK) cp(resolve(FIX, 'baseline-state.json'), resolve(BASE, 'state.json'))
+      cp(resolve(FIX, 'baseline-actions.json'), resolve(BASE, 'actions.json'))
+      if (!QUICK) cp(resolve(FIX, 'baseline-questions.json'), resolve(BASE, 'questions.json'))
     }
 
-    console.log('\n▶ capture action scenario — baseline')
-    await run('node', ['capture-actions.mjs', 'baseline', URL_BASE], { cwd: __dirname })
-    console.log('\n▶ capture action scenario — new')
-    await run('node', ['capture-actions.mjs', 'new', URL_NEW], { cwd: __dirname })
-
-    console.log('\n▶ capture UI pixel frames — baseline')
-    await run('node', ['capture-shots.mjs', 'baseline', URL_BASE], { cwd: __dirname })
-    console.log('\n▶ capture UI pixel frames — new')
-    await run('node', ['capture-shots.mjs', 'new', URL_NEW], { cwd: __dirname })
+    console.log('\n▶ capture the new build')
+    if (!QUICK) await node(['capture.mjs', 'new', URL_NEW])
+    await node(['capture-actions.mjs', 'new', URL_NEW])
+    if (REVERIFY) await node(['capture-shots.mjs', 'new', URL_NEW])
 
     if (!QUICK) {
       console.log('\n▶ compare derived state (gauge / score / topics / radii)')
-      await run('node', ['compare.mjs'], { cwd: __dirname }).catch(() => (failed = true))
+      await node(['compare.mjs']).catch(() => (failed = true))
       console.log('\n▶ compare question text (de/fr/it)')
-      await run('node', ['multilang-baseline.mjs'], { cwd: __dirname }).catch(() => (failed = true))
+      await node(['multilang-baseline.mjs']).catch(() => (failed = true))
     }
-
     console.log('\n▶ compare action scenario (network + UI + about + lang)')
-    await run('node', ['compare-actions.mjs'], { cwd: __dirname }).catch(() => (failed = true))
+    await node(['compare-actions.mjs']).catch(() => (failed = true))
 
-    console.log('\n▶ compare UI pixel frames (panel / slider / modal / gauge)')
-    await run('node', ['compare-shots.mjs', 'baseline', 'new'], { cwd: __dirname }).catch(() => (failed = true))
+    if (REVERIFY) {
+      console.log('\n▶ compare UI pixel frames (cross-app — needs the live original)')
+      await node(['compare-shots.mjs', 'baseline', 'new']).catch(() => (failed = true))
+    }
   } finally {
     killAll()
   }
 
-  console.log(`\n${failed ? '❌ SUITE FAILED' : '✅ SUITE PASSED'}`)
+  const how = REVERIFY ? 'reverified against the live original; fixtures/ refreshed' : 'vs frozen fixtures/'
+  console.log(`\n${failed ? '❌ SUITE FAILED' : '✅ SUITE PASSED'} (${how})`)
   process.exit(failed ? 1 : 0)
 }
 
